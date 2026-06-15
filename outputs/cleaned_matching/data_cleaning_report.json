@@ -1,0 +1,109 @@
+{
+  "source_files": {
+    "tiki": "C:\\Users\\Minh Phuc\\Downloads\\tiki_books (2).csv",
+    "students": "C:\\Users\\Minh Phuc\\Downloads\\mock_ueh_students_2000.csv",
+    "repo": "C:\\Users\\Minh Phuc\\Downloads\\ueh_repository_raw.csv"
+  },
+  "outputs": {
+    "directory": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching",
+    "tiki_books_clean": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\tiki_books_clean.csv",
+    "ueh_students_clean": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\ueh_students_clean.csv",
+    "ueh_student_courses_clean": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\ueh_student_courses_clean.csv",
+    "ueh_repository_clean": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\ueh_repository_clean.csv",
+    "course_resource_matches": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\course_resource_matches.csv",
+    "student_resource_matches": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\student_resource_matches.csv",
+    "match_quality_summary": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\cleaned_matching\\match_quality_summary.csv"
+  },
+  "cleaning_notes": [
+    "Tiki: dropped fully empty/high-missing operational columns, normalized titles, prices, dates, URLs, and deduplicated repeated products by book_id while preserving all source search keys.",
+    "Students: preserved student rows, normalized names/majors, parsed mon_hoc into a course list, and exploded to one row per student-course.",
+    "UEH repository: removed empty subject/doc_type noise, normalized titles/abstracts, deduplicated repeated author names, and kept one row per doc_id.",
+    "Matching: used accent-insensitive Vietnamese/English text normalization, domain synonym expansion, token n-grams, weighted text overlap, exact phrase boosts, popularity/view tie-breakers, and confidence labels."
+  ],
+  "validation": [
+    {
+      "metric": "raw_tiki_rows",
+      "value": 9473.0
+    },
+    {
+      "metric": "clean_tiki_unique_books",
+      "value": 6399.0
+    },
+    {
+      "metric": "raw_student_rows",
+      "value": 2000.0
+    },
+    {
+      "metric": "clean_student_rows",
+      "value": 2000.0
+    },
+    {
+      "metric": "student_course_rows",
+      "value": 12000.0
+    },
+    {
+      "metric": "unique_major_course_pairs",
+      "value": 216.0
+    },
+    {
+      "metric": "raw_repo_rows",
+      "value": 2000.0
+    },
+    {
+      "metric": "clean_repo_unique_docs",
+      "value": 2000.0
+    },
+    {
+      "metric": "course_resource_match_rows_top3_each_type",
+      "value": 1296.0
+    },
+    {
+      "metric": "student_resource_match_rows",
+      "value": 12000.0
+    },
+    {
+      "metric": "student_rows_with_tiki_match",
+      "value": 12000.0
+    },
+    {
+      "metric": "student_rows_with_repo_match",
+      "value": 12000.0
+    },
+    {
+      "metric": "student_rows_with_both_matches",
+      "value": 12000.0
+    },
+    {
+      "metric": "top1_tiki_book_confidence_high",
+      "value": 73.0
+    },
+    {
+      "metric": "top1_tiki_book_confidence_low",
+      "value": 72.0
+    },
+    {
+      "metric": "top1_tiki_book_confidence_medium",
+      "value": 71.0
+    },
+    {
+      "metric": "top1_tiki_book_avg_score",
+      "value": 51.51
+    },
+    {
+      "metric": "top1_ueh_repository_confidence_medium",
+      "value": 88.0
+    },
+    {
+      "metric": "top1_ueh_repository_confidence_low",
+      "value": 80.0
+    },
+    {
+      "metric": "top1_ueh_repository_confidence_high",
+      "value": 48.0
+    },
+    {
+      "metric": "top1_ueh_repository_avg_score",
+      "value": 40.65
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ueh-tiki/schemas/course_resource_match.schema.json",
+  "title": "Course Resource Match Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "schema_version",
+    "occurred_at",
+    "source",
+    "trace_id",
+    "privacy_level",
+    "payload"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "event_type": {
+      "type": "string",
+      "const": "course_resource_match_created"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "const": "privacy-layer-export"
+    },
+    "trace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": ["internal"]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "major",
+        "course",
+        "rank",
+        "resource_type",
+        "resource_id",
+        "resource_title",
+        "score",
+        "confidence"
+      ],
+      "properties": {
+        "major": { "type": "string" },
+        "major_norm": { "type": ["string", "null"] },
+        "course": { "type": "string" },
+        "course_norm": { "type": ["string", "null"] },
+        "rank": { "type": "integer", "minimum": 1 },
+        "resource_type": {
+          "type": "string",
+          "enum": ["tiki_book", "ueh_repository"]
+        },
+        "resource_id": { "type": ["string", "integer", "null"] },
+        "resource_title": { "type": ["string", "null"] },
+        "score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "confidence": {
+          "type": ["string", "null"],
+          "enum": ["high", "medium", "low", null]
+        },
+        "match_reason": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "price": { "type": ["number", "integer", "null"] },
+        "rating_average": { "type": ["number", "null"] },
+        "review_count": { "type": ["integer", "null"] },
+        "quantity_sold": { "type": ["number", "integer", "null"] },
+        "source_keys": { "type": ["string", "null"] },
+        "year": { "type": ["integer", "null"] },
+        "collection": { "type": ["string", "null"] },
+        "views": { "type": ["integer", "null"] },
+        "authors": { "type": ["string", "null"] },
+        "popularity_score": { "type": ["number", "null"] }
+      }
+    }
+  }
+}

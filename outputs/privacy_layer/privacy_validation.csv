@@ -1,0 +1,19 @@
+﻿check,passed,detail
+students_protected_row_count_matches_source,True,"{'source': 2000, 'protected': 2000}"
+student_hash_unique_per_student,True,"{'unique_hashes': 2000, 'students': 2000}"
+student_hash_is_hmac_sha256_length,True,all hashes are 64 lowercase hex characters
+student_hash_reproducible,True,protected hashes match deterministic HMAC output
+student_token_unique_per_student,True,"{'unique_tokens': 2000, 'students': 2000}"
+student_token_format,True,all tokens match stu_ plus 16 lowercase hex characters
+student_token_reproducible,True,protected tokens match deterministic HMAC token output
+student_token_map_protected_row_count,True,"{'source': 2000, 'token_map': 2000}"
+student_token_map_protected_has_no_raw_pii_columns,True,no raw PII columns
+student_token_map_protected_sample_has_no_raw_student_codes,True,first 1000 rows do not contain sampled raw student codes
+students_protected_sample_has_no_raw_student_codes,True,first 1000 rows do not contain sampled raw student codes
+student_courses_protected_sample_has_no_raw_student_codes,True,first 1000 rows do not contain sampled raw student codes
+student_resource_matches_analytics_has_no_forbidden_pii_columns,True,no forbidden columns
+student_resource_matches_analytics_sample_has_no_raw_student_codes,True,first 1000 rows do not contain sampled raw student codes
+course_resource_matches_analytics_has_no_forbidden_pii_columns,True,no forbidden columns
+student_courses_protected_row_count,True,12000
+student_matches_analytics_row_count,True,12000
+student_matches_analytics_has_all_matches,True,"{'missing_tiki': 0, 'missing_repo': 0}"

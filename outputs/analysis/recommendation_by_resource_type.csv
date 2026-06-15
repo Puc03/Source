@@ -1,0 +1,3 @@
+resource_type,recommendation_rows,students,resources,avg_recommendation_score,avg_match_score,avg_quality_score,avg_popularity_score
+tiki_book,5394,2000,83,71.41,72.24,71.62,45.4
+ueh_repository,4606,1941,68,69.43,64.6,79.6,50.0

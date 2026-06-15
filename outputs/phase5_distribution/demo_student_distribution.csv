@@ -1,0 +1,6 @@
+student_token,student_rank,resource_type,resource_title,recommendation_score,delivery_type,availability_status,primary_action,access_reference
+stu_00b9e0b6b2593639,1,tiki_book,- Giáo trình cấu trúc dữ liệu và giải thuật,85.18,print_collection_or_marketplace,available_via_tiki_link,place_hold_or_open_tiki_link,OPAC-SIM-269955449
+stu_00b9e0b6b2593639,2,tiki_book,The Experience Economy: Nền Kinh Tế Trải Nghiệm - Biến Dịch Vụ Của Bạn Thành Trải Nghiệm Khách Hàng,44.76,print_collection_or_marketplace,available_via_tiki_link,place_hold_or_open_tiki_link,OPAC-SIM-182480871
+stu_00b9e0b6b2593639,3,ueh_repository,"Đặc điểm quá tự tin, thù lao giám đốc điều hành và hiệu quả hoạt động của các doanh nghiệp niêm yết ",42.49,digital_repository,digital_access_granted,open_repository_link,student_access_allowed
+stu_00b9e0b6b2593639,4,tiki_book,Everything You Need To Ace Computer Science And Coding Big Fat Notebooks - Sổ Tay Khoa Học Máy Tính ,42.16,print_collection_or_marketplace,available_via_tiki_link,place_hold_or_open_tiki_link,OPAC-SIM-115126767
+stu_00b9e0b6b2593639,5,tiki_book,Tớ Đến Với Khoa Học Máy Tính: Thuật Toán Và Lập Trình (Tái Bản),37.7,print_collection_or_marketplace,available_via_tiki_link,place_hold_or_open_tiki_link,OPAC-SIM-112442080

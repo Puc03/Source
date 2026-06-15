@@ -1,0 +1,729 @@
+const {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, BorderStyle, WidthType, ShadingType, VerticalAlign,
+  LevelFormat, PageNumber, Footer, Header, HeadingLevel, PageBreak
+} = require("docx");
+const fs = require("fs");
+const D = JSON.parse(fs.readFileSync('/home/claude/report_data.json','utf-8'));
+
+// ── REAL DATA ─────────────────────────────────────────────────────────
+const KPI    = D.kpi[0];
+const RECKPI = D.rec_kpi[0];
+const RECTYPE= D.rec_type;
+const MAJOR  = D.major;
+const MREC   = D.major_rec;
+const TCONF  = D.tiki_conf;
+const RCONF  = D.repo_conf;
+const COURSE = D.course.slice(0,10);
+const TTIKI  = D.top_tiki.slice(0,8);
+const TREPO  = D.top_repo.slice(0,8);
+const TREC   = D.top_rec.slice(0,8);
+const LOWC   = D.low_conf.slice(0,6);
+const MODEL  = D.model;
+const LAKE   = D.lake;
+const TCOM   = D.tiki_com[0];
+const PRIV   = D.priv_val;
+const SREC   = D.sample_recs;
+const AUDIT  = D.audit;
+
+// ── COLORS ──────────────────────────────────────────────────────────
+const C = {
+  navy: "0F3460", blue: "1565C0", green: "1AA37A", orange: "E87722",
+  teal: "0097A7", gray: "4A6080", lgray: "8094B0", white: "FFFFFF",
+  bgblue: "EBF4FF", bggreen: "E8F5E9", bgorg: "FFF3E0", bggray: "F4F7FC",
+  line: "D0D9E8", red: "C62828"
+};
+
+// ── DIMENSIONS (A4, 2cm margins) ────────────────────────────────────
+const PW = 11906; const ML = 1134; const MR = 1134;
+const CW = PW - ML - MR; // 9638
+
+// ── HELPERS ─────────────────────────────────────────────────────────
+const sp  = (b=0,a=80) => ({before:b,after:a});
+const b1  = col => ({style:BorderStyle.SINGLE,size:1,color:col||C.line});
+const bds = col => ({top:b1(col),bottom:b1(col),left:b1(col),right:b1(col)});
+const nb  = ()  => ({top:b1("FFFFFF"),bottom:b1("FFFFFF"),left:b1("FFFFFF"),right:b1("FFFFFF")});
+const nosp= sp(0,0);
+const fn  = (text,opts={}) => new TextRun({
+  text, font:"Times New Roman", bold:opts.b||false, italics:opts.i||false,
+  color:opts.c||"000000", size:opts.s||24, highlight:opts.hl
+});
+const p   = (ch,opts={}) => new Paragraph({
+  children: Array.isArray(ch)?ch:[ch],
+  spacing: opts.sp||sp(0,80), alignment:opts.al||AlignmentType.JUSTIFIED,
+  indent:opts.in, numbering:opts.num, heading:opts.h
+});
+const cell= (ch,w,opts={}) => new TableCell({
+  borders: opts.nb?nb():bds(opts.bc||C.line),
+  shading: opts.fill?{fill:opts.fill,type:ShadingType.CLEAR}:undefined,
+  width:{size:w,type:WidthType.DXA},
+  margins: opts.mg||{top:80,bottom:80,left:120,right:120},
+  verticalAlign:opts.va||VerticalAlign.TOP,
+  columnSpan:opts.span,
+  children:Array.isArray(ch)?ch:[ch]
+});
+const row = cells => new TableRow({children:cells});
+const tbl = (rows,widths) => new Table({
+  width:{size:widths.reduce((a,b)=>a+b,0),type:WidthType.DXA},
+  columnWidths:widths, rows
+});
+const spacer = () => p([fn("")],{sp:sp(0,40)});
+
+// heading helpers
+const h1 = txt => new Paragraph({
+  children:[fn(txt,{b:true,s:26,c:C.navy})],
+  spacing:sp(280,100),
+  border:{bottom:{style:BorderStyle.SINGLE,size:8,color:C.blue,space:3}}
+});
+const h2 = txt => new Paragraph({
+  children:[fn(txt,{b:true,s:24,c:C.blue})],
+  spacing:sp(200,60)
+});
+const h3 = txt => new Paragraph({
+  children:[fn(txt,{b:true,s:22,c:C.teal})],
+  spacing:sp(140,40)
+});
+
+// chapter title
+const chTitle = txt => new Paragraph({
+  children:[fn(txt,{b:true,s:28,c:C.navy})],
+  spacing:sp(0,120), alignment:AlignmentType.CENTER,
+  border:{bottom:{style:BorderStyle.SINGLE,size:10,color:C.navy,space:4}}
+});
+
+// phase strip
+const phaseStrip = (num,title,sub) => {
+  const W1=1440, W2=CW-1440;
+  return tbl([row([
+    cell(p([fn("PHASE "+num,{b:true,s:20,c:C.white})],{sp:nosp,al:AlignmentType.CENTER}),
+        W1,{fill:C.navy,bc:C.navy,va:VerticalAlign.CENTER,mg:{top:100,bottom:100,left:80,right:80}}),
+    cell([
+      p([fn(title,{b:true,s:20,c:C.navy})],{sp:sp(0,8)}),
+      sub?p([fn(sub,{s:18,c:C.gray,i:true})],{sp:nosp}):null
+    ].filter(Boolean),W2,{fill:C.bgblue,bc:C.bgblue,mg:{top:80,bottom:80,left:180,right:120}})
+  ])],[W1,W2]);
+};
+
+// note box
+const noteBox = (icon,text,bc,bg) => {
+  const W1=360,W2=CW-360;
+  return tbl([row([
+    cell(p([fn(icon,{b:true,s:22,c:C.white})],{sp:nosp,al:AlignmentType.CENTER}),
+        W1,{fill:bc,bc:bc,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:60,right:60}}),
+    cell(p([fn(text,{s:20})],{sp:nosp,al:AlignmentType.JUSTIFIED}),
+        W2,{fill:bg,nb:false,
+            border:{top:b1(bc),bottom:b1(bc),right:b1(bc),left:{style:BorderStyle.NONE,size:0,color:"FFFFFF"}},
+            mg:{top:100,bottom:100,left:140,right:120}})
+  ])],[W1,W2]);
+};
+
+// KPI row
+const kpiRow = items => {
+  const w = Math.floor(CW/items.length);
+  return tbl([row(items.map(it=>cell([
+    p([fn(it.val,{b:true,s:26,c:it.vc||C.blue})],{sp:sp(0,4),al:AlignmentType.CENTER}),
+    p([fn(it.lbl,{s:17,c:C.gray})],{sp:nosp,al:AlignmentType.CENTER})
+  ],w,{fill:it.bg||C.bgblue,bc:it.vc||C.blue,va:VerticalAlign.CENTER,mg:{top:100,bottom:100,left:60,right:60}})))],
+  items.map(()=>w));
+};
+
+// header row helper
+const hRow = (cols,ws,fill) => row(cols.map((c,i)=>cell(
+  p([fn(c,{b:true,s:19,c:C.white})],{sp:nosp}),
+  ws[i],{fill:fill||C.navy,bc:fill||C.navy,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:100,right:80}}
+)));
+
+// data row helper
+const dRow = (vals,ws,even,colors) => row(vals.map((v,i)=>cell(
+  p([fn(String(v??'—'),{s:18,c:colors&&colors[i]?colors[i]:"1A2A4A"})],{sp:nosp}),
+  ws[i],{fill:even?C.bggray:C.white,bc:C.line,mg:{top:65,bottom:65,left:100,right:80}}
+)));
+
+const tblTitle = txt => p([fn("Bảng: "+txt,{b:true,s:19,c:C.gray,i:true})],
+  {sp:sp(60,30),al:AlignmentType.CENTER});
+
+function num(v,dp=2){return typeof v==='number'?v.toFixed(dp):String(v??'—');}
+function pct(v){return num(v,2)+'%';}
+
+// ═══════════════════════════════════════════════════════════════════
+// DOCUMENT SECTIONS
+// ═══════════════════════════════════════════════════════════════════
+const children = [];
+const add = (...items) => items.forEach(x=>x&&children.push(x));
+
+// ── COVER ───────────────────────────────────────────────────────────
+add(spacer(),spacer());
+add(chTitle("CHƯƠNG 6: THỰC HIỆN DEMO"));
+add(spacer());
+add(p([fn("Môn học: Dữ liệu lớn và ứng dụng",{b:true,s:22,c:C.blue})],{sp:sp(0,40),al:AlignmentType.CENTER}));
+add(p([fn("Dự án: UEH Smart Library – Hệ thống Đề xuất Tài liệu Thông minh",{s:22,c:C.gray})],{sp:sp(0,40),al:AlignmentType.CENTER}));
+add(p([fn("University of Economics Ho Chi Minh City (UEH)  |  2025–2026",{s:20,c:C.lgray,i:true})],{sp:sp(0,0),al:AlignmentType.CENTER}));
+add(spacer(),spacer());
+
+// KPI summary on cover
+add(kpiRow([
+  {val:KPI.total_match_rows.toLocaleString(),lbl:"Total match rows",vc:C.blue,bg:C.bgblue},
+  {val:KPI.total_students.toLocaleString(),lbl:"Simulated students",vc:C.green,bg:C.bggreen},
+  {val:KPI.total_majors.toString(),lbl:"UEH majors",vc:C.orange,bg:C.bgorg},
+  {val:KPI.total_courses.toString(),lbl:"Môn học",vc:C.teal,bg:"E0F2F1"},
+]));
+add(spacer());
+add(kpiRow([
+  {val:KPI.total_tiki_books.toString(),lbl:"Tiki books crawled",vc:C.orange,bg:C.bgorg},
+  {val:KPI.total_repo_documents.toString(),lbl:"UEH repo docs",vc:C.teal,bg:"E0F2F1"},
+  {val:RECKPI.top5_recommendation_rows.toLocaleString(),lbl:"Recommendation rows",vc:C.blue,bg:C.bgblue},
+  {val:RECKPI.avg_recommendation_score.toFixed(1),lbl:"Avg rec score",vc:C.green,bg:C.bggreen},
+]));
+add(spacer(),spacer());
+
+// ── 6.1 SƠ LƯỢC DEMO ────────────────────────────────────────────────
+add(h1("6.1. Sơ lược demo"));
+add(p([fn("Chương này trình bày toàn bộ quá trình thực hiện demo dự án UEH Smart Library Recommendation System – một hệ thống đề xuất tài liệu thư viện cá nhân hóa theo ngành học. Hệ thống được xây dựng theo kiến trúc Big Data 6 phase, từ thu thập dữ liệu đến trực quan hóa kết quả.")],{sp:sp(0,80)}));
+
+// 6.1.1 Công cụ
+add(h2("6.1.1. Công cụ sử dụng"));
+add(p([fn("Hệ thống sử dụng hoàn toàn các công cụ mã nguồn mở, chạy trên môi trường local để mô phỏng kiến trúc Big Data sản xuất:")],{sp:sp(0,60)}));
+
+const toolW=[2100,2200,CW-4300];
+add(tblTitle("Danh sách công cụ và thư viện"));
+add(tbl([
+  hRow(["Công cụ / Thư viện","Vai trò","Chi tiết sử dụng"],toolW),
+  dRow(["Python 3.10+","Ngôn ngữ lập trình chính","pandas, pyarrow, duckdb, requests, json, hmac, hashlib"],toolW,true),
+  dRow(["Apache Parquet (pyarrow)","Định dạng lưu trữ cột","Thay thế HDFS/S3; phân vùng theo major=<tên ngành>"],toolW,false),
+  dRow(["DuckDB","OLAP query engine","Truy vấn Parquet, tổng hợp KPI, GROUP BY major/course"],toolW,true),
+  dRow(["Tiki API + Crawling","Thu thập dữ liệu sách","162 đầu sách, rating, review_count, quantity_sold, price"],toolW,false),
+  dRow(["UEH Digital Repository","Tài nguyên học thuật","2.000 tài liệu → 152 đầu doc matched với ngành học"],toolW,true),
+  dRow(["HMAC-SHA256 (hmac, hashlib)","Privacy layer","student_token stu_<16hex>, student_hash 64-char"],toolW,false),
+  dRow(["PySpark MLlib (extension)","ALS Collaborative Filtering","rank=10, maxIter=10, regParam=0.1, implicitPrefs=True"],toolW,true),
+  dRow(["Power BI / pptxgenjs","Trực quan hóa","6-page dashboard, 29 KPI cards, 12 biểu đồ"],toolW,false),
+  dRow(["Microsoft Excel / CSV","Trao đổi dữ liệu","14 bảng analysis, workbook kiểm tra chất lượng"],toolW,true),
+],toolW));
+add(spacer());
+
+// 6.1.2 Flowchart
+add(h2("6.1.2. Flowchart tổng quát pipeline"));
+add(p([fn("Toàn bộ quy trình được tổ chức theo 6 phase tuần tự, mô phỏng kiến trúc Big Data end-to-end:")],{sp:sp(0,60)}));
+
+const flowW=[1300,280,1300,280,1300,280,1300,280,1300,280,1300];
+add(tbl([row([
+  cell(p([fn("Mô phỏng hành vi",{b:true,s:18,c:C.white}),fn("\n80.667 events",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:C.navy,bc:C.navy,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+  cell(p([fn("→",{b:true,s:20,c:C.orange})],{sp:nosp,al:AlignmentType.CENTER}),
+      280,{fill:C.bggray,nb:true,va:VerticalAlign.CENTER,mg:{top:0,bottom:0,left:0,right:0}}),
+  cell(p([fn("Privacy Layer",{b:true,s:18,c:C.white}),fn("\nHMAC-SHA256",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:C.green,bc:C.green,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+  cell(p([fn("→",{b:true,s:20,c:C.orange})],{sp:nosp,al:AlignmentType.CENTER}),
+      280,{fill:C.bggray,nb:true,va:VerticalAlign.CENTER,mg:{top:0,bottom:0,left:0,right:0}}),
+  cell(p([fn("Parquet Data Lake",{b:true,s:18,c:C.white}),fn("\n36 partitions",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:C.blue,bc:C.blue,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+  cell(p([fn("→",{b:true,s:20,c:C.orange})],{sp:nosp,al:AlignmentType.CENTER}),
+      280,{fill:C.bggray,nb:true,va:VerticalAlign.CENTER,mg:{top:0,bottom:0,left:0,right:0}}),
+  cell(p([fn("DuckDB Warehouse",{b:true,s:18,c:C.white}),fn("\nOLAP queries",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:C.orange,bc:C.orange,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+  cell(p([fn("→",{b:true,s:20,c:C.orange})],{sp:nosp,al:AlignmentType.CENTER}),
+      280,{fill:C.bggray,nb:true,va:VerticalAlign.CENTER,mg:{top:0,bottom:0,left:0,right:0}}),
+  cell(p([fn("Content-based Rec",{b:true,s:18,c:C.white}),fn("\n6 features",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:C.teal,bc:C.teal,va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+  cell(p([fn("→",{b:true,s:20,c:C.orange})],{sp:nosp,al:AlignmentType.CENTER}),
+      280,{fill:C.bggray,nb:true,va:VerticalAlign.CENTER,mg:{top:0,bottom:0,left:0,right:0}}),
+  cell(p([fn("Power BI Dashboard",{b:true,s:18,c:C.white}),fn("\n6 pages",{s:15,c:"CCE5FF"})],{sp:nosp,al:AlignmentType.CENTER}),
+      1300,{fill:"6B21A8",bc:"6B21A8",va:VerticalAlign.CENTER,mg:{top:80,bottom:80,left:40,right:40}}),
+])],[1300,280,1300,280,1300,280,1300,280,1300,280,1300]));
+add(spacer());
+
+// ── 6.2 QUÁ TRÌNH THỰC HIỆN ──────────────────────────────────────────
+add(h1("6.2. Quá trình thực hiện demo"));
+
+// ── PHASE 1 ──────────────────────────────────────────────────────────
+add(phaseStrip("1","THU THẬP DỮ LIỆU & BẢO MẬT DỮ LIỆU","Tiki API · UEH Repository · Sinh viên giả lập · HMAC-SHA256 Privacy Layer"));
+add(spacer());
+
+// 1a: UEH Resource
+add(h3("1. Dữ liệu tài nguyên từ Thư viện số UEH"));
+add(p([fn("Thu thập từ hai nguồn chính theo phương thức khác nhau:")],{sp:sp(0,50)}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[
+  fn("UEH Digital Repository",{b:true}),fn(": Thu thập qua scraping và API – 2.000 tài liệu thô → sau khi làm sạch, loại trùng còn lại "),
+  fn(KPI.total_repo_documents+" tài liệu duy nhất",{b:true,c:C.teal}),fn(" được sử dụng trong matching (Master's Theses, Book Series, nghiên cứu chuyên ngành).")
+]}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[
+  fn("Tiki Book Catalog",{b:true}),fn(": Thu thập qua Tiki API – "+TCOM.tiki_match_rows.toLocaleString()+" dòng thô → deduplicate còn "),
+  fn("6.399 đầu sách duy nhất",{b:true,c:C.orange}),fn("; trong đó "+KPI.total_tiki_books+" đầu sách được matched với môn học UEH.")
+]}));
+add(spacer());
+add(kpiRow([
+  {val:"9.473",lbl:"Tiki raw rows",vc:C.orange,bg:C.bgorg},
+  {val:"6.399",lbl:"Tiki unique books",vc:C.orange,bg:C.bgorg},
+  {val:KPI.total_tiki_books.toString(),lbl:"Tiki matched",vc:C.green,bg:C.bggreen},
+  {val:"2.000",lbl:"UEH Repo raw",vc:C.teal,bg:"E0F2F1"},
+  {val:KPI.total_repo_documents.toString(),lbl:"UEH Repo matched",vc:C.green,bg:C.bggreen},
+]));
+add(spacer());
+
+const tikiW=[2200,1800,CW-4000];
+add(tblTitle("Thống kê dữ liệu Tiki Books (proxy data)"));
+add(tbl([
+  hRow(["Chỉ số","Giá trị thực tế","Ghi chú"],tikiW,C.orange),
+  dRow(["Tổng dòng thu thập","9.473 → 6.399 unique","Dedup theo tên sách + SKU"],tikiW,true),
+  dRow(["Avg Rating (thang 5)","2,28 sao","Proxy quality signal"],tikiW,false),
+  dRow(["Avg Review Count","26,82 lượt","Popularity signal"],tikiW,true),
+  dRow(["Avg Quantity Sold","243,58 sản phẩm","Sales signal – mô phỏng độ phổ biến"],tikiW,false),
+  dRow(["Avg Price","225.203 VNĐ","Không dùng trong scoring"],tikiW,true),
+  dRow(["Search keyword match","12.000 / 12.000 rows","100% match – keyword extraction"],tikiW,false),
+],tikiW));
+add(spacer());
+
+// top tiki
+const ttW=[200,3800,800,700,800,CW-6300];
+add(tblTitle("Top Tiki Books được match nhiều nhất (Top 8)"));
+add(tbl([
+  hRow(["#","Tên sách","Matched","Avg Score","Avg Rating","Avg Reviews"],ttW,C.orange),
+  ...TTIKI.map((r,i)=>dRow([i+1,r.tiki_title.length>55?r.tiki_title.slice(0,53)+"…":r.tiki_title,
+    r.matched_times,num(r.avg_tiki_score),num(r.avg_rating),num(r.avg_review_count)],
+    ttW,i%2===0,null))
+],ttW));
+add(spacer());
+
+// top repo
+const trW=[200,4200,1200,800,CW-6400];
+add(tblTitle("Top UEH Repository Documents được match nhiều nhất (Top 8)"));
+add(tbl([
+  hRow(["#","Tiêu đề tài liệu","Collection","Matched","Avg Score"],trW,C.teal),
+  ...TREPO.map((r,i)=>dRow([i+1,r.repo_title.length>60?r.repo_title.slice(0,58)+"…":r.repo_title,
+    r.repo_collection||"—",r.matched_times,num(r.avg_repo_score)],
+    trW,i%2===0,null))
+],trW));
+add(spacer());
+
+// 1b: Proxy behavior
+add(h3("2. Dữ liệu hành vi thay thế (Proxy Data)"));
+add(p([fn("Vì chưa có log hành vi thật từ OPAC/LMS UEH, hành vi người dùng được mô phỏng từ 4 hệ thống thư viện số:")],{sp:sp(0,60)}));
+
+const evW=[2400,1200,1000,CW-4600];
+add(tbl([
+  hRow(["Hệ thống nguồn","Số sự kiện","Tỷ lệ","Loại sự kiện chính"],evW,C.blue),
+  dRow(["OpenAthens (e-journal)","44.032","54,58%","Login, article access, session"],evW,true),
+  dRow(["DSpace Repository","15.928","19,75%","Repository Search, Download PDF, View Metadata, Open Fulltext, View Collection"],evW,false),
+  dRow(["EBSCO OneSearch","10.560","13,09%","Academic search, full-text access"],evW,true),
+  dRow(["Sierra Circulation","10.147","12,58%","Checkouts, holds, renewals"],evW,false),
+  row([
+    cell(p([fn("TỔNG CỘNG",{b:true,s:19,c:C.white})],{sp:nosp}),evW[0],{fill:C.navy,bc:C.navy,mg:{top:80,bottom:80,left:100,right:80}}),
+    cell(p([fn("80.667",{b:true,s:19,c:C.white})],{sp:nosp,al:AlignmentType.CENTER}),evW[1],{fill:C.navy,bc:C.navy,mg:{top:80,bottom:80,left:80,right:80}}),
+    cell(p([fn("100%",{b:true,s:19,c:C.white})],{sp:nosp,al:AlignmentType.CENTER}),evW[2],{fill:C.navy,bc:C.navy,mg:{top:80,bottom:80,left:60,right:60}}),
+    cell(p([fn("4 hệ thống UEH Smart Library",{b:true,s:19,c:C.white})],{sp:nosp}),evW[3],{fill:C.navy,bc:C.navy,mg:{top:80,bottom:80,left:100,right:80}}),
+  ])
+],evW));
+add(spacer());
+
+// 1c: Students
+add(h3("3. Dữ liệu hồ sơ người dùng giả lập"));
+add(p([fn("Hệ thống tạo "),fn(KPI.total_students.toLocaleString()+" sinh viên UEH giả lập",{b:true,c:C.blue}),
+  fn(" với thông tin đầy đủ, phân bổ trên "+KPI.total_majors+" ngành học:")],{sp:sp(0,60)}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[fn("Họ tên tiếng Việt",{b:true}),fn(": sinh theo phân phối thực tế UEH (họ phổ biến: Nguyễn, Trần, Lê, Phạm...)")]}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[fn("Mã sinh viên",{b:true}),fn(": định dạng UEH: "),fn("31 + (23|24|25) + 10 + 5 chữ số",{b:true,c:C.teal})]}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[fn("36 ngành học",{b:true}),fn(": Tài chính, Kế toán, Kinh doanh, CNTT, Nghệ thuật, Luật, Logistics...")]}));
+add(new Paragraph({numbering:{reference:"bullets",level:0},spacing:sp(20,20),children:[fn("201 môn học",{b:true}),fn(": 6 môn/sinh viên → "),fn("12.000 bản ghi student-course",{b:true,c:C.navy})]}));
+add(spacer());
+add(kpiRow([
+  {val:KPI.total_students.toLocaleString(),lbl:"Sinh viên giả lập",vc:C.blue,bg:C.bgblue},
+  {val:KPI.total_majors.toString(),lbl:"Ngành học UEH",vc:C.green,bg:C.bggreen},
+  {val:KPI.total_courses.toString(),lbl:"Môn học",vc:C.teal,bg:"E0F2F1"},
+  {val:KPI.total_match_rows.toLocaleString(),lbl:"Student-Course rows",vc:C.navy,bg:"EEF0FF"},
+  {val:"6",lbl:"Môn / sinh viên",vc:C.orange,bg:C.bgorg},
+]));
+add(spacer());
+
+// 1d: Privacy
+add(h3("4. Privacy Layer – Bảo mật thông tin sinh viên"));
+add(p([fn("Trước khi đưa dữ liệu vào pipeline, toàn bộ thông tin định danh sinh viên được ẩn danh hóa bằng thuật toán "),
+  fn("HMAC-SHA256",{b:true,c:C.navy}),fn(". Kết quả: tất cả 18 kiểm tra xác thực đều "),fn("PASS",{b:true,c:C.green}),fn(".")],{sp:sp(0,60)}));
+
+const pvW=[2400,1600,CW-4000];
+add(tblTitle("Cơ chế ẩn danh hóa Privacy Layer"));
+add(tbl([
+  hRow(["Thành phần","Giá trị / Định dạng","Mục đích"],pvW,C.green),
+  dRow(["Thuật toán hashing","HMAC-SHA256","Deterministic, không thể đảo ngược"],pvW,true),
+  dRow(["student_hash","64 ký tự hex thường","Dùng cho Kafka / legacy joins"],pvW,false),
+  dRow(["student_token","stu_<16 hex chars>","Dùng cho API / dashboard / analytics"],pvW,true),
+  dRow(["Secret fingerprint","sha256 first 16: 18d773332a0f08ba","Environment variable STUDENT_HASH_SECRET"],pvW,false),
+  dRow(["Cột PII đã xóa","ho_ten, ma_sv, student_code, student_name, user_id","Không xuất hiện trong analytics files"],pvW,true),
+  dRow(["protected files","student_code_masked (ẩn 5 số cuối) + initials","Debug chỉ; KHÔNG dùng trong analytics"],pvW,false),
+],pvW));
+add(spacer());
+
+// Privacy validation table (real data)
+const pvvW=[3600,800,CW-4400];
+add(tblTitle("Kết quả kiểm tra xác thực Privacy Layer – "+PRIV.length+"/"+PRIV.length+" PASS"));
+add(tbl([
+  hRow(["Kiểm tra / Check","Kết quả","Chi tiết"],pvvW,C.green),
+  ...PRIV.map((r,i)=>dRow([r.check,r.passed?"✓ PASS":"✗ FAIL",
+    typeof r.detail==='object'?JSON.stringify(r.detail):String(r.detail)],
+    pvvW,i%2===0,[null,r.passed?C.green:"C62828",C.gray]))
+],pvvW));
+add(spacer());
+add(noteBox("✅","Toàn bộ 18 kiểm tra xác thực đều PASS. Không có thông tin định danh cá nhân (PII) xuất hiện trong các analytics files. student_token là định danh duy nhất được phép xuất hiện trong dashboard và API downstream.",C.green,C.bggreen));
+add(spacer());
+
+// ── PHASE 2 ──────────────────────────────────────────────────────────
+add(phaseStrip("2","LƯU TRỮ & PHÂN TÁN DỮ LIỆU","Local Parquet Data Lake – 36 partitions theo major – mô phỏng HDFS/S3"));
+add(spacer());
+
+add(p([fn("Toàn bộ dữ liệu sau khi làm sạch và ẩn danh hóa được chuyển sang định dạng "),
+  fn("Apache Parquet",{b:true,c:C.blue}),fn(" phân vùng theo "),fn("major=<tên ngành>",{b:true,c:C.teal}),
+  fn(", mô phỏng kiến trúc HDFS/S3 Data Lake trong môi trường local. DuckDB đọc trực tiếp từ Parquet bằng predicate pushdown.")],{sp:sp(0,80)}));
+
+add(kpiRow([
+  {val:LAKE.length.toString(),lbl:"Parquet partitions",vc:C.blue,bg:C.bgblue},
+  {val:KPI.total_match_rows.toLocaleString(),lbl:"Total rows",vc:C.navy,bg:"EEF0FF"},
+  {val:"~53 MB",lbl:"DuckDB .db file",vc:C.green,bg:C.bggreen},
+  {val:"major=",lbl:"Partition key",vc:C.orange,bg:C.bgorg},
+]));
+add(spacer());
+
+const lkW=[2600,1300,CW-3900];
+add(tblTitle("Data Lake partition summary – "+LAKE.length+" partitions (toàn bộ 36 ngành)"));
+add(tbl([
+  hRow(["Ngành học (Partition Key)","Rows in partition","Đường dẫn Parquet"],lkW,C.blue),
+  ...LAKE.map((r,i)=>dRow([r.major,r.rows_in_partition.toLocaleString(),
+    "student_matches/major="+r.major.slice(0,20)+"…/data_0.parquet"],lkW,i%2===0,null))
+],lkW));
+add(spacer());
+add(noteBox("🗄","Local Parquet Data Lake mô phỏng cấu trúc HDFS/S3 thông qua partition theo major=. Trong production, các partition sẽ được lưu trên MinIO, AWS S3 hoặc HDFS cluster. DuckDB sẽ được thay bằng Apache Spark SQL cho xử lý phân tán thực sự.",C.blue,C.bgblue));
+add(spacer());
+
+// ── PHASE 3 ──────────────────────────────────────────────────────────
+add(phaseStrip("3","XỬ LÝ PHÂN TÁN – CONTENT/KEYWORD MATCHING","DuckDB OLAP · Chuẩn hóa văn bản · Synonym expansion · Confidence scoring"));
+add(spacer());
+
+add(p([fn("Phase 3 thực hiện quá trình khớp nội dung giữa môn học của sinh viên và tài nguyên thư viện. Sử dụng DuckDB cho OLAP trên Parquet Data Lake, kết hợp content/keyword matching đa tầng.")],{sp:sp(0,80)}));
+
+add(h3("Phương pháp Content/Keyword Matching"));
+add(p([fn("Quy trình matching 4 bước (theo data_cleaning_report.json):")],{sp:sp(0,50)}));
+add(new Paragraph({numbering:{reference:"numbers",level:0},spacing:sp(20,25),children:[fn("Chuẩn hóa văn bản",{b:true}),fn(": Loại dấu tiếng Việt (accent-insensitive), tokenize thành words và n-grams, chuẩn hóa lower-case")]}));
+add(new Paragraph({numbering:{reference:"numbers",level:0},spacing:sp(20,25),children:[fn("Synonym expansion",{b:true}),fn(": Áp dụng từ điển đồng nghĩa Việt–Anh theo domain (tài chính, công nghệ, kinh doanh, luật...)")]}));
+add(new Paragraph({numbering:{reference:"numbers",level:0},spacing:sp(20,25),children:[fn("Tính điểm khớp",{b:true}),fn(": Token overlap giữa course_norm và resource title + secondary text → numeric score 0–100")]}));
+add(new Paragraph({numbering:{reference:"numbers",level:0},spacing:sp(20,25),children:[fn("Gán confidence label",{b:true}),fn(": Low / Medium / High dựa trên ngưỡng score + exact phrase boost + popularity tie-breaker")]}));
+add(spacer());
+
+add(kpiRow([
+  {val:KPI.total_match_rows.toLocaleString(),lbl:"Tổng match rows",vc:C.navy,bg:"EEF0FF"},
+  {val:"216",lbl:"Major-course pairs",vc:C.blue,bg:C.bgblue},
+  {val:num(KPI.avg_tiki_match_score),lbl:"Avg Tiki score",vc:C.orange,bg:C.bgorg},
+  {val:num(KPI.avg_repo_match_score),lbl:"Avg Repo score",vc:C.teal,bg:"E0F2F1"},
+  {val:"100%",lbl:"Rows có đủ 2 nguồn",vc:C.green,bg:C.bggreen},
+]));
+add(spacer());
+
+// Confidence tables
+const cfW=[1200,1200,1200,1200,1000,1200,CW-7000];
+add(tblTitle("Phân phối Confidence – Tiki Books"));
+add(tbl([
+  hRow(["Mức Confidence","Match Rows","Tỷ lệ","Avg Score","Avg Rating","Avg Reviews","Avg Qty Sold"],cfW,C.orange),
+  ...TCONF.map((r,i)=>dRow([r.confidence.toUpperCase(),r.match_rows.toLocaleString(),pct(r.percentage),
+    num(r.avg_tiki_score),num(r.avg_rating),num(r.avg_review_count),num(r.avg_quantity_sold)],
+    cfW,i%2===0,[i===0?C.red:i===1?C.orange:C.green,null,null,C.teal,null,null,null]))
+],cfW));
+add(spacer());
+
+const crW=[1400,1400,1400,1400,CW-5600];
+add(tblTitle("Phân phối Confidence – UEH Repository"));
+add(tbl([
+  hRow(["Mức Confidence","Match Rows","Tỷ lệ","Avg Repo Score","Avg Views"],crW,C.teal),
+  ...RCONF.map((r,i)=>dRow([r.confidence.toUpperCase(),r.match_rows.toLocaleString(),pct(r.percentage),
+    num(r.avg_repo_score),num(r.avg_views)],
+    crW,i%2===0,[i===2?C.green:i===0?C.orange:C.red,null,null,C.teal,null]))
+],crW));
+add(spacer());
+
+// Top course matches
+const csW=[2000,2200,1000,1000,CW-6200];
+add(tblTitle("Top 10 cặp Ngành–Môn học có điểm khớp cao nhất"));
+add(tbl([
+  hRow(["Ngành","Môn học","Tiki Score","Repo Score","Lượt sinh viên"],csW,C.teal),
+  ...COURSE.map((r,i)=>dRow([r.major,r.course,num(r.avg_tiki_score),num(r.avg_repo_score),r.students],
+    csW,i%2===0,[null,null,
+      parseFloat(r.avg_tiki_score)>=80?C.green:parseFloat(r.avg_tiki_score)>=50?C.teal:C.orange,
+      parseFloat(r.avg_repo_score)>=50?C.green:C.orange,C.blue]))
+],csW));
+add(spacer());
+
+// Major summary
+const mjW=[2200,900,900,800,900,1000,CW-6700];
+add(tblTitle("Tổng hợp Matching theo Ngành (36 ngành)"));
+add(tbl([
+  hRow(["Ngành","Match Rows","Sinh viên","Môn","Tiki Books","Repo Docs","Avg Tiki / Repo"],mjW,C.navy),
+  ...MAJOR.map((r,i)=>dRow([r.major,r.match_rows,r.students,r.courses,r.tiki_books,r.repo_documents,
+    num(r.avg_tiki_score)+" / "+num(r.avg_repo_score)],
+    mjW,i%2===0,null))
+],mjW));
+add(spacer());
+
+add(noteBox("📊","Tiki Books có avg match score cao hơn UEH Repository ("+num(KPI.avg_tiki_match_score)+" vs "+num(KPI.avg_repo_match_score)+") vì tên sách Tiki ngắn gọn, rõ ràng, dễ keyword-match. UEH Repo có tiêu đề học thuật dài hơn nhưng freshness/quality score cao hơn (79,09 vs 71,41).",C.teal,"E0F2F1"));
+add(spacer());
+
+// ── PHASE 4 ──────────────────────────────────────────────────────────
+add(phaseStrip("4","MÔ HÌNH AI – CONTENT-BASED RECOMMENDATION","6 features · match_score + confidence + rating + review_count + quantity_sold + popularity"));
+add(spacer());
+
+add(p([fn("Phase 4 xây dựng mô hình đề xuất chính là "),fn("Content-based Recommendation",{b:true,c:C.blue}),
+  fn(", kết hợp 6 feature từ giai đoạn matching và dữ liệu thương mại. Ngoài ra, nhóm thực hiện "),
+  fn("Extension Demo: Spark ALS Collaborative Filtering",{b:true,c:C.teal}),fn(".")],{sp:sp(0,80)}));
+
+add(h3("4.1 Feature Engineering – Content-based Model"));
+
+const fW=[1900,2400,1800,CW-6100];
+add(tblTitle("6 Features đầu vào của mô hình (từ model_feature_summary.csv)"));
+add(tbl([
+  hRow(["Feature","Ý nghĩa","Avg Score (từ data)","Vai trò"],fW,C.teal),
+  ...MODEL.map((m,mi)=>[
+    dRow(["match_score","Điểm khớp keyword khóa học – tài nguyên",num(m.avg_match_score),"Chính"],fW,true,[null,null,C.teal,C.green]),
+    dRow(["confidence_score","Mức tin cậy kết quả khớp (low/med/high)",num(m.avg_confidence_score),"Chính"],fW,false,[null,null,C.teal,C.green]),
+    dRow(["rating/freshness score","Rating sao Tiki / chỉ số mới tài liệu",num(m.avg_rating_or_freshness_score),"Phụ"],fW,true,[null,null,C.teal,C.orange]),
+    dRow(["review_score","Số lượt đánh giá Tiki (chuẩn hóa)",num(m.avg_review_score),"Phụ"],fW,false,[null,null,C.teal,C.orange]),
+    dRow(["sales/views_score","Quantity_sold Tiki / views UEH Repo",num(m.avg_sales_or_views_score),"Phụ"],fW,true,[null,null,C.teal,C.orange]),
+    dRow(["search_signal_score","Keyword search match trong source_keys",num(m.avg_search_signal_score),"Hỗ trợ"],fW,false,[null,null,C.teal,C.gray]),
+    dRow(["→ recommendation_score","Tổng hợp 6 features (avg trên data)",num(m.avg_recommendation_score),"OUTPUT"],fW,true,[null,null,C.navy,C.navy]),
+  ].map((r,ri)=>({...r, _src: m.resource_type, _ri: ri}))).flat()
+],fW));
+add(spacer());
+
+// Rec KPIs
+add(kpiRow([
+  {val:RECKPI.top5_recommendation_rows.toLocaleString(),lbl:"Top-5 rec rows",vc:C.navy,bg:"EEF0FF"},
+  {val:RECKPI.students_with_recommendations.toLocaleString(),lbl:"Sinh viên có gợi ý",vc:C.blue,bg:C.bgblue},
+  {val:RECKPI.recommended_resources.toString(),lbl:"Unique resources",vc:C.teal,bg:"E0F2F1"},
+  {val:RECKPI.avg_recommendation_score.toFixed(1),lbl:"Avg rec score",vc:C.green,bg:C.bggreen},
+  {val:RECKPI.min_recommendation_score.toFixed(2)+"–"+RECKPI.max_recommendation_score.toFixed(2),lbl:"Score range",vc:C.orange,bg:C.bgorg},
+]));
+add(spacer());
+
+// Rec by type
+const rtW=[2000,1100,1100,1100,1200,1100,1100,CW-8700];
+add(tblTitle("Recommendation theo loại tài nguyên"));
+add(tbl([
+  hRow(["Resource Type","Rec Rows","Sinh viên","Resources","Avg Rec Score","Avg Match","Avg Quality","Avg Popularity"],rtW,C.blue),
+  ...RECTYPE.map((r,i)=>dRow([r.resource_type,r.recommendation_rows.toLocaleString(),r.students,r.resources,
+    num(r.avg_recommendation_score),num(r.avg_match_score),num(r.avg_quality_score),num(r.avg_popularity_score)],
+    rtW,i%2===0,[i===0?C.orange:C.teal,null,null,null,C.green,null,null,null]))
+],rtW));
+add(spacer());
+
+// Top recommended resources
+const toprW=[300,1000,3800,700,900,CW-6700];
+add(tblTitle("Top tài nguyên được gợi ý nhiều nhất (Top 8 trong "+RECKPI.recommended_resources+" resources)"));
+add(tbl([
+  hRow(["#","Loại","Tên tài nguyên","Lần","Avg Score","Avg Match"],toprW,C.orange),
+  ...TREC.map((r,i)=>dRow([i+1,r.resource_type==='tiki_book'?'Tiki':'UEH Repo',
+    r.resource_title.length>58?r.resource_title.slice(0,56)+"…":r.resource_title,
+    r.recommended_times,num(r.avg_recommendation_score),num(r.avg_match_score)],
+    toprW,i%2===0,[C.blue,r.resource_type==='tiki_book'?C.orange:C.teal,null,C.navy,
+      parseFloat(r.avg_recommendation_score)>=70?C.green:C.orange,null]))
+],toprW));
+add(spacer());
+
+// Major rec summary
+const mrW=[2200,1000,900,900,1100,CW-6100];
+add(tblTitle("Kết quả đề xuất theo ngành (36 ngành)"));
+add(tbl([
+  hRow(["Ngành","Rec Rows","Sinh viên","Resources","Avg Rec Score","Nhận xét"],mrW,C.navy),
+  ...MREC.map((r,i)=>dRow([r.major,r.recommendation_rows,r.students,r.resources,
+    num(r.avg_recommendation_score),
+    parseFloat(r.avg_recommendation_score)>=80?"Score cao – khớp tốt":
+    parseFloat(r.avg_recommendation_score)>=65?"Trung bình – ổn":
+    "Thấp – ít tài nguyên phù hợp"],
+    mrW,i%2===0,[null,null,null,null,
+      parseFloat(r.avg_recommendation_score)>=80?C.green:
+      parseFloat(r.avg_recommendation_score)>=65?C.teal:C.orange,C.gray]))
+],mrW));
+add(spacer());
+
+// Sample recommendations
+add(h3("Mẫu kết quả đề xuất cho 2 sinh viên"));
+const tokens=[...new Set(SREC.map(r=>r.student_token))];
+tokens.forEach((tok,ti)=>{
+  const rows=SREC.filter(r=>r.student_token===tok);
+  const major=rows[0].major;
+  add(p([fn("Sinh viên: ",{b:true}),fn(tok,{c:C.teal}),fn("  |  Ngành: ",{b:true}),fn(major,{c:C.blue})],{sp:sp(60,30)}));
+  const srW=[360,1000,2000,2800,800,CW-6960];
+  add(tbl([
+    hRow(["Rank","Type","Course","Resource Title","Score","Confidence"],srW,C.navy),
+    ...rows.map((r,i)=>dRow([r.student_rank,r.resource_type==='tiki_book'?'Tiki':'UEH Repo',
+      r.course.length>28?r.course.slice(0,26)+"…":r.course,
+      r.resource_title.length>40?r.resource_title.slice(0,38)+"…":r.resource_title,
+      num(r.recommendation_score),r.confidence],
+      srW,i%2===0,[C.blue,r.resource_type==='tiki_book'?C.orange:C.teal,null,null,
+        parseFloat(r.recommendation_score)>=75?C.green:parseFloat(r.recommendation_score)>=55?C.teal:C.gray,
+        r.confidence==='high'?C.green:r.confidence==='medium'?C.orange:C.red]))
+  ],srW));
+  if(ti<tokens.length-1) add(spacer());
+});
+add(spacer());
+
+// Low confidence
+add(h3("Phân tích điểm yếu – Low Confidence Candidates"));
+add(p([fn("100 rows có cả Tiki và Repo confidence = low, chủ yếu tập trung ở ngành "),fn("Kỹ sư Robot & TTNT",{b:true,c:C.red}),
+  fn(" với môn "),fn("Xử lý tín hiệu số",{b:true,c:C.red}),fn(". Nguyên nhân: tên môn quá kỹ thuật, kho sách thiếu tài liệu phù hợp.")],{sp:sp(0,60)}));
+const lcW=[2200,2600,900,2000,CW-7700];
+add(tblTitle("Low confidence improvement candidates (6 mẫu đại diện)"));
+add(tbl([
+  hRow(["Ngành","Môn học","Tiki Score","Tên sách Tiki (gợi ý)","Tên Repo Doc"],lcW,C.red),
+  ...LOWC.map((r,i)=>dRow([r.major,r.course,num(r.tiki_score,1),
+    r.tiki_title.length>38?r.tiki_title.slice(0,36)+"…":r.tiki_title,
+    r.repo_title.length>38?r.repo_title.slice(0,36)+"…":r.repo_title],
+    lcW,i%2===0,[null,null,C.red,null,null]))
+],lcW));
+add(spacer());
+
+// 4.2 ALS
+add(h3("4.2 Extension Demo: PySpark ALS Collaborative Filtering"));
+add(p([fn("Nhằm chứng minh khả năng tích hợp Spark MLlib vào pipeline Big Data end-to-end, nhóm thực hiện demo "),
+  fn("ALS (Alternating Least Squares)",{b:true,c:C.blue}),fn(" với proxy implicit ratings:")],{sp:sp(0,60)}));
+
+const alsW=[2400,CW-2400];
+add(tblTitle("Tóm tắt mô hình Spark ALS"));
+add(tbl([
+  hRow(["Chỉ số","Giá trị / Mô tả"],alsW,C.blue),
+  dRow(["Dữ liệu đầu vào","22.115 proxy interactions (student_token × resource_id)"],alsW,true),
+  dRow(["Users","2.000 sinh viên được mã hóa bằng student_token"],alsW,false),
+  dRow(["Items","314 unique items (tiki_book + ueh_repository)"],alsW,true),
+  dRow(["Avg proxy rating","4,8046 (thang 1–5, tổng hợp từ match + confidence + popularity)"],alsW,false),
+  dRow(["Hyperparameters","rank=10, maxIter=10, regParam=0.1, implicitPrefs=True, alpha=1.0, seed=42"],alsW,true),
+  dRow(["Prediction rows","4.287 dự đoán trên tập kiểm tra"],alsW,false),
+  dRow(["RMSE tham khảo","4,789 (proxy scale – KHÔNG phải rating thật từ sinh viên UEH)"],alsW,true,[null,C.red]),
+],alsW));
+add(spacer());
+add(noteBox("⚠","ALS sử dụng proxy implicit ratings tổng hợp từ match_score, confidence và tín hiệu hành vi mô phỏng – KHÔNG phải rating thật từ sinh viên UEH. RMSE = 4,789 là giá trị tham khảo trên thang proxy, không phản ánh chất lượng gợi ý thực tế. Mục tiêu demo là chứng minh luồng kỹ thuật Spark MLlib end-to-end.",C.orange,C.bgorg));
+add(spacer());
+
+// ── PHASE 5 ──────────────────────────────────────────────────────────
+add(phaseStrip("5","PHÂN PHỐI ĐỀ XUẤT – DELIVERY PAYLOAD","10.000 cards · High Priority 4.323 · Recommended 1.776 · Optional 3.901 · Web portal payload"));
+add(spacer());
+
+add(p([fn("Phase 5 đóng gói kết quả đề xuất thành delivery cards có cấu trúc, phân loại theo mức độ ưu tiên, sẵn sàng cho web portal hoặc email push.")],{sp:sp(0,80)}));
+
+add(kpiRow([
+  {val:RECKPI.top5_recommendation_rows.toLocaleString(),lbl:"Delivery rows",vc:C.navy,bg:"EEF0FF"},
+  {val:RECKPI.students_with_recommendations.toLocaleString(),lbl:"Sinh viên được nhận",vc:C.blue,bg:C.bgblue},
+  {val:"4.323",lbl:"High Priority",vc:C.green,bg:C.bggreen},
+  {val:"1.776",lbl:"Recommended",vc:C.teal,bg:"E0F2F1"},
+  {val:"3.901",lbl:"Optional",vc:C.gray,bg:C.bggray},
+]));
+add(spacer());
+add(kpiRow([
+  {val:"5.394",lbl:"Tiki / Print (53,94%)",vc:C.orange,bg:C.bgorg},
+  {val:"4.606",lbl:"Digital UEH (46,06%)",vc:C.teal,bg:"E0F2F1"},
+  {val:RECTYPE[0].avg_recommendation_score.toFixed(2),lbl:"Avg Tiki score",vc:C.orange,bg:C.bgorg},
+  {val:RECTYPE[1].avg_recommendation_score.toFixed(2),lbl:"Avg UEH score",vc:C.teal,bg:"E0F2F1"},
+]));
+add(spacer());
+
+const delW=[2100,1200,1000,CW-4300];
+add(tblTitle("Phân loại delivery cards theo mức độ ưu tiên"));
+add(tbl([
+  hRow(["Mức độ ưu tiên","Số cards","Tỷ lệ","Tiêu chí phân loại"],delW,C.navy),
+  dRow(["High Priority","4.323","43,23%","Score ≥ 75 – khớp rõ với ngành và môn học"],delW,true,[C.green,C.green,C.green,null]),
+  dRow(["Recommended","1.776","17,76%","Score 55–74 – khớp tốt nhưng chưa đặc thù ngành"],delW,false,[C.teal,C.teal,C.teal,null]),
+  dRow(["Optional","3.901","39,01%","Score < 55 – khớp yếu, bổ sung tham khảo thêm"],delW,true,[C.gray,C.gray,C.gray,null]),
+  dRow(["Tiki / Print","5.394","53,94%","Đặt hàng Tiki hoặc mượn bản in tại thư viện UEH"],delW,false,[C.orange,C.orange,C.orange,null]),
+  dRow(["Digital Repo","4.606","46,06%","Truy cập trực tiếp qua UEH Digital Repository"],delW,true,[C.teal,C.teal,C.teal,null]),
+],delW));
+add(spacer());
+
+// Web portal payload sample
+add(h3("Mẫu Web Portal Payload – student_recommendations_top5.csv (31 cột)"));
+const wpW=[440,1000,1000,1800,2600,660,CW-7500];
+add(p([fn("Sample sinh viên: "),fn("stu_000c7c111a0a0389",{b:true,c:C.teal}),fn("  |  Ngành: Công nghệ thông tin")],{sp:sp(40,30)}));
+add(tbl([
+  hRow(["Card","Type","Course","Resource Title (abbr.)","Model Explanation","Score","Action"],wpW,C.navy),
+  dRow(["1","UEH Repo","Trí tuệ nhân tạo","Ứng dụng TTNT trong dịch vụ tài chính VN","content match + confidence + year + views","84,32","Open Repo"],wpW,true,[C.blue,C.teal,null,null,null,C.green,C.teal]),
+  dRow(["2","Tiki Book","Lập trình HĐT","Giáo Trình C++ Và Lập Trình Hướng Đối Tượng","content match + confidence + rating + reviews + qty_sold + search","82,01","Tiki Hold"],wpW,false,[C.blue,C.orange,null,null,null,C.green,C.orange]),
+  dRow(["3","Tiki Book","Trí tuệ nhân tạo","Hiểu Về Trí Tuệ Nhân Tạo - AI","content match + confidence + rating + reviews + qty_sold + search","81,85","Tiki Hold"],wpW,true,[C.blue,C.orange,null,null,null,C.green,C.orange]),
+  dRow(["4","Tiki Book","Điện toán đám mây","Cố Định Một Đám Mây","content match + confidence + rating + reviews + qty_sold + search","60,53","Tiki Hold"],wpW,false,[C.blue,C.orange,null,null,null,C.teal,C.orange]),
+  dRow(["5","UEH Repo","Cơ sở dữ liệu","Ứng dụng Big Data & AI trong CSDL BDS VN","content match + confidence + year + views","59,03","Open Repo"],wpW,true,[C.blue,C.teal,null,null,null,C.teal,C.teal]),
+],wpW));
+add(spacer());
+add(noteBox("🌐","Web portal payload trong student_recommendations_top5.csv chứa 31 cột đầy đủ: student_token, major, course, resource_type, resource_title, resource_url, model_explanation, match_score, confidence, recommendation_score, student_rank… Sẵn sàng tích hợp với API Gateway hoặc web portal UEH.",C.teal,"E0F7FA"));
+add(spacer());
+
+// ── PHASE 6 ──────────────────────────────────────────────────────────
+add(phaseStrip("6","TRỰC QUAN HÓA DỮ LIỆU – POWER BI DASHBOARD","6 slides · 29 KPI cards · 12 biểu đồ · pptxgenjs · dữ liệu thực từ 14 bảng CSV"));
+add(spacer());
+
+add(p([fn("Phase 6 trình bày toàn bộ kết quả pipeline qua "),fn("Power BI Dashboard 6 trang",{b:true,c:C.blue}),
+  fn(", được xây dựng bằng pptxgenjs với dữ liệu thực từ các bảng CSV trong outputs/analysis/:")],{sp:sp(0,80)}));
+
+const dbW=[500,2400,CW-2900];
+add(tblTitle("Cấu trúc Power BI Dashboard – 6 trang slide"));
+add(tbl([
+  hRow(["Trang","Tiêu đề slide","Nội dung chính"],dbW,C.navy),
+  dRow(["1","Project Overview","8 KPI cards · Pipeline strip (6 bước) · Technology Stack (6 cards): Parquet, DuckDB, Content-based Rec, Privacy, Visualization, Future Extension"],dbW,true),
+  dRow(["2","Simulated User Behavior","Events by source system (bar) · Source distribution % (pie) · DSpace event types · Events per major top 5"],dbW,false),
+  dRow(["3","Matching Analysis","Match rows by major (column) · Avg Tiki vs Repo score by major (clustered) · Tiki confidence distribution · UEH Repo confidence (donut)"],dbW,true),
+  dRow(["4","AI Recommendation","6 KPI cards · Recommendations by resource type · Top recommended resources table · Student-level top-5 table · ALS extension box"],dbW,false),
+  dRow(["5","Recommendation Distribution","6 KPI cards · Availability status (donut) · Score by delivery type · Delivery summary · Web portal payload table"],dbW,true),
+  dRow(["6","Limitations & Future Work","5 limitations · 5 future work items · roadmap production deployment"],dbW,false),
+],dbW));
+add(spacer());
+
+const vizW=[2200,1100,CW-3300];
+add(tblTitle("Thành phần biểu đồ trong dashboard"));
+add(tbl([
+  hRow(["Loại visualisation","Số lượng","Mục đích"],vizW,C.blue),
+  dRow(["KPI Cards","29 cards","Chỉ số tổng hợp (match rows, rec score, sinh viên, resources...)"],vizW,true),
+  dRow(["Bar Charts (horizontal)","6","Events by source, event types, events per major, confidence distribution"],vizW,false),
+  dRow(["Column Charts","3","Match rows by major, Tiki vs Repo score, resource type comparison"],vizW,true),
+  dRow(["Pie / Donut Charts","3","Source distribution %, UEH Repo confidence, availability status"],vizW,false),
+  dRow(["Data Tables (interactive)","5","Top resources, student-level recs, web portal payload, delivery, ALS metrics"],vizW,true),
+  dRow(["Pipeline Strip","1","Visual 6-bước pipeline trên Slide 1"],vizW,false),
+  dRow(["Tech Stack Cards","6","Parquet, DuckDB, Content-based Rec, Privacy Layer, Visualization, Future"],vizW,true),
+],vizW));
+add(spacer());
+add(noteBox("📊","Dashboard được export sang file UEH_SmartLibrary_Dashboard.pptx (6 slides). Toàn bộ dữ liệu trực tiếp từ 14 bảng CSV trong outputs/analysis/. Có thể mở bằng PowerPoint, Google Slides hoặc LibreOffice Impress để trình chiếu.",C.blue,C.bgblue));
+add(spacer());
+
+// ── 6.3 TÓM TẮT ──────────────────────────────────────────────────────
+add(h1("6.3. Tóm tắt kết quả demo"));
+add(p([fn("Bảng tổng hợp kết quả thực tế sau khi hoàn thành toàn bộ 6 phase của pipeline demo:")],{sp:sp(0,60)}));
+
+const sumW=[500,2100,3600,CW-6200];
+add(tbl([
+  hRow(["Phase","Mô tả","Output thực tế (số liệu từ file)","Trạng thái"],sumW,C.navy),
+  dRow(["1","Thu thập & Bảo mật","9.473 Tiki raw → 162 matched · 2.000 UEH Repo → 152 matched · 2.000 sinh viên · 18/18 privacy PASS","✅ Hoàn thành"],sumW,true,[null,null,null,C.green]),
+  dRow(["2","Parquet Data Lake","36 partitions theo major= · 12.000 rows total · DuckDB ~53 MB · cấu trúc giống HDFS/S3","✅ Hoàn thành"],sumW,false,[null,null,null,C.green]),
+  dRow(["3","Content Matching","12.000 match rows · 216 major-course pairs · avg Tiki "+num(KPI.avg_tiki_match_score)+" / Repo "+num(KPI.avg_repo_match_score)+" · confidence phân 3 mức","✅ Hoàn thành"],sumW,true,[null,null,null,C.green]),
+  dRow(["4","AI Recommendation","10.000 rec rows · 151 unique resources · avg score "+RECKPI.avg_recommendation_score.toFixed(1)+" · ALS RMSE 4,789 (proxy)","✅ Hoàn thành"],sumW,false,[null,null,null,C.green]),
+  dRow(["5","Delivery","5.394 Tiki + 4.606 Repo · High 4.323 / Rec 1.776 / Optional 3.901 · web payload sẵn sàng","✅ Hoàn thành"],sumW,true,[null,null,null,C.green]),
+  dRow(["6","Dashboard","6-slide Power BI · 29 KPI cards · 12 charts · dữ liệu thực từ 14 bảng CSV","✅ Hoàn thành"],sumW,false,[null,null,null,C.green]),
+],sumW));
+add(spacer());
+add(noteBox("🎓","Toàn bộ pipeline được thực hiện trên môi trường local với dữ liệu mô phỏng. Hệ thống có thể mở rộng sang production với: Spark ALS thực (thay content-based), MinIO/HDFS thay Local Parquet, real OPAC API, API Gateway + web/mobile delivery, và đánh giá bằng precision@k, NDCG, A/B testing.",C.navy,C.bgblue));
+add(spacer(),spacer());
+
+// ── DOCUMENT ──────────────────────────────────────────────────────────
+const doc = new Document({
+  numbering:{config:[
+    {reference:"bullets",levels:[{level:0,format:LevelFormat.BULLET,text:"•",alignment:AlignmentType.LEFT,
+      style:{paragraph:{indent:{left:640,hanging:320},spacing:{before:20,after:20}}}}]},
+    {reference:"numbers",levels:[{level:0,format:LevelFormat.DECIMAL,text:"%1.",alignment:AlignmentType.LEFT,
+      style:{paragraph:{indent:{left:640,hanging:300},spacing:{before:20,after:25}}}}]},
+  ]},
+  styles:{default:{document:{run:{font:"Times New Roman",size:24}}}},
+  sections:[{
+    properties:{page:{
+      size:{width:11906,height:16838},
+      margin:{top:1134,right:1134,bottom:1134,left:1134}
+    }},
+    footers:{default:new Footer({children:[
+      p([fn("UEH Smart Library – Big Data & Applications  |  Trang ",{s:18,c:C.lgray}),
+         new PageNumber({children:[],type:"current"}),fn(" / ",{s:18,c:C.lgray}),
+         new PageNumber({children:[],type:"total"}),
+      ],{sp:nosp,al:AlignmentType.CENTER})
+    ]})},
+    children
+  }]
+});
+
+Packer.toBuffer(doc).then(buf=>{
+  fs.mkdirSync("/mnt/user-data/outputs", {recursive: true});
+  fs.writeFileSync("/mnt/user-data/outputs/UEH_SmartLibrary_Chapter6_FINAL.docx",buf);
+  console.log("✅ FINAL report saved! Paragraphs: "+children.length);
+});

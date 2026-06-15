@@ -1,0 +1,337 @@
+{
+  "created_at": "2026-05-29T17:55:05.284219+00:00",
+  "privacy_transform_version": "privacy_v1",
+  "hashing": {
+    "algorithm": "HMAC-SHA256",
+    "identifier_source": "student_code",
+    "hash_column": "student_hash",
+    "secret_source": "STUDENT_HASH_SECRET environment variable or local .student_hash_secret file",
+    "secret_created_this_run": false,
+    "secret_fingerprint_sha256_first16": "18d773332a0f08ba"
+  },
+  "tokenization": {
+    "algorithm": "HMAC-SHA256 with student_token domain prefix",
+    "token_column": "student_token",
+    "token_format": "stu_<16 lowercase hex chars>",
+    "public_or_analytics_usage": "Use student_token for API/dashboard identifiers; keep student_hash for legacy joins and Kafka compatibility.",
+    "private_mapping_path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\.secrets\\student_token_mapping_private.csv",
+    "protected_mapping_path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\student_token_map_protected.csv"
+  },
+  "policy": {
+    "restricted_pii_columns_removed_from_analytics": [
+      "ho_ten",
+      "ma_sv",
+      "student_code",
+      "student_code_masked",
+      "student_id",
+      "student_name",
+      "student_name_initials",
+      "student_name_norm",
+      "user_id"
+    ],
+    "student_code_mask_policy": "show prefix and mask the final 5 digits",
+    "protected_outputs_keep_debug_masks": true,
+    "analytics_outputs_keep_debug_masks": false,
+    "kafka_recommended_inputs": [
+      "student_resource_matches_analytics.csv",
+      "course_resource_matches_analytics.csv"
+    ]
+  },
+  "outputs": {
+    "student_token_map_protected": {
+      "rows": 2000,
+      "columns": [
+        "student_token",
+        "student_hash",
+        "student_code_masked",
+        "student_name_initials",
+        "gender",
+        "major",
+        "major_norm",
+        "cohort",
+        "privacy_level",
+        "contains_raw_pii",
+        "contains_debug_masks",
+        "mapping_scope",
+        "token_version",
+        "privacy_transform_version"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\student_token_map_protected.csv"
+    },
+    "students_protected": {
+      "rows": 2000,
+      "columns": [
+        "student_token",
+        "student_hash",
+        "student_code_masked",
+        "student_name_initials",
+        "gender",
+        "major",
+        "major_norm",
+        "cohort",
+        "courses",
+        "course_count",
+        "privacy_level",
+        "pii_removed",
+        "pii_fields_removed",
+        "privacy_transform_version"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\students_protected.csv"
+    },
+    "student_courses_protected": {
+      "rows": 12000,
+      "columns": [
+        "student_token",
+        "student_hash",
+        "student_code_masked",
+        "student_name_initials",
+        "gender",
+        "major",
+        "major_norm",
+        "cohort",
+        "course_order",
+        "course",
+        "course_norm",
+        "privacy_level",
+        "pii_removed",
+        "pii_fields_removed",
+        "privacy_transform_version"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\student_courses_protected.csv"
+    },
+    "student_resource_matches_analytics": {
+      "rows": 12000,
+      "columns": [
+        "student_token",
+        "student_hash",
+        "gender",
+        "major",
+        "major_norm",
+        "cohort",
+        "course_order",
+        "course",
+        "course_norm",
+        "tiki_book_id",
+        "tiki_title",
+        "tiki_score",
+        "tiki_confidence",
+        "repo_doc_id",
+        "repo_title",
+        "repo_score",
+        "repo_confidence",
+        "privacy_level",
+        "pii_removed",
+        "pii_fields_removed",
+        "privacy_transform_version",
+        "tiki_match_reason",
+        "tiki_price",
+        "tiki_rating_average",
+        "tiki_review_count",
+        "tiki_quantity_sold",
+        "tiki_source_keys",
+        "tiki_url",
+        "repo_match_reason",
+        "repo_year",
+        "repo_collection",
+        "repo_views",
+        "repo_authors",
+        "repo_url"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\student_resource_matches_analytics.csv"
+    },
+    "course_resource_matches_analytics": {
+      "rows": 1296,
+      "columns": [
+        "major",
+        "major_norm",
+        "course",
+        "course_norm",
+        "rank",
+        "resource_type",
+        "resource_id",
+        "resource_title",
+        "score",
+        "confidence",
+        "match_reason",
+        "url",
+        "price",
+        "rating_average",
+        "review_count",
+        "quantity_sold",
+        "source_keys",
+        "year",
+        "collection",
+        "views",
+        "authors",
+        "popularity_score",
+        "privacy_level",
+        "pii_removed",
+        "pii_fields_removed",
+        "privacy_transform_version"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\course_resource_matches_analytics.csv"
+    },
+    "tiki_books_public": {
+      "rows": 6399,
+      "columns": [
+        "book_id",
+        "sku",
+        "title",
+        "title_norm",
+        "price",
+        "original_price",
+        "discount",
+        "discount_rate",
+        "quantity_sold",
+        "rating_average",
+        "review_count",
+        "source_keys",
+        "source_keys_norm",
+        "source_key_count",
+        "source_modes",
+        "fetched_at_first",
+        "fetched_at_last",
+        "tiki_url",
+        "url_path",
+        "match_text_norm",
+        "popularity_score"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\tiki_books_public.csv"
+    },
+    "ueh_repository_public": {
+      "rows": 2000,
+      "columns": [
+        "doc_id",
+        "year",
+        "title",
+        "title_norm",
+        "abstract",
+        "abstract_norm",
+        "collection",
+        "authors",
+        "author_count",
+        "views",
+        "uri",
+        "url",
+        "match_text_norm"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\ueh_repository_public.csv"
+    },
+    "privacy_validation": {
+      "rows": 18,
+      "columns": [
+        "check",
+        "passed",
+        "detail"
+      ],
+      "path": "C:\\Users\\Minh Phuc\\Documents\\Codex\\2026-05-27\\files-mentioned-by-the-user-tiki\\outputs\\privacy_layer\\privacy_validation.csv"
+    }
+  },
+  "validation": [
+    {
+      "check": "students_protected_row_count_matches_source",
+      "passed": true,
+      "detail": {
+        "source": 2000,
+        "protected": 2000
+      }
+    },
+    {
+      "check": "student_hash_unique_per_student",
+      "passed": true,
+      "detail": {
+        "unique_hashes": 2000,
+        "students": 2000
+      }
+    },
+    {
+      "check": "student_hash_is_hmac_sha256_length",
+      "passed": true,
+      "detail": "all hashes are 64 lowercase hex characters"
+    },
+    {
+      "check": "student_hash_reproducible",
+      "passed": true,
+      "detail": "protected hashes match deterministic HMAC output"
+    },
+    {
+      "check": "student_token_unique_per_student",
+      "passed": true,
+      "detail": {
+        "unique_tokens": 2000,
+        "students": 2000
+      }
+    },
+    {
+      "check": "student_token_format",
+      "passed": true,
+      "detail": "all tokens match stu_ plus 16 lowercase hex characters"
+    },
+    {
+      "check": "student_token_reproducible",
+      "passed": true,
+      "detail": "protected tokens match deterministic HMAC token output"
+    },
+    {
+      "check": "student_token_map_protected_row_count",
+      "passed": true,
+      "detail": {
+        "source": 2000,
+        "token_map": 2000
+      }
+    },
+    {
+      "check": "student_token_map_protected_has_no_raw_pii_columns",
+      "passed": true,
+      "detail": "no raw PII columns"
+    },
+    {
+      "check": "student_token_map_protected_sample_has_no_raw_student_codes",
+      "passed": true,
+      "detail": "first 1000 rows do not contain sampled raw student codes"
+    },
+    {
+      "check": "students_protected_sample_has_no_raw_student_codes",
+      "passed": true,
+      "detail": "first 1000 rows do not contain sampled raw student codes"
+    },
+    {
+      "check": "student_courses_protected_sample_has_no_raw_student_codes",
+      "passed": true,
+      "detail": "first 1000 rows do not contain sampled raw student codes"
+    },
+    {
+      "check": "student_resource_matches_analytics_has_no_forbidden_pii_columns",
+      "passed": true,
+      "detail": "no forbidden columns"
+    },
+    {
+      "check": "student_resource_matches_analytics_sample_has_no_raw_student_codes",
+      "passed": true,
+      "detail": "first 1000 rows do not contain sampled raw student codes"
+    },
+    {
+      "check": "course_resource_matches_analytics_has_no_forbidden_pii_columns",
+      "passed": true,
+      "detail": "no forbidden columns"
+    },
+    {
+      "check": "student_courses_protected_row_count",
+      "passed": true,
+      "detail": 12000
+    },
+    {
+      "check": "student_matches_analytics_row_count",
+      "passed": true,
+      "detail": 12000
+    },
+    {
+      "check": "student_matches_analytics_has_all_matches",
+      "passed": true,
+      "detail": {
+        "missing_tiki": 0,
+        "missing_repo": 0
+      }
+    }
+  ]
+}

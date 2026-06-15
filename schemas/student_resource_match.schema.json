@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ueh-tiki/schemas/student_resource_match.schema.json",
+  "title": "Student Resource Match Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "schema_version",
+    "occurred_at",
+    "source",
+    "trace_id",
+    "privacy_level",
+    "payload"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "event_type": {
+      "type": "string",
+      "const": "student_resource_match_created"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "const": "privacy-layer-export"
+    },
+    "trace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": ["internal"]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "student_token",
+        "student_hash",
+        "major",
+        "cohort",
+        "course_order",
+        "course",
+        "tiki_book_id",
+        "tiki_title",
+        "tiki_score",
+        "tiki_confidence",
+        "repo_doc_id",
+        "repo_title",
+        "repo_score",
+        "repo_confidence"
+      ],
+      "not": {
+        "anyOf": [
+          { "required": ["student_id"] },
+          { "required": ["student_code"] },
+          { "required": ["student_name"] },
+          { "required": ["student_name_norm"] },
+          { "required": ["student_code_masked"] },
+          { "required": ["student_name_initials"] },
+          { "required": ["ma_sv"] },
+          { "required": ["ho_ten"] },
+          { "required": ["user_id"] }
+        ]
+      },
+        "properties": {
+        "student_token": {
+          "type": "string",
+          "pattern": "^stu_[0-9a-f]{16}$"
+        },
+        "student_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "gender": {
+          "type": ["string", "null"]
+        },
+        "major": {
+          "type": "string",
+          "minLength": 1
+        },
+        "major_norm": {
+          "type": ["string", "null"]
+        },
+        "cohort": {
+          "type": ["integer", "null"]
+        },
+        "course_order": {
+          "type": ["integer", "null"]
+        },
+        "course": {
+          "type": "string",
+          "minLength": 1
+        },
+        "course_norm": {
+          "type": ["string", "null"]
+        },
+        "tiki_book_id": {
+          "type": ["integer", "string", "null"]
+        },
+        "tiki_title": {
+          "type": ["string", "null"]
+        },
+        "tiki_score": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "tiki_confidence": {
+          "type": ["string", "null"],
+          "enum": ["high", "medium", "low", null]
+        },
+        "tiki_match_reason": {
+          "type": ["string", "null"]
+        },
+        "tiki_price": {
+          "type": ["number", "integer", "null"]
+        },
+        "tiki_rating_average": {
+          "type": ["number", "null"]
+        },
+        "tiki_review_count": {
+          "type": ["integer", "null"]
+        },
+        "tiki_quantity_sold": {
+          "type": ["number", "integer", "null"]
+        },
+        "tiki_source_keys": {
+          "type": ["string", "null"]
+        },
+        "tiki_url": {
+          "type": ["string", "null"]
+        },
+        "repo_doc_id": {
+          "type": ["string", "null"]
+        },
+        "repo_title": {
+          "type": ["string", "null"]
+        },
+        "repo_score": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "repo_confidence": {
+          "type": ["string", "null"],
+          "enum": ["high", "medium", "low", null]
+        },
+        "repo_match_reason": {
+          "type": ["string", "null"]
+        },
+        "repo_year": {
+          "type": ["integer", "null"]
+        },
+        "repo_collection": {
+          "type": ["string", "null"]
+        },
+        "repo_views": {
+          "type": ["integer", "null"]
+        },
+        "repo_authors": {
+          "type": ["string", "null"]
+        },
+        "repo_url": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

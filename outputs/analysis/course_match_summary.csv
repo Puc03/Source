@@ -1,0 +1,101 @@
+major,course,match_rows,students,avg_tiki_score,avg_repo_score
+Đầu tư tài chính,Phân tích kỹ thuật,68,68,100.0,34.37
+Toán tài chính,Xác suất và thống kê,68,68,94.0,22.9
+Toán tài chính,Toán tài chính ứng dụng,68,68,93.38,25.83
+Đầu tư tài chính,Thị trường tài chính,68,68,90.95,70.95
+Đầu tư tài chính,Phân tích đầu tư chứng khoán,68,68,90.7,17.02
+Toán tài chính,Quản lý rủi ro định lượng,68,68,39.01,43.59
+Đầu tư tài chính,Quản lý danh mục đầu tư,68,68,35.66,17.43
+Kinh doanh nông nghiệp,Chuỗi cung ứng nông sản,68,68,35.17,100.0
+Đầu tư tài chính,Định giá tài sản tài chính,68,68,33.68,21.25
+Kinh doanh nông nghiệp,Marketing nông sản,68,68,33.47,30.69
+Kinh doanh nông nghiệp,Nông nghiệp công nghệ cao,68,68,28.58,26.24
+Kinh doanh nông nghiệp,Tài chính nông nghiệp,68,68,22.91,16.79
+Toán tài chính,Mô hình tài chính,68,68,21.96,33.79
+Đầu tư tài chính,Tài chính hành vi,68,68,21.51,82.06
+Toán tài chính,Định giá quyền chọn,68,68,21.41,26.06
+Kinh doanh nông nghiệp,Chính sách nông nghiệp,68,68,18.55,29.4
+Kinh doanh nông nghiệp,Kinh tế nông nghiệp,68,68,17.88,32.05
+Toán tài chính,Phương trình vi phân tài chính,68,68,16.79,12.81
+Kinh doanh quốc tế,Đàm phán quốc tế,67,67,92.88,40.69
+Kinh doanh quốc tế,Tài chính quốc tế,67,67,84.53,76.12
+Kinh doanh quốc tế,Thương mại quốc tế,67,67,76.84,85.35
+Kinh doanh quốc tế,Quản trị kinh doanh quốc tế,67,67,68.99,11.37
+Kinh doanh quốc tế,Văn hóa kinh doanh quốc tế,67,67,39.48,15.22
+Kinh doanh quốc tế,Luật thương mại quốc tế,67,67,34.02,33.84
+Quản lý công,Chính sách công,66,66,100.0,94.79
+Logistics và Quản lý chuỗi cung ứng,Quản lý chuỗi cung ứng,66,66,81.57,40.15
+Quản lý công,Tài chính công,66,66,72.92,44.4
+Logistics và Quản lý chuỗi cung ứng,Logistics ngược,66,66,39.73,69.23
+Quản lý công,Đạo đức công vụ,66,66,31.04,27.91
+Logistics và Quản lý chuỗi cung ứng,Công nghệ trong logistics,66,66,29.83,31.71
+Logistics và Quản lý chuỗi cung ứng,Mua hàng và đàm phán,66,66,29.7,18.41
+Quản lý công,Quản trị dịch vụ công,66,66,26.59,28.29
+Logistics và Quản lý chuỗi cung ứng,Vận tải và phân phối,66,66,26.0,49.32
+Quản lý công,Quản lý hành chính công,66,66,25.32,73.66
+Quản lý công,Luật hành chính,66,66,22.12,20.8
+Logistics và Quản lý chuỗi cung ứng,Quản lý kho hàng,66,66,20.77,100.0
+Kỹ sư Robot và Trí tuệ nhân tạo,Thị giác máy tính,63,63,100.0,9.29
+Kỹ sư Robot và Trí tuệ nhân tạo,Trí tuệ nhân tạo,63,63,100.0,82.0
+Kinh tế đầu tư,Thẩm định dự án,63,63,98.06,41.85
+Kỹ sư Robot và Trí tuệ nhân tạo,Hệ thống nhúng,63,63,77.7,94.12
+Quản trị Hải quan - Ngoại thương,Thương mại quốc tế,63,63,75.9,84.86
+Kinh tế đầu tư,Rủi ro trong đầu tư,63,63,73.37,20.85
+Kinh tế đầu tư,Chính sách đầu tư,63,63,44.24,17.3
+Quản trị Hải quan - Ngoại thương,Thuế xuất nhập khẩu,63,63,41.45,20.75
+An toàn thông tin,Quản trị rủi ro CNTT,63,63,40.14,32.67
+Kinh tế đầu tư,Quản lý đầu tư,63,63,39.4,22.13
+Kỹ sư Robot và Trí tuệ nhân tạo,Điều khiển tự động,63,63,38.79,14.84
+Kinh tế đầu tư,Phân tích dự án đầu tư,63,63,38.74,36.09
+An toàn thông tin,Mật mã học,63,63,37.69,9.32
+Quản trị Hải quan - Ngoại thương,Quản lý chuỗi cung ứng toàn cầu,63,63,36.86,22.13
+Kỹ sư Robot và Trí tuệ nhân tạo,Học máy nâng cao,63,63,35.33,25.03
+Quản trị Hải quan - Ngoại thương,Thủ tục xuất nhập khẩu,63,63,26.9,18.06
+An toàn thông tin,An toàn hệ thống thông tin,63,63,26.64,32.53
+An toàn thông tin,Bảo mật mạng máy tính,63,63,21.85,9.87
+Quản trị Hải quan - Ngoại thương,Nghiệp vụ hải quan,63,63,21.56,17.42
+An toàn thông tin,Pháp lý an toàn thông tin,63,63,20.69,7.4
+Kinh tế đầu tư,Kinh tế đầu tư công,63,63,20.42,21.38
+Quản trị Hải quan - Ngoại thương,Luật hải quan,63,63,13.14,15.09
+An toàn thông tin,Kiểm thử xâm nhập,63,63,12.21,14.04
+Kỹ sư Robot và Trí tuệ nhân tạo,Xử lý tín hiệu số,63,63,8.5,8.75
+Hệ thống hoạch định nguồn lực doanh nghiệp,Tích hợp hệ thống,62,62,97.83,53.97
+Công nghệ Tài chính,Công nghệ Blockchain,62,62,64.69,68.22
+Công nghệ Tài chính,Trí tuệ nhân tạo trong tài chính,62,62,58.34,44.4
+Công nghệ Tài chính,Quản lý rủi ro số,62,62,50.23,54.33
+Hệ thống hoạch định nguồn lực doanh nghiệp,SAP căn bản,62,62,39.82,47.8
+Công nghệ Tài chính,Phân tích dữ liệu tài chính,62,62,37.47,22.68
+Hệ thống hoạch định nguồn lực doanh nghiệp,Quản lý dự án CNTT,62,62,36.82,40.97
+Công nghệ Tài chính,Fintech và ngân hàng số,62,62,25.18,23.23
+Hệ thống hoạch định nguồn lực doanh nghiệp,Hệ thống ERP,62,62,25.1,97.47
+Hệ thống hoạch định nguồn lực doanh nghiệp,Phân tích hệ thống thông tin,62,62,22.29,23.67
+Hệ thống hoạch định nguồn lực doanh nghiệp,Quản trị quy trình kinh doanh,62,62,19.94,16.91
+Công nghệ Tài chính,Thanh toán số,62,62,10.75,24.77
+Bất động sản,Luật kinh doanh bất động sản,61,61,76.89,48.9
+Bất động sản,Đầu tư bất động sản,61,61,72.35,74.29
+Bất động sản,Quản lý dự án BĐS,61,61,36.71,37.83
+Bất động sản,Định giá bất động sản,61,61,32.43,50.72
+Bất động sản,Thị trường bất động sản,61,61,31.4,47.56
+Bất động sản,Tài chính bất động sản,61,61,28.83,32.48
+Thị trường chứng khoán,Phân tích kỹ thuật,59,59,100.0,34.43
+Thị trường chứng khoán,Phân tích chứng khoán cơ bản,59,59,62.73,28.49
+Công nghệ nghệ thuật - ArtTech,Thiết kế đồ họa số,59,59,57.58,17.9
+Thị trường chứng khoán,Đạo đức nghề nghiệp chứng khoán,59,59,41.1,49.52
+Công nghệ nghệ thuật - ArtTech,Mỹ thuật ứng dụng,59,59,40.56,14.61
+Công nghệ nghệ thuật - ArtTech,Công nghệ truyền thông sáng tạo,59,59,36.67,20.48
+Công nghệ nghệ thuật - ArtTech,Thiết kế UX/UI,59,59,32.14,8.35
+Thị trường chứng khoán,Pháp luật chứng khoán,59,59,26.62,18.21
+Thị trường chứng khoán,Thị trường phái sinh,59,59,26.34,68.78
+Thị trường chứng khoán,Quản lý quỹ đầu tư,59,59,25.91,30.77
+Công nghệ nghệ thuật - ArtTech,Nghệ thuật tương tác,59,59,21.36,18.63
+Công nghệ nghệ thuật - ArtTech,Sản xuất nội dung số,59,59,13.06,8.3
+Tài chính,Tài chính doanh nghiệp,58,58,100.0,61.03
+Công nghệ thông tin,Trí tuệ nhân tạo,58,58,100.0,81.37
+Tài chính,Định giá doanh nghiệp,58,58,100.0,100.0
+Tài chính,Thị trường tài chính,58,58,96.33,75.58
+Tài chính,Phân tích tài chính,58,58,93.94,29.52
+Công nghệ thông tin,Lập trình hướng đối tượng,58,58,93.35,13.38
+Tài chính,Tài chính quốc tế,58,58,89.39,80.45
+Công nghệ thông tin,Mạng máy tính,58,58,59.36,8.57
+Công nghệ thông tin,Cơ sở dữ liệu,58,58,55.12,55.89
+Công nghệ thông tin,Điện toán đám mây,58,58,41.99,40.54

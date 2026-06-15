@@ -1,0 +1,3 @@
+resource_type,candidates,avg_match_score,avg_confidence_score,avg_rating_or_freshness_score,avg_review_score,avg_sales_or_views_score,avg_search_signal_score,avg_recommendation_score
+tiki_book,12000,50.91,63.04,71.41,46.0,35.25,83.04,55.09
+ueh_repository,12000,40.44,57.65,79.09,50.0,50.0,50.0,49.08

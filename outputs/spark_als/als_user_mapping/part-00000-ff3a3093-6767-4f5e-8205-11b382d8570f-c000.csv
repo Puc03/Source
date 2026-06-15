@@ -1,0 +1,2001 @@
+student_token,user_id,major
+stu_000c7c111a0a0389,0,Công nghệ thông tin
+stu_0015bc6641cd2650,1,Kế toán công
+stu_00425f58ce521820,2,Kiến trúc và thiết kế đô thị thông minh
+stu_006661cad9063305,3,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_0082f6f3f256c8f5,4,Quản lý công
+stu_009d578c031e4974,5,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_00b9e0b6b2593639,6,Khoa học máy tính
+stu_00f0b86637288e57,7,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_0155d6746bdbe341,8,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_0228ea389f375d71,9,Khoa học máy tính
+stu_027a60d511f604c1,10,Marketing
+stu_027bcbfe5de83f4f,11,Quản trị kinh doanh
+stu_028b11ad8cbc6bdf,12,Công nghệ Tài chính
+stu_02aa803284772bd9,13,Kinh tế đầu tư
+stu_02bd6ce789bd0042,14,Quản lý công
+stu_02c562f45b1d6585,15,Kế toán doanh nghiệp
+stu_02e5721d62372eff,16,Kiến trúc và thiết kế đô thị thông minh
+stu_030af84750294ef7,17,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_031b4075586cc07c,18,Công nghệ nghệ thuật - ArtTech
+stu_0371c59c46b7c396,19,Công nghệ thông tin
+stu_0407993b24b07b26,20,Marketing
+stu_041e0fabdad0b293,21,Kiến trúc và thiết kế đô thị thông minh
+stu_045ecdfbf1de14e6,22,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_0496b10309cb7df4,23,Kinh doanh số
+stu_04970aac396d0ae0,24,Kiến trúc và thiết kế đô thị thông minh
+stu_058d34db56276a68,25,Quản lý công
+stu_05da437cf43c2858,26,Kinh tế đầu tư
+stu_05de2be78857c2e2,27,Công nghệ nghệ thuật - ArtTech
+stu_060ad304a6ae052b,28,Công nghệ Tài chính
+stu_067ae3fc94cf085b,29,Kế toán doanh nghiệp
+stu_073962a8ae3183d6,30,Thị trường chứng khoán
+stu_07e44bda789c1ef3,31,Kinh doanh số
+stu_08106e5e4f15a253,32,Kiến trúc và thiết kế đô thị thông minh
+stu_082e0e59c7558075,33,Kinh tế đầu tư
+stu_0887d747ae2b7de0,34,Công nghệ nghệ thuật - ArtTech
+stu_08d9f8afc39c55eb,35,Công nghệ Tài chính
+stu_090f6c16a3f97a98,36,Quản trị kinh doanh
+stu_097c7a4a06790989,37,Kiến trúc và thiết kế đô thị thông minh
+stu_09c38bd8a97bd27f,38,Quản trị kinh doanh
+stu_09d753d0f71aa805,39,Công nghệ nghệ thuật - ArtTech
+stu_0a4d98cdd02b57b3,40,Công nghệ và đổi mới sáng tạo
+stu_0aa4677ff83b3a35,41,Kinh tế đầu tư
+stu_0aba2abc30a7acc0,42,Quản lý công
+stu_0ad065a36570bf28,43,Kiến trúc và thiết kế đô thị thông minh
+stu_0c76b03704d01369,44,Công nghệ nghệ thuật - ArtTech
+stu_0ce8c63eca29cafa,45,Kiến trúc và thiết kế đô thị thông minh
+stu_0d37322b5f6f26d6,46,Công nghệ nghệ thuật - ArtTech
+stu_0d5541bf112d8bec,47,Công nghệ và đổi mới sáng tạo
+stu_0dadb1d0f45f07f2,48,Kiến trúc và thiết kế đô thị thông minh
+stu_0e34ddaa46c1cb29,49,Công nghệ Tài chính
+stu_0e98da3e98b60e67,50,Kiến trúc và thiết kế đô thị thông minh
+stu_0ecd09a2860653b5,51,Kiến trúc và thiết kế đô thị thông minh
+stu_0ee124865609bac3,52,Công nghệ và đổi mới sáng tạo
+stu_0ee744cf79ae0811,53,Công nghệ và đổi mới sáng tạo
+stu_0fb43a94973a1d0d,54,Công nghệ nghệ thuật - ArtTech
+stu_10e7e69fb062fc5c,55,Công nghệ thông tin
+stu_118576782c05f622,56,Khoa học máy tính
+stu_11cf5ceeb829c586,57,Công nghệ nghệ thuật - ArtTech
+stu_12cd44d256ab1272,58,Công nghệ nghệ thuật - ArtTech
+stu_12d7d72b0b434de2,59,Khoa học máy tính
+stu_13b985c6e1be517f,60,Công nghệ và đổi mới sáng tạo
+stu_13d20113b4de221c,61,Marketing
+stu_1429b0960f8cd975,62,Kinh doanh số
+stu_14344c660b92a853,63,Kinh tế đầu tư
+stu_145c5cb6d0191ce9,64,Kinh doanh thương mại
+stu_146adf25af870287,65,Quản trị kinh doanh
+stu_14cec1b27ae35d4a,66,Thị trường chứng khoán
+stu_14d56d9831527ae6,67,Kinh doanh số
+stu_14d7565dd95a4d0c,68,Quản trị kinh doanh
+stu_1544cc717c52abcd,69,Kinh tế đầu tư
+stu_156454d42c624414,70,Kiến trúc và thiết kế đô thị thông minh
+stu_15651e10343d82cc,71,Khoa học máy tính
+stu_15781dcafd4dcc5e,72,Kinh tế đầu tư
+stu_15af54ee16b2887f,73,Kiến trúc và thiết kế đô thị thông minh
+stu_16208ae3b97a6dbe,74,Công nghệ thông tin
+stu_16485a0c04d6c325,75,Marketing
+stu_169df85fc58c1def,76,Khoa học máy tính
+stu_17319b43a1747938,77,Ngân hàng
+stu_17728fca62c1e70f,78,Kế toán công
+stu_17ac838f50f326fd,79,Kế toán doanh nghiệp
+stu_17c113818245636c,80,Kế toán doanh nghiệp
+stu_1864890699cad656,81,Kế toán doanh nghiệp
+stu_188b4f564f6b0778,82,Kế toán doanh nghiệp
+stu_18c648352c2456a8,83,Công nghệ Tài chính
+stu_19539ea9df9d9226,84,Công nghệ nghệ thuật - ArtTech
+stu_1955323eefdae8dc,85,Công nghệ và đổi mới sáng tạo
+stu_1982f424c4d060b5,86,Quản lý công
+stu_1989de4e291d51c0,87,Quản lý công
+stu_1a0dc36f3df6c810,88,Công nghệ thông tin
+stu_1a23f3ab54b4392b,89,Công nghệ Tài chính
+stu_1a5e1e5f965179dc,90,Kinh doanh số
+stu_1a658067260e2917,91,Kế toán doanh nghiệp
+stu_1a74dc2bc251bd68,92,Kinh tế đầu tư
+stu_1a90db9c2be4ff5c,93,Công nghệ và đổi mới sáng tạo
+stu_1b0d48b79fcfb72b,94,Quản trị kinh doanh
+stu_1b7806115868343b,95,Thị trường chứng khoán
+stu_1b7acb624a42ade5,96,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_1bcea43a27ed85b1,97,Công nghệ thông tin
+stu_1be432057dc25de6,98,Ngân hàng
+stu_1c0ed15feb393f63,99,Công nghệ và đổi mới sáng tạo
+stu_1d2d2723c159c31c,100,Kiến trúc và thiết kế đô thị thông minh
+stu_1d9e73662fd31c24,101,Quản trị kinh doanh
+stu_1e2a6fc1454136dc,102,Kinh doanh số
+stu_1e691af7fce002ab,103,Công nghệ Tài chính
+stu_1e743b95459dcaee,104,Kinh doanh thương mại
+stu_1f293fd65a2987b0,105,Ngân hàng
+stu_1f5c81ac7d6e6149,106,Kinh tế đầu tư
+stu_1fba68c16de54ba8,107,Kiến trúc và thiết kế đô thị thông minh
+stu_20206c4b2964aefa,108,Kiến trúc và thiết kế đô thị thông minh
+stu_20315623058ea68c,109,Công nghệ nghệ thuật - ArtTech
+stu_203c5e4c696e83d3,110,Kế toán doanh nghiệp
+stu_207f43432af34758,111,Kinh doanh thương mại
+stu_20bdf3b586ad855a,112,Kinh doanh thương mại
+stu_20fd8bf593f72bec,113,Kinh tế đầu tư
+stu_21f73b046502f2db,114,Kinh doanh số
+stu_22cdc2a74f63f0b4,115,Quản trị kinh doanh
+stu_22d65a5f2cd7bb5f,116,Thị trường chứng khoán
+stu_22e7820f658bc9a6,117,Kiến trúc và thiết kế đô thị thông minh
+stu_22fa751311ad792a,118,Công nghệ Tài chính
+stu_233b0554af4911a2,119,Công nghệ nghệ thuật - ArtTech
+stu_2343b5771e950cab,120,Quản lý công
+stu_2347159e3dc2afc5,121,Quản trị kinh doanh
+stu_235a25e3735e0478,122,Thị trường chứng khoán
+stu_23639d48abc169e5,123,Thị trường chứng khoán
+stu_2386230909df6044,124,Công nghệ Tài chính
+stu_23d616ca323c2b10,125,Kiến trúc và thiết kế đô thị thông minh
+stu_246eb88ed0025b22,126,Kiến trúc và thiết kế đô thị thông minh
+stu_247307a8ab438387,127,Kế toán công
+stu_24815bd625fbd350,128,Công nghệ nghệ thuật - ArtTech
+stu_24e80726aeaca0bd,129,Khoa học máy tính
+stu_2510c64d9077b90f,130,Kinh tế đầu tư
+stu_259bb9c3a79e5f25,131,Công nghệ thông tin
+stu_25e02e3fdabfffb3,132,Quản lý công
+stu_263d96e0b8e7c12b,133,Công nghệ thông tin
+stu_265e9c8c117c2493,134,Quản lý công
+stu_267c3e0439655b3f,135,Công nghệ Tài chính
+stu_270042f44bb09bb7,136,Kế toán doanh nghiệp
+stu_276f305aa7451517,137,Quản trị kinh doanh
+stu_27d76e4b1ec5471c,138,Kế toán công
+stu_280b3e178bb60639,139,Quản trị kinh doanh
+stu_284856f2a14afe2a,140,Kế toán công
+stu_2882241844de4d04,141,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_295fc88c4a9c9cd7,142,Kiến trúc và thiết kế đô thị thông minh
+stu_2988f2d5b97b36a6,143,Quản trị kinh doanh
+stu_298b507cdcbacd16,144,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_29f0ebcc99d2ed36,145,Ngân hàng
+stu_2a4d5e630e5c4676,146,Khoa học máy tính
+stu_2a64fd5e71b9177d,147,Kinh doanh số
+stu_2ab5dc496b503d6d,148,Kinh doanh thương mại
+stu_2afe18203da7f33d,149,Công nghệ Tài chính
+stu_2b310c95205ea33d,150,Kế toán công
+stu_2b53fb8437e7cbde,151,Quản lý công
+stu_2ba8a80b6a0c3f08,152,Công nghệ Tài chính
+stu_2bb8de4ce7d1c81e,153,Kinh tế đầu tư
+stu_2bea256b73ac2f55,154,Thị trường chứng khoán
+stu_2ca0a66b1ee9b1af,155,Công nghệ nghệ thuật - ArtTech
+stu_2ccf0afddb9e0aad,156,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_2d342520a83ea762,157,Kế toán công
+stu_2d4910b487782c25,158,Kiến trúc và thiết kế đô thị thông minh
+stu_2deb3551037392bc,159,Quản trị kinh doanh
+stu_2e7b62669e834af8,160,Kinh tế đầu tư
+stu_2e9307f2fd0d699d,161,Công nghệ nghệ thuật - ArtTech
+stu_2f437c7d3f4127b4,162,Kinh tế đầu tư
+stu_2fd3008efcbd4e0b,163,Kinh doanh số
+stu_2fd6b5aa0a358a94,164,Ngân hàng
+stu_3037aec63b5f10a2,165,Khoa học máy tính
+stu_31193bfd3dbcd5cf,166,Quản trị kinh doanh
+stu_319370737c366f8c,167,Kinh doanh thương mại
+stu_31c358de29e4cd18,168,Kinh tế đầu tư
+stu_32270a07ff79ad55,169,Khoa học máy tính
+stu_322faaa1afa38ce2,170,Ngân hàng
+stu_32822319d9020b58,171,Ngân hàng
+stu_32ca13fb5a793870,172,Marketing
+stu_33d5b66238ead23c,173,Công nghệ thông tin
+stu_33eeab8aec08e3ff,174,Công nghệ nghệ thuật - ArtTech
+stu_3491397d8928f461,175,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_34f5fc2eb2b289f1,176,Công nghệ thông tin
+stu_351ed33ebbba8363,177,Quản trị kinh doanh
+stu_3593d9bcaff5bc50,178,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_3626f5b5fc35986d,179,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_362f4837ab1d80d9,180,Ngân hàng
+stu_3653e8e9ba3b013a,181,Kinh doanh số
+stu_3680331e0cc643f6,182,Kế toán công
+stu_36a395e130b11fa4,183,Ngân hàng
+stu_36b229ef7c53c11f,184,Ngân hàng
+stu_38fe82dfc755b552,185,Công nghệ Tài chính
+stu_398205d4e707eddf,186,Kinh tế đầu tư
+stu_398e4b022bd54091,187,Marketing
+stu_39d302a0c58f45cd,188,Thị trường chứng khoán
+stu_39ff63bdcd4d6605,189,Quản lý công
+stu_3a0a2a342c042246,190,Thị trường chứng khoán
+stu_3b59bcef76fdfbbb,191,Khoa học máy tính
+stu_3b68c15b261343ca,192,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_3b6e994ccf29a6ac,193,Marketing
+stu_3bd31edae8312a13,194,Kinh doanh thương mại
+stu_3c29b5b6c122609f,195,Marketing
+stu_3c550cc1a80c7b33,196,Kế toán doanh nghiệp
+stu_3ca51dc178923e3f,197,Kinh tế đầu tư
+stu_3d2f8f337ef82be7,198,Kế toán doanh nghiệp
+stu_3d4e932dd3b34f88,199,Công nghệ nghệ thuật - ArtTech
+stu_3d72b0df6e9ab031,200,Kế toán công
+stu_3da1e4ee1a91f291,201,Khoa học máy tính
+stu_3de3a577d6233cbb,202,Công nghệ thông tin
+stu_3de7e20ee4a2c0e3,203,Thị trường chứng khoán
+stu_3e0dd4b97dbc5db8,204,Công nghệ nghệ thuật - ArtTech
+stu_3e9b0c662af05404,205,Kinh tế đầu tư
+stu_3ead5b17d47a7510,206,Kế toán doanh nghiệp
+stu_3eb9dc8637165f85,207,Kinh doanh số
+stu_3eebd5b2565cad7a,208,Kế toán công
+stu_3f1f2ceb8f582e18,209,Công nghệ và đổi mới sáng tạo
+stu_3f51a004654da1d5,210,Ngân hàng
+stu_3f668a0ef4a6a5a6,211,Quản lý công
+stu_3f7e5047a964abcd,212,Công nghệ thông tin
+stu_3f7f2a48e4525d84,213,Thị trường chứng khoán
+stu_3f9ccdf142b17221,214,Kinh tế đầu tư
+stu_3ff336e065b6e993,215,Kế toán công
+stu_4009c7414b4ef866,216,Kinh doanh thương mại
+stu_40e56c6bfa80ce91,217,Công nghệ thông tin
+stu_40f25bb19132d505,218,Công nghệ Tài chính
+stu_417e2a9ba95b4697,219,Khoa học máy tính
+stu_41c7c29563e4378d,220,Kế toán doanh nghiệp
+stu_41d42081a789c438,221,Kế toán doanh nghiệp
+stu_41d9bc09d48823ba,222,Khoa học máy tính
+stu_42baef09b3c8eaa1,223,Quản trị kinh doanh
+stu_432390acfd7cd96c,224,Kế toán công
+stu_43ebe85526275d67,225,Công nghệ thông tin
+stu_43f7c3af76d2d526,226,Công nghệ và đổi mới sáng tạo
+stu_43fb79834b70fa31,227,Kinh tế đầu tư
+stu_441586f4dec48da6,228,Công nghệ nghệ thuật - ArtTech
+stu_44566c5a371efb7f,229,Kinh doanh số
+stu_449fbe01327d6c44,230,Kế toán doanh nghiệp
+stu_44b370a6a9502d29,231,Công nghệ nghệ thuật - ArtTech
+stu_455be3c3b43339e8,232,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_456ada0508e35a13,233,Thị trường chứng khoán
+stu_45d983cfe131dd2b,234,Kế toán công
+stu_45e966dd3e909e05,235,Ngân hàng
+stu_45ec62aa98aea38e,236,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_46627281ef093aa1,237,Kinh doanh thương mại
+stu_46658add19f671d1,238,Khoa học máy tính
+stu_466c2d4b42cb3249,239,Quản trị kinh doanh
+stu_46abe212b94f5cb8,240,Kinh tế đầu tư
+stu_4704e773a301d345,241,Công nghệ và đổi mới sáng tạo
+stu_47315a9b8feae56f,242,Kiến trúc và thiết kế đô thị thông minh
+stu_4735a13262f6931b,243,Ngân hàng
+stu_474cac777d90c318,244,Kinh tế đầu tư
+stu_476355cf24d2d01b,245,Kinh doanh thương mại
+stu_4790a41ac3014bf5,246,Công nghệ Tài chính
+stu_483c5af7f1037b30,247,Kinh doanh số
+stu_4906e72164bca1eb,248,Kinh tế đầu tư
+stu_49975c4d78f32aa6,249,Công nghệ Tài chính
+stu_49f90642c6c8fd85,250,Kinh doanh thương mại
+stu_4af057d8767ad157,251,Kinh tế đầu tư
+stu_4b037dfa5392e3d6,252,Công nghệ và đổi mới sáng tạo
+stu_4b1d8f55afaa08c6,253,Kế toán công
+stu_4caa547a35170722,254,Quản lý công
+stu_4cceb31835dd2db1,255,Kinh doanh số
+stu_4d2fadc6e206dcc1,256,Thị trường chứng khoán
+stu_4d5d6102d53ae5bb,257,Khoa học máy tính
+stu_4de5a01e01a1e588,258,Kinh tế đầu tư
+stu_4dee2eed8e1a0fb9,259,Kinh doanh thương mại
+stu_4e1390d12af9bdfd,260,Công nghệ Tài chính
+stu_4fa3346b774980fe,261,Công nghệ Tài chính
+stu_4fee16b200c01cad,262,Quản lý công
+stu_500e8bb0a665df8e,263,Kinh tế đầu tư
+stu_501dd097a40d7ac2,264,Ngân hàng
+stu_50491eac8b6564d3,265,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_504d8a567c6f701c,266,Kinh doanh thương mại
+stu_506ff7c8fd23dbba,267,Công nghệ nghệ thuật - ArtTech
+stu_509df207a0a58772,268,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_50e2e3eb6a51fef6,269,Quản trị kinh doanh
+stu_5167195d214292e7,270,Công nghệ và đổi mới sáng tạo
+stu_5173bfc9c794fba6,271,Quản lý công
+stu_51c3a0e68be68cc9,272,Công nghệ Tài chính
+stu_51d1689a3e54b78b,273,Kinh doanh số
+stu_52a69c7c5e697360,274,Công nghệ nghệ thuật - ArtTech
+stu_52f96fd3b574acdc,275,Marketing
+stu_530dc9bf55657acc,276,Ngân hàng
+stu_53326ff73dbce0e6,277,Công nghệ thông tin
+stu_538095b7d63ba344,278,Công nghệ Tài chính
+stu_539c9ead59666c8b,279,Kinh doanh thương mại
+stu_540ec1323640a712,280,Kế toán công
+stu_54612d49b3156eb6,281,Kiến trúc và thiết kế đô thị thông minh
+stu_54612f29017ef1f8,282,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_54d98aaf4646b7e7,283,Kế toán công
+stu_550759eeee5c02ba,284,Công nghệ thông tin
+stu_559cd867006cd2ea,285,Marketing
+stu_55deead3d24a4be3,286,Kế toán công
+stu_55eab45189606d50,287,Thị trường chứng khoán
+stu_564247854bfac6b6,288,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5667c3728a235656,289,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_568769f93e752943,290,Công nghệ thông tin
+stu_56ece45b73719b87,291,Công nghệ Tài chính
+stu_5709df5774529c0d,292,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5813fc0d6b7846ad,293,Kinh doanh số
+stu_58229738120afab7,294,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5871e6909d41b8cd,295,Marketing
+stu_587fe925cf9367f1,296,Công nghệ nghệ thuật - ArtTech
+stu_588e8f56121670e8,297,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5896de9eda17229e,298,Kiến trúc và thiết kế đô thị thông minh
+stu_58f6d376850ca7d2,299,Kinh doanh thương mại
+stu_59176c1b825ce109,300,Công nghệ Tài chính
+stu_59de92b6f9f16549,301,Công nghệ nghệ thuật - ArtTech
+stu_59eedfb3321b883c,302,Quản lý công
+stu_59f6dfc481d038cc,303,Khoa học máy tính
+stu_59fbae68bc8e79c6,304,Kinh tế đầu tư
+stu_5a1a42c501042c91,305,Kế toán công
+stu_5a37b82ca5a29bcc,306,Công nghệ và đổi mới sáng tạo
+stu_5ab5526a4b57b3ee,307,Công nghệ Tài chính
+stu_5abc5f05bcdaa1cf,308,Công nghệ Tài chính
+stu_5af2e469f822e4d0,309,Khoa học máy tính
+stu_5b0caf833b600b62,310,Công nghệ thông tin
+stu_5b257cc72552ab01,311,Quản lý công
+stu_5b4d2336accce430,312,Marketing
+stu_5b704c6711290a80,313,Ngân hàng
+stu_5b812c3ff4ddd511,314,Công nghệ và đổi mới sáng tạo
+stu_5bbef4f24884334f,315,Marketing
+stu_5bfa66e934d15278,316,Công nghệ Tài chính
+stu_5c2a456eb8eacac3,317,Công nghệ thông tin
+stu_5cd4d57210db05e1,318,Kế toán công
+stu_5d66ec9a125cac45,319,Ngân hàng
+stu_5d98bc9300d96405,320,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5de60144d72bc4dd,321,Kiến trúc và thiết kế đô thị thông minh
+stu_5e115595deefe961,322,Quản lý công
+stu_5e1700d5197a60d5,323,Kiến trúc và thiết kế đô thị thông minh
+stu_5e7bbb5a0898038f,324,Công nghệ và đổi mới sáng tạo
+stu_5e8811e2a937fee3,325,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_5f01d7ffecca7c06,326,Công nghệ thông tin
+stu_5f8695620d3b40dc,327,Công nghệ nghệ thuật - ArtTech
+stu_5fbd832a72ecf688,328,Quản lý công
+stu_5fbf1256d9589dd3,329,Khoa học máy tính
+stu_5fef66bbeab28f38,330,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_601c837fdbe73a19,331,Kinh tế đầu tư
+stu_6032012828ecf865,332,Kinh doanh số
+stu_60475164fa4b7050,333,Kinh doanh số
+stu_60bdb20256cb07ca,334,Quản lý công
+stu_611575e92760cb42,335,Kinh doanh số
+stu_613445194243d26a,336,Kiến trúc và thiết kế đô thị thông minh
+stu_6145fcbc0bc23320,337,Kiến trúc và thiết kế đô thị thông minh
+stu_617081fa88c14444,338,Kiến trúc và thiết kế đô thị thông minh
+stu_6175f5f8a27fd2c7,339,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_61c1f5ec15f58796,340,Quản lý công
+stu_62700c5411b71152,341,Kế toán doanh nghiệp
+stu_62afb09013b2dd16,342,Kế toán doanh nghiệp
+stu_62d9541eb315c620,343,Công nghệ thông tin
+stu_62ff6495ee196b12,344,Quản lý công
+stu_639bbfd88ea8de00,345,Ngân hàng
+stu_63aae67ede012222,346,Quản lý công
+stu_647a18f6c01fd9d2,347,Kinh doanh số
+stu_64a377d6d0789fc0,348,Khoa học máy tính
+stu_64ad013ffe1207a6,349,Quản lý công
+stu_65d6092b34439d5b,350,Kinh doanh số
+stu_6618aa041a6936dc,351,Kinh doanh thương mại
+stu_66240f47f8bb0ebb,352,Quản trị kinh doanh
+stu_6624e77f3e29035b,353,Ngân hàng
+stu_66d64493edc58b11,354,Công nghệ nghệ thuật - ArtTech
+stu_66f0c7c5173b6af9,355,Quản trị kinh doanh
+stu_67629aaf94f94480,356,Công nghệ thông tin
+stu_677b96bbdd30b075,357,Công nghệ Tài chính
+stu_67837bfa7f5f86f2,358,Kiến trúc và thiết kế đô thị thông minh
+stu_678d59e2c6f3d01a,359,Quản lý công
+stu_67afa1617cb21661,360,Kinh tế đầu tư
+stu_682fd8ed20d6d28b,361,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_685eb296dc8c79b6,362,Quản trị kinh doanh
+stu_68b38709381cba76,363,Quản lý công
+stu_68f12975f08411a3,364,Thị trường chứng khoán
+stu_68f1cb0196193615,365,Thị trường chứng khoán
+stu_69128c528af58195,366,Công nghệ và đổi mới sáng tạo
+stu_692ec07fed34a4fb,367,Kinh doanh số
+stu_69ad10cc497e0a1b,368,Quản trị kinh doanh
+stu_69bd0c4ff00d7392,369,Công nghệ và đổi mới sáng tạo
+stu_69fef6cdcb0042e9,370,Quản lý công
+stu_6a11fe4bcde12ad9,371,Quản trị kinh doanh
+stu_6a3cb605289c0bf2,372,Khoa học máy tính
+stu_6a6d29d3c4b8438e,373,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_6a99225648561d1b,374,Kế toán công
+stu_6af0bc9e8676fe10,375,Công nghệ thông tin
+stu_6b2dae4e4818f468,376,Thị trường chứng khoán
+stu_6b42e20634e37af9,377,Quản trị kinh doanh
+stu_6ba5de8be3bed59c,378,Kế toán doanh nghiệp
+stu_6ba6b1a68f6f3a88,379,Công nghệ nghệ thuật - ArtTech
+stu_6c5e9f1f0f92f7b3,380,Ngân hàng
+stu_6cf21cc550869290,381,Công nghệ thông tin
+stu_6d4b2e77fc48f968,382,Quản trị kinh doanh
+stu_6dbaaa85d8eaf400,383,Công nghệ Tài chính
+stu_6ddd8232101979e1,384,Marketing
+stu_6de98d9bcddd06dd,385,Kiến trúc và thiết kế đô thị thông minh
+stu_6e183840812752f5,386,Quản lý công
+stu_6e25a3c0d9f7a235,387,Kinh doanh số
+stu_6e4e8f27ba83315c,388,Công nghệ Tài chính
+stu_6e5967910832e68d,389,Kinh tế đầu tư
+stu_6e73b790820b8d8c,390,Marketing
+stu_6ebdc047ab979edc,391,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_6ee218d3fffc49e2,392,Kế toán công
+stu_6ee24ff5bb5871d1,393,Kiến trúc và thiết kế đô thị thông minh
+stu_6f0746ecfe979a0f,394,Kinh doanh số
+stu_6f20bb411eb68797,395,Kinh doanh thương mại
+stu_6faf7a0e0e1a98d0,396,Công nghệ nghệ thuật - ArtTech
+stu_6fb9112154854310,397,Kiến trúc và thiết kế đô thị thông minh
+stu_6fd8282a93d5e4bd,398,Kế toán doanh nghiệp
+stu_70247d517d2d1a8e,399,Marketing
+stu_7038da631408a5b6,400,Quản lý công
+stu_7042a8cb2209c2b9,401,Kinh doanh thương mại
+stu_705b7debfb64982a,402,Ngân hàng
+stu_70ea32aca9ecc9de,403,Kinh tế đầu tư
+stu_70eabafb0e0b45aa,404,Công nghệ thông tin
+stu_71ec0237158d65ef,405,Kinh tế đầu tư
+stu_71ede728785c661c,406,Kế toán công
+stu_721018450e033b49,407,Kế toán công
+stu_72a5eb87e07be9bf,408,Công nghệ thông tin
+stu_72aa013012b0848b,409,Kế toán doanh nghiệp
+stu_72ac549dbe5ade40,410,Kế toán công
+stu_72cdec30864e9c2c,411,Công nghệ Tài chính
+stu_730013641509efb9,412,Ngân hàng
+stu_7314c0991bdab0df,413,Kinh doanh số
+stu_73a25e6f286c7ab0,414,Marketing
+stu_73aaaa21b9518f5f,415,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_73b6db674005267a,416,Công nghệ thông tin
+stu_73c782de504ad1b9,417,Công nghệ Tài chính
+stu_73f9c21514598d6b,418,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_742d246d3763b665,419,Kiến trúc và thiết kế đô thị thông minh
+stu_74967c0eb1286fea,420,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_74afbae848a93e3f,421,Marketing
+stu_74c59540811a0f08,422,Công nghệ nghệ thuật - ArtTech
+stu_75655afed7bea994,423,Thị trường chứng khoán
+stu_75bc0b440eeed455,424,Quản trị kinh doanh
+stu_761cf90793019e69,425,Kiến trúc và thiết kế đô thị thông minh
+stu_7679028d55b23ec4,426,Kiến trúc và thiết kế đô thị thông minh
+stu_774610d3082053b9,427,Quản lý công
+stu_77672b0c65904a84,428,Công nghệ và đổi mới sáng tạo
+stu_776f3f8100ce2e55,429,Kiến trúc và thiết kế đô thị thông minh
+stu_77a54c3ecd309173,430,Công nghệ và đổi mới sáng tạo
+stu_77a8ff9452740fda,431,Công nghệ và đổi mới sáng tạo
+stu_77df32deb018e7d0,432,Công nghệ Tài chính
+stu_77fba46facdba1bf,433,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_77fe0f90511d2b55,434,Kinh doanh thương mại
+stu_780c94c7377e342f,435,Ngân hàng
+stu_78154b5a77260fcf,436,Công nghệ và đổi mới sáng tạo
+stu_7866af1fcd8ec6e8,437,Công nghệ Tài chính
+stu_786f4c7d5e3c8924,438,Quản trị kinh doanh
+stu_789c1996c7ce52ab,439,Thị trường chứng khoán
+stu_78a57814db23c595,440,Công nghệ Tài chính
+stu_78a9213310e28b33,441,Thị trường chứng khoán
+stu_78c3007d9c0e9cb9,442,Thị trường chứng khoán
+stu_78c63b31582d3db1,443,Thị trường chứng khoán
+stu_78fc606115a0cfab,444,Công nghệ nghệ thuật - ArtTech
+stu_792e2a9755944b94,445,Khoa học máy tính
+stu_797e4124ff7dd110,446,Khoa học máy tính
+stu_79a20003619e3aaf,447,Thị trường chứng khoán
+stu_7a300b055fd65dc2,448,Kinh doanh số
+stu_7a7f50201ac7be50,449,Kinh doanh số
+stu_7a9090ab8059832b,450,Công nghệ nghệ thuật - ArtTech
+stu_7aa6030c44d1dc99,451,Quản trị kinh doanh
+stu_7b0371ce991021cc,452,Kinh doanh thương mại
+stu_7b27f7debe13750f,453,Kế toán doanh nghiệp
+stu_7c185f26d8ab08eb,454,Công nghệ thông tin
+stu_7c8c7bc68709da6c,455,Quản trị kinh doanh
+stu_7d1867d384ff540a,456,Ngân hàng
+stu_7d2b52d2d922195b,457,Quản lý công
+stu_7e096a26aef08ae0,458,Công nghệ Tài chính
+stu_7e39c98e4ebc8d79,459,Quản trị kinh doanh
+stu_7e8dd8e5ce0b2ac9,460,Ngân hàng
+stu_7e973b54d496b69a,461,Kinh tế đầu tư
+stu_7e9977966de306cd,462,Công nghệ nghệ thuật - ArtTech
+stu_7ea626ee8fb150ff,463,Kế toán doanh nghiệp
+stu_7eca5717539a0751,464,Công nghệ nghệ thuật - ArtTech
+stu_7f1eda3fab6aca2c,465,Marketing
+stu_7f6de2f7a4ee56bf,466,Thị trường chứng khoán
+stu_7f79b4233015f61e,467,Quản trị kinh doanh
+stu_7fa8e6052ce423b1,468,Công nghệ Tài chính
+stu_8002dc46fb90561e,469,Công nghệ Tài chính
+stu_802cc997b260f976,470,Công nghệ Tài chính
+stu_803281bb59fb7644,471,Thị trường chứng khoán
+stu_80684c137a8620b5,472,Kế toán doanh nghiệp
+stu_80a275b580c68136,473,Kinh doanh thương mại
+stu_80b1f1c46d84b602,474,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_80d134d11973800f,475,Kinh doanh thương mại
+stu_80e79af732f78ea8,476,Ngân hàng
+stu_80fa17707d978cff,477,Kinh doanh thương mại
+stu_812d4cffadf6e037,478,Kế toán doanh nghiệp
+stu_8280bfe28013ac02,479,Kinh tế đầu tư
+stu_82dea91d33a7c134,480,Khoa học máy tính
+stu_82e6fa20cb34c3a6,481,Kiến trúc và thiết kế đô thị thông minh
+stu_8387d0a87e334133,482,Kinh tế đầu tư
+stu_8391601d41851392,483,Công nghệ thông tin
+stu_83b1f09b9b1c1e8e,484,Kinh doanh thương mại
+stu_83c53e8c35f88a59,485,Kiến trúc và thiết kế đô thị thông minh
+stu_83eef3902805e86b,486,Kinh doanh thương mại
+stu_8533ccd90a395106,487,Công nghệ và đổi mới sáng tạo
+stu_8561a5ec6ee5bdb8,488,Kế toán doanh nghiệp
+stu_8570ebef7e65b7ee,489,Thị trường chứng khoán
+stu_85c455a589d71e0b,490,Quản trị kinh doanh
+stu_8602cb2e0dadce9b,491,Kinh tế đầu tư
+stu_861027881db742b5,492,Công nghệ và đổi mới sáng tạo
+stu_867554c334e37e9c,493,Kinh tế đầu tư
+stu_8709c6cc07a9c325,494,Công nghệ nghệ thuật - ArtTech
+stu_8747379452ac0659,495,Công nghệ Tài chính
+stu_874baca17ee1990a,496,Ngân hàng
+stu_878f85501502a47a,497,Kinh tế đầu tư
+stu_87b56f0ed100fd98,498,Khoa học máy tính
+stu_887e9c399f3eeac2,499,Công nghệ thông tin
+stu_889b3e35188f9297,500,Kinh doanh thương mại
+stu_88b35791aafc14a3,501,Marketing
+stu_88cae935e3532882,502,Kinh doanh số
+stu_895abbda34038376,503,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_898f21493bad2a29,504,Kinh doanh thương mại
+stu_89bc7ab2efdc288d,505,Công nghệ và đổi mới sáng tạo
+stu_8a2ab2ebd4dec5c3,506,Công nghệ và đổi mới sáng tạo
+stu_8a4fe827963ee702,507,Thị trường chứng khoán
+stu_8ad2b603b2d03997,508,Khoa học máy tính
+stu_8b21f10a612d4bca,509,Công nghệ thông tin
+stu_8b26e52a0b8bab6c,510,Quản lý công
+stu_8b5540c9bfe73cb2,511,Ngân hàng
+stu_8bb5e27d07db492c,512,Kinh tế đầu tư
+stu_8c41312e109fed9f,513,Ngân hàng
+stu_8c7b8b909c7f27a4,514,Công nghệ thông tin
+stu_8ce9eea8146780d8,515,Quản lý công
+stu_8d8c7e17f347c4e1,516,Thị trường chứng khoán
+stu_8dd4fee6d04e9bd4,517,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_8e404c418428e3ae,518,Thị trường chứng khoán
+stu_8eacb505c4ef2ff1,519,Kinh doanh số
+stu_8ec7011c54371f04,520,Công nghệ nghệ thuật - ArtTech
+stu_8ec72b502e9454fc,521,Marketing
+stu_8eefb91075079d03,522,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_8f17cba4b24949a5,523,Quản lý công
+stu_8f2ab94b07678def,524,Kinh tế đầu tư
+stu_8f2cab88a6552082,525,Kế toán công
+stu_906c11f6a96a5e8f,526,Công nghệ thông tin
+stu_9073d95ec45e90ab,527,Công nghệ Tài chính
+stu_910a679c8fcde81d,528,Kinh tế đầu tư
+stu_9117e52beebb4151,529,Kế toán doanh nghiệp
+stu_911d4f88a0241c57,530,Kế toán doanh nghiệp
+stu_911fc1cc7197b3c5,531,Quản lý công
+stu_9160bfa320bef3b8,532,Quản lý công
+stu_91824d80b8f25d7e,533,Thị trường chứng khoán
+stu_919fcd415c22cf10,534,Ngân hàng
+stu_91a38fb38027c5ec,535,Ngân hàng
+stu_91e3accd3c38570b,536,Quản trị kinh doanh
+stu_920f28e00f5853f2,537,Quản trị kinh doanh
+stu_92bd832b68341696,538,Kế toán doanh nghiệp
+stu_92f7e95dfbdf94a0,539,Công nghệ Tài chính
+stu_9310873e8dc0d0a8,540,Kinh doanh số
+stu_9395998a1ee3e70e,541,Kinh doanh thương mại
+stu_93af390de9f476a5,542,Kinh doanh số
+stu_93b262f49a7dfb9d,543,Công nghệ Tài chính
+stu_93cbda17b248ec9f,544,Kế toán công
+stu_94e9981932515fff,545,Quản trị kinh doanh
+stu_9523385c851ccbc0,546,Kế toán công
+stu_95f50c9afecad0b8,547,Khoa học máy tính
+stu_962ff4eb275f9754,548,Thị trường chứng khoán
+stu_96408a7a7e64380f,549,Kế toán doanh nghiệp
+stu_964339ab3ee5878e,550,Kế toán doanh nghiệp
+stu_966766fc0c1a9ecb,551,Thị trường chứng khoán
+stu_969c05ea31474044,552,Thị trường chứng khoán
+stu_96c2408bad998516,553,Công nghệ và đổi mới sáng tạo
+stu_96edca842d8dcd05,554,Công nghệ thông tin
+stu_971af1c79eb50ca3,555,Kinh doanh thương mại
+stu_97283db5e02db114,556,Kinh tế đầu tư
+stu_973e12af57094dfe,557,Khoa học máy tính
+stu_974414e259954fac,558,Khoa học máy tính
+stu_97a092a922052db6,559,Công nghệ thông tin
+stu_97cf4e6c8813307d,560,Công nghệ và đổi mới sáng tạo
+stu_985438d6ec036dd8,561,Thị trường chứng khoán
+stu_985f0eb5ea04df19,562,Quản lý công
+stu_9863145f1a9881c5,563,Công nghệ và đổi mới sáng tạo
+stu_98d77553f9c171f5,564,Marketing
+stu_98ddc35b3863a82a,565,Kiến trúc và thiết kế đô thị thông minh
+stu_994adc93ae8c89cd,566,Công nghệ nghệ thuật - ArtTech
+stu_99a3e91b57c3cc31,567,Ngân hàng
+stu_9b0f0d502c09bf82,568,Kinh doanh số
+stu_9b63ef2b652134c3,569,Thị trường chứng khoán
+stu_9be8d89c86a700c4,570,Kinh tế đầu tư
+stu_9c3d566b0c22dcd0,571,Công nghệ nghệ thuật - ArtTech
+stu_9cb39b58d739aef0,572,Thị trường chứng khoán
+stu_9d3e1c86df58cf47,573,Kinh doanh thương mại
+stu_9e85c0d06098e839,574,Kiến trúc và thiết kế đô thị thông minh
+stu_9eaf5e73d04c387e,575,Công nghệ nghệ thuật - ArtTech
+stu_a006a02066f967f8,576,Công nghệ nghệ thuật - ArtTech
+stu_a010b7887bb70cf1,577,Quản lý công
+stu_a024578eae19c22b,578,Công nghệ và đổi mới sáng tạo
+stu_a04257ddb493d127,579,Kế toán công
+stu_a04f4110c904c024,580,Quản trị kinh doanh
+stu_a07b2ff0ed2a40d3,581,Công nghệ và đổi mới sáng tạo
+stu_a0e4f7d57745af3d,582,Khoa học máy tính
+stu_a1047e655f95e6b2,583,Công nghệ Tài chính
+stu_a1839a40d039509c,584,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_a1c4bbd15896e4e1,585,Quản trị kinh doanh
+stu_a2081ad9f7e2b92e,586,Marketing
+stu_a221c7d2791d6f32,587,Khoa học máy tính
+stu_a2256b595684f41b,588,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_a268a3cf9f999cc8,589,Kinh tế đầu tư
+stu_a3872afda5d5a529,590,Công nghệ nghệ thuật - ArtTech
+stu_a3a2305fe90af5de,591,Quản lý công
+stu_a3c1efd9c8501096,592,Công nghệ nghệ thuật - ArtTech
+stu_a3d5a066d671c04f,593,Kế toán công
+stu_a424d6762e788c75,594,Thị trường chứng khoán
+stu_a462f24969f8a84c,595,Kiến trúc và thiết kế đô thị thông minh
+stu_a484be977847316f,596,Kiến trúc và thiết kế đô thị thông minh
+stu_a4c2b4486056c4c9,597,Thị trường chứng khoán
+stu_a4df50731c935826,598,Marketing
+stu_a57e457b0dadbd71,599,Kinh doanh số
+stu_a5acc58e004c7409,600,Kinh doanh số
+stu_a5c5d3ae7a14f5c6,601,Công nghệ thông tin
+stu_a6acdebd62240691,602,Kinh doanh thương mại
+stu_a6be15ed867ca4e3,603,Kế toán công
+stu_a73be1f345f848bf,604,Khoa học máy tính
+stu_a76e2e6dc9fdaeb9,605,Kinh tế đầu tư
+stu_a870e895d77f9715,606,Quản lý công
+stu_a875139532c39251,607,Công nghệ nghệ thuật - ArtTech
+stu_a8def983920db2d5,608,Công nghệ thông tin
+stu_a99f2c8b2e56e639,609,Marketing
+stu_aa0de929f59358fd,610,Ngân hàng
+stu_aa509693a6913232,611,Marketing
+stu_aa60d9ec57782cea,612,Công nghệ thông tin
+stu_aa65711dc4dddd1d,613,Kinh doanh thương mại
+stu_aaa04038e1f8315f,614,Kinh doanh thương mại
+stu_ab2ad2ce196cb996,615,Khoa học máy tính
+stu_abb4af5e564ad3b9,616,Kiến trúc và thiết kế đô thị thông minh
+stu_abb9f5ee51a7fc80,617,Công nghệ nghệ thuật - ArtTech
+stu_ac7f8b5b428f8bbb,618,Thị trường chứng khoán
+stu_ad6666897ac2df89,619,Quản lý công
+stu_ae81810debc5e014,620,Công nghệ thông tin
+stu_aebbd95b7c455b96,621,Ngân hàng
+stu_aece5c2935621a4d,622,Kinh doanh số
+stu_aff328d7a26c07b1,623,Công nghệ thông tin
+stu_b031bc096ddec00a,624,Marketing
+stu_b04272cb8e0fdbd9,625,Marketing
+stu_b0b8b6b479d805e7,626,Quản trị kinh doanh
+stu_b0cc1375bf02c3ea,627,Kinh tế đầu tư
+stu_b1480064e4477e0c,628,Quản lý công
+stu_b1c822f7f49568d5,629,Kinh tế đầu tư
+stu_b223ee205527d2ac,630,Quản trị kinh doanh
+stu_b23574662c822b52,631,Quản lý công
+stu_b252e6eda740f4d6,632,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_b2a2bf7629465f39,633,Kiến trúc và thiết kế đô thị thông minh
+stu_b2bf6090355708c2,634,Thị trường chứng khoán
+stu_b2ddc60e0a8453f8,635,Quản trị kinh doanh
+stu_b3528709bd2025f4,636,Marketing
+stu_b3f892e949dca056,637,Kế toán doanh nghiệp
+stu_b40bee8f8413f30c,638,Công nghệ và đổi mới sáng tạo
+stu_b436c8642227020c,639,Quản trị kinh doanh
+stu_b48bff81764ebf1d,640,Ngân hàng
+stu_b4a0274f5f1930e9,641,Quản trị kinh doanh
+stu_b4c29f1825e57f0c,642,Công nghệ và đổi mới sáng tạo
+stu_b4d8f8c3d01bae29,643,Quản trị kinh doanh
+stu_b59bed0032d9fd66,644,Công nghệ và đổi mới sáng tạo
+stu_b5a479f4fc60b614,645,Kế toán công
+stu_b5b51ef5b82dc9cd,646,Kế toán công
+stu_b60af57861d683a5,647,Kinh doanh thương mại
+stu_b61da1620bbd005f,648,Công nghệ và đổi mới sáng tạo
+stu_b62ed9929dcee08a,649,Quản trị kinh doanh
+stu_b69ce8781a228080,650,Công nghệ Tài chính
+stu_b6fd867e3d4fa626,651,Kế toán công
+stu_b750251e08537d11,652,Công nghệ Tài chính
+stu_b7d9e349e9e9d438,653,Kinh doanh số
+stu_b82d1b973001c611,654,Khoa học máy tính
+stu_b84e3dfe4d1a9f4b,655,Thị trường chứng khoán
+stu_b8601982d0575c8f,656,Kiến trúc và thiết kế đô thị thông minh
+stu_b861c4429ebba1c9,657,Ngân hàng
+stu_b871d53047f1a2aa,658,Công nghệ nghệ thuật - ArtTech
+stu_b8b80d6a2bcb8aba,659,Quản lý công
+stu_b8f65c3169e9b63f,660,Marketing
+stu_b94dac9ca4a79163,661,Thị trường chứng khoán
+stu_b97a60bdfeec38c5,662,Công nghệ thông tin
+stu_ba155a8934aee9a5,663,Thị trường chứng khoán
+stu_ba1c556d0fe2a15b,664,Marketing
+stu_ba1f9123c4fc4df6,665,Công nghệ Tài chính
+stu_ba4cf3509d98f5e8,666,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_baad4fbb7c89dfa8,667,Công nghệ Tài chính
+stu_bade3665369e993f,668,Kiến trúc và thiết kế đô thị thông minh
+stu_bb19a4836f7581ff,669,Công nghệ Tài chính
+stu_bb75985b5fb6c47e,670,Marketing
+stu_bbd7daf4e1348958,671,Kinh doanh số
+stu_bbf52c285d4f3194,672,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_bbf5d30306379485,673,Kinh doanh số
+stu_bc470e49dd340f3f,674,Kinh tế đầu tư
+stu_bc5c9bd751583984,675,Kiến trúc và thiết kế đô thị thông minh
+stu_bc869195fb44d1c2,676,Kế toán doanh nghiệp
+stu_bcb3452a61e86ef0,677,Kiến trúc và thiết kế đô thị thông minh
+stu_bd6bcef36f5b33c5,678,Công nghệ và đổi mới sáng tạo
+stu_bdb9043227dffa11,679,Kế toán doanh nghiệp
+stu_be08ddb9e356bc1c,680,Kế toán công
+stu_be34636b5d6799f5,681,Công nghệ và đổi mới sáng tạo
+stu_be8698a912cf9f7d,682,Công nghệ thông tin
+stu_bec549dd4828e421,683,Kinh tế đầu tư
+stu_bf3c063af1e09e33,684,Công nghệ thông tin
+stu_bf8f78332d6b7b32,685,Thị trường chứng khoán
+stu_bfc71c05bb69beaa,686,Kinh tế đầu tư
+stu_c04340d5673406c3,687,Công nghệ và đổi mới sáng tạo
+stu_c0ba852a3057c48b,688,Khoa học máy tính
+stu_c0c2937e4213ed0a,689,Công nghệ nghệ thuật - ArtTech
+stu_c24c7586abd73add,690,Kế toán công
+stu_c24e205f0b933cd5,691,Kiến trúc và thiết kế đô thị thông minh
+stu_c27daa0bbdb58e2f,692,Marketing
+stu_c291c6cc652110a0,693,Công nghệ và đổi mới sáng tạo
+stu_c312e3fd4d3e00fe,694,Kinh tế đầu tư
+stu_c3218ba78fceb325,695,Marketing
+stu_c36a99b7a9de7d66,696,Khoa học máy tính
+stu_c39fbfde1ba21fd4,697,Marketing
+stu_c3bfe047ee8075cd,698,Quản lý công
+stu_c3cd5b2b4ec8a371,699,Khoa học máy tính
+stu_c3d7c2db9f3c3dbe,700,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c407842cd02c1e1c,701,Quản lý công
+stu_c4258628eef349e5,702,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c462dea10b96752a,703,Quản trị kinh doanh
+stu_c47fecf01a2a0a69,704,Kế toán doanh nghiệp
+stu_c556dcccf2c099c0,705,Công nghệ và đổi mới sáng tạo
+stu_c58497af4afce7df,706,Công nghệ Tài chính
+stu_c5a6e8dcdf4656c3,707,Công nghệ nghệ thuật - ArtTech
+stu_c5dbaa3a96f9a815,708,Quản lý công
+stu_c63074ca2c9e6ff4,709,Quản trị kinh doanh
+stu_c6cf50cd02b5af82,710,Công nghệ thông tin
+stu_c6df96930d5bc7ac,711,Công nghệ và đổi mới sáng tạo
+stu_c6e62ef21a2805fe,712,Quản lý công
+stu_c732da2c5e5bcec4,713,Kế toán công
+stu_c7507ed5203b5025,714,Công nghệ Tài chính
+stu_c75d89599b4019a7,715,Kế toán doanh nghiệp
+stu_c770a43cc26e0012,716,Công nghệ Tài chính
+stu_c7a631645dd123ff,717,Công nghệ và đổi mới sáng tạo
+stu_c7aa7be38bb77f7c,718,Kế toán công
+stu_c7b1b3375b9b9517,719,Marketing
+stu_c80561137661cb52,720,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c87ac87f62de80d9,721,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c8a5ea9785cff009,722,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c8d8b0bd9c54e13c,723,Khoa học máy tính
+stu_c8ed7be879f66d62,724,Kinh tế đầu tư
+stu_c8f35f47fb59ca65,725,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_c968e934e231ec10,726,Kinh doanh số
+stu_c9904b2b37becd21,727,Công nghệ Tài chính
+stu_c9a300d325b178a0,728,Quản lý công
+stu_c9f3f909caf2f0f9,729,Kế toán công
+stu_ca012edec6eefdc1,730,Thị trường chứng khoán
+stu_ca61d05ec83102dc,731,Thị trường chứng khoán
+stu_ca7ccc71f3b0ed34,732,Thị trường chứng khoán
+stu_cad988f99396e2cc,733,Khoa học máy tính
+stu_cb1b3f6ac86e10a8,734,Kế toán công
+stu_cb98dc089ef2628d,735,Kinh tế đầu tư
+stu_cbcf979bc7792c61,736,Ngân hàng
+stu_cbf7ffc2d04bac67,737,Công nghệ và đổi mới sáng tạo
+stu_cbf9513fd0a124f2,738,Kinh tế đầu tư
+stu_cc0ff3eb4bb24797,739,Quản lý công
+stu_cc6ea6a144696d9f,740,Quản lý công
+stu_ccfe8b97202423c8,741,Marketing
+stu_cd25f33875bc1afe,742,Quản lý công
+stu_cd43e409fff3bd01,743,Kế toán doanh nghiệp
+stu_cd8a36f479676bd6,744,Kinh doanh số
+stu_ce9008c61029ed22,745,Ngân hàng
+stu_cecf62a81f190238,746,Kinh doanh thương mại
+stu_cee6642082d25684,747,Công nghệ thông tin
+stu_cf6421a9fe724bb0,748,Marketing
+stu_cf7f4812b9608283,749,Ngân hàng
+stu_cfd8bd7be1f9b405,750,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_cffb8dae2426fb9f,751,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_d069140fb26e386c,752,Quản lý công
+stu_d06f9bd5f63d28ad,753,Công nghệ nghệ thuật - ArtTech
+stu_d09c07dbee58e7ea,754,Marketing
+stu_d167122f61861e3e,755,Kinh tế đầu tư
+stu_d16e84418d2230dd,756,Kinh tế đầu tư
+stu_d23e2621a68820d3,757,Công nghệ thông tin
+stu_d26de74bb3f67425,758,Quản trị kinh doanh
+stu_d278696d1b9ec8ed,759,Ngân hàng
+stu_d303c4af0ca319fb,760,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_d343f60b5e9a587c,761,Ngân hàng
+stu_d38a3682c9ac2d5a,762,Kế toán doanh nghiệp
+stu_d3915ed00c0f10a4,763,Công nghệ thông tin
+stu_d42dab8f8cc640db,764,Quản lý công
+stu_d4822f7634809b1c,765,Công nghệ và đổi mới sáng tạo
+stu_d482e123599a788a,766,Công nghệ Tài chính
+stu_d4b64c4b07f3981f,767,Công nghệ nghệ thuật - ArtTech
+stu_d4c7ce3be9f05ac0,768,Thị trường chứng khoán
+stu_d4cde0abb468c9a9,769,Công nghệ thông tin
+stu_d4d119bfac395968,770,Marketing
+stu_d51ae4444125ee29,771,Thị trường chứng khoán
+stu_d53124e80c5718f7,772,Công nghệ thông tin
+stu_d5cadb9d06fa2ca8,773,Kế toán công
+stu_d63e974b21e139b6,774,Quản trị kinh doanh
+stu_d644bb6c0ddc2c5a,775,Quản trị kinh doanh
+stu_d69980b3ef56adf6,776,Ngân hàng
+stu_d6a0497e5e2c71ee,777,Kế toán công
+stu_d6e6c8cf155d5f64,778,Kế toán doanh nghiệp
+stu_d76a84fc8363f0c2,779,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_d7c75c2557e1860f,780,Quản lý công
+stu_d7eba5121bd93cd3,781,Kinh tế đầu tư
+stu_d7ee83d5c844fc10,782,Quản lý công
+stu_d9585b7e982b631e,783,Công nghệ thông tin
+stu_d96c503640e3aae3,784,Kinh doanh thương mại
+stu_d9a0bb984c16d5e4,785,Khoa học máy tính
+stu_d9d0d2bfc928a288,786,Kế toán doanh nghiệp
+stu_d9d7bc061e1b4d5f,787,Marketing
+stu_da34612da7ce8e40,788,Công nghệ và đổi mới sáng tạo
+stu_da7098bad2f4ce74,789,Kế toán doanh nghiệp
+stu_da98fe673461589b,790,Công nghệ Tài chính
+stu_dab68898fc0f7cb7,791,Kế toán công
+stu_db2ba2a735de7fa9,792,Kiến trúc và thiết kế đô thị thông minh
+stu_db2fb888c0edbf0c,793,Kinh doanh số
+stu_db30779760a397a3,794,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_db6be35040e9561d,795,Công nghệ nghệ thuật - ArtTech
+stu_db83bc62f5ab68c7,796,Ngân hàng
+stu_db84bbe051523307,797,Khoa học máy tính
+stu_dba0881fafceb98c,798,Quản lý công
+stu_dbbe5f3d9c98b061,799,Công nghệ thông tin
+stu_dc99184f050b1807,800,Kinh tế đầu tư
+stu_dcafdef845af6a8f,801,Công nghệ và đổi mới sáng tạo
+stu_dcca5354912a0732,802,Khoa học máy tính
+stu_dcdf50603c835772,803,Kinh tế đầu tư
+stu_dcee7abb6562203f,804,Kiến trúc và thiết kế đô thị thông minh
+stu_dd228c04a1496c71,805,Marketing
+stu_dd3c3bf0d47e6728,806,Ngân hàng
+stu_ddf59d3421f5f8c9,807,Marketing
+stu_de26d2d9ff68cf68,808,Quản lý công
+stu_de4d55b3ecb0b17b,809,Quản trị kinh doanh
+stu_de6a7b8da271015a,810,Marketing
+stu_def204a1d5d5fc0f,811,Ngân hàng
+stu_df1e1e1db62bac6e,812,Công nghệ Tài chính
+stu_df32ffcabc6bcf3f,813,Công nghệ Tài chính
+stu_df36d8cc1a4a81bc,814,Marketing
+stu_df6928a5d8108f5f,815,Thị trường chứng khoán
+stu_df7e6f33b3814acc,816,Công nghệ thông tin
+stu_df88b28964f08f7d,817,Kế toán doanh nghiệp
+stu_df9c7d5068e3ac98,818,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_dfb2ff4200952aee,819,Kinh doanh thương mại
+stu_dfe52f76e750bcfc,820,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_e0729deb40c65b66,821,Công nghệ thông tin
+stu_e0a950aabd1181a5,822,Công nghệ nghệ thuật - ArtTech
+stu_e0e758a34d59751b,823,Công nghệ nghệ thuật - ArtTech
+stu_e100bf4739ff4efd,824,Quản lý công
+stu_e127e8189c9dc7c0,825,Công nghệ thông tin
+stu_e159e0b4f3ef9e51,826,Công nghệ nghệ thuật - ArtTech
+stu_e17e6b42ef569576,827,Công nghệ nghệ thuật - ArtTech
+stu_e1f97086edf52457,828,Kế toán công
+stu_e20a318678451b2d,829,Quản lý công
+stu_e3827bf7751ed5b3,830,Công nghệ thông tin
+stu_e391d40e1a4aced6,831,Kinh doanh thương mại
+stu_e3b629809cd64045,832,Marketing
+stu_e41dbe547512b783,833,Marketing
+stu_e4244310675a6427,834,Công nghệ Tài chính
+stu_e4a783095128833e,835,Kế toán công
+stu_e586cd103214d69b,836,Kiến trúc và thiết kế đô thị thông minh
+stu_e5de4d9ee0bcb2fb,837,Marketing
+stu_e5ff48cd62e8d899,838,Thị trường chứng khoán
+stu_e606a17d1fe86979,839,Kinh tế đầu tư
+stu_e6232037ac4c4c4a,840,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_e63722f06740100d,841,Công nghệ nghệ thuật - ArtTech
+stu_e6801958d5bbdca5,842,Kinh doanh thương mại
+stu_e69907bace6d9a63,843,Quản lý công
+stu_e6cfa688467e072a,844,Khoa học máy tính
+stu_e6e0ddd77906ffb5,845,Khoa học máy tính
+stu_e6f418c2fc1c3f2d,846,Công nghệ và đổi mới sáng tạo
+stu_e7252d50e0d27219,847,Công nghệ Tài chính
+stu_e7a483eba8264648,848,Kinh doanh thương mại
+stu_e7c87ef2b3626bfa,849,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_e7e6ca7afbddb865,850,Kế toán công
+stu_e80744e50125a6e1,851,Công nghệ nghệ thuật - ArtTech
+stu_e82f884f052e22aa,852,Kinh doanh số
+stu_e8c6d85e5e46e1d2,853,Kế toán công
+stu_e9253fd15a59531e,854,Marketing
+stu_e957049e35f847d6,855,Quản lý công
+stu_e9c4b99a17cab019,856,Khoa học máy tính
+stu_e9ca8f215621cbde,857,Kế toán công
+stu_e9d50edc64b29156,858,Khoa học máy tính
+stu_e9d6cdebcd33fb61,859,Thị trường chứng khoán
+stu_e9f0e77ee7c64423,860,Kinh doanh thương mại
+stu_ea1713ca112b4010,861,Quản trị kinh doanh
+stu_ea38686df7107d00,862,Quản trị kinh doanh
+stu_eab9f894e80980f6,863,Quản lý công
+stu_ead5cbb7b326ed22,864,Kinh tế đầu tư
+stu_eb0854c1ac8eac53,865,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_eb2efffbb868c4ef,866,Thị trường chứng khoán
+stu_ebb48ae541dc123c,867,Kinh doanh số
+stu_ecda1134f617c04a,868,Kinh doanh số
+stu_ed5965984b5e2758,869,Kiến trúc và thiết kế đô thị thông minh
+stu_ed85beccbc9927be,870,Công nghệ và đổi mới sáng tạo
+stu_edcb9b028df8c268,871,Quản lý công
+stu_edf19eb01d73fb91,872,Kế toán công
+stu_ee825b93e0525b3d,873,Kinh doanh số
+stu_ee86262c37516cee,874,Marketing
+stu_ee90103afceffbb1,875,Kế toán công
+stu_efa75463a8abc96f,876,Công nghệ nghệ thuật - ArtTech
+stu_f1250580ab9bd94f,877,Kế toán công
+stu_f1b6c20bdddaee69,878,Thị trường chứng khoán
+stu_f219c388dc429f57,879,Kinh tế đầu tư
+stu_f286d3ea5f61177d,880,Quản trị kinh doanh
+stu_f2903e334f47465b,881,Kinh doanh thương mại
+stu_f2fdcaf145490300,882,Công nghệ Tài chính
+stu_f36ff10b2d0404ca,883,Công nghệ và đổi mới sáng tạo
+stu_f384158fe8a6d230,884,Marketing
+stu_f3a036161b2b0f3b,885,Công nghệ thông tin
+stu_f3aca1d7bdb69615,886,Thị trường chứng khoán
+stu_f3ad546e670cf458,887,Kinh tế đầu tư
+stu_f3b6235fbd9cd819,888,Công nghệ Tài chính
+stu_f3c2d95680383fe7,889,Công nghệ và đổi mới sáng tạo
+stu_f4d70133fa21fc23,890,Công nghệ thông tin
+stu_f57f59704887f3c4,891,Kinh doanh thương mại
+stu_f5ba26783bf235a6,892,Công nghệ Tài chính
+stu_f624443562757701,893,Thị trường chứng khoán
+stu_f6e2b46c799db11a,894,Công nghệ nghệ thuật - ArtTech
+stu_f74f934c1dff5afb,895,Marketing
+stu_f75df1873ec97e1a,896,Kế toán công
+stu_f7621d15bcb4e907,897,Quản lý công
+stu_f78006a3c8a7b1ff,898,Kinh doanh số
+stu_f7cbe8c684e88e39,899,Thị trường chứng khoán
+stu_f86d79b63e2ce697,900,Công nghệ nghệ thuật - ArtTech
+stu_f89a5a54489d0632,901,Thị trường chứng khoán
+stu_f8bf209a553ebd62,902,Kinh doanh số
+stu_f8dc09c8703182d7,903,Kinh doanh thương mại
+stu_f8e54938af35f6e7,904,Marketing
+stu_f904a80772292663,905,Marketing
+stu_f96a5c5262f50d17,906,Ngân hàng
+stu_f9eccd5186ce5674,907,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_fa9a0fec6ef3683c,908,Công nghệ Tài chính
+stu_fadb504f23c5008a,909,Công nghệ Tài chính
+stu_fc15cd156440be1d,910,Marketing
+stu_fc1d3dad4a9c17e6,911,Quản lý công
+stu_fc215070ca9e383d,912,Kiến trúc và thiết kế đô thị thông minh
+stu_fcfcbd8a874397e0,913,Kế toán doanh nghiệp
+stu_fd350d32670a2300,914,Công nghệ thông tin
+stu_fd5befb7c8a185a6,915,Kinh doanh thương mại
+stu_fe39d5df54c3d085,916,Hệ thống hoạch định nguồn lực doanh nghiệp
+stu_fe64cb71dafbba68,917,Kế toán doanh nghiệp
+stu_ff1b0d3ae1b2a4d9,918,Quản trị kinh doanh
+stu_ff32219f85476113,919,Thị trường chứng khoán
+stu_ffbdd70a94e369fe,920,Công nghệ nghệ thuật - ArtTech
+stu_ffd41d2204d51a01,921,Quản trị kinh doanh
+stu_004191135ece3f93,922,Toán tài chính
+stu_00a2a78a63f2c162,923,Đầu tư tài chính
+stu_012da647bfb8d133,924,An toàn thông tin
+stu_0162381fab53ca26,925,Khoa học dữ liệu
+stu_01ad5644971613f3,926,An toàn thông tin
+stu_020fdfaa5fa49d33,927,Logistics và Quản lý chuỗi cung ứng
+stu_0210c548016ada21,928,Kinh doanh nông nghiệp
+stu_025567b2c7534f7b,929,Kinh doanh nông nghiệp
+stu_036c57ba185f3cdc,930,Logistics và Quản lý chuỗi cung ứng
+stu_03d337a552253baf,931,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_03fdbb1b35bd520c,932,Logistics và Quản lý chuỗi cung ứng
+stu_0410dbc9c742f686,933,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_0440ff9a482aadb5,934,Tài chính
+stu_0491e3f3c104a224,935,Kinh doanh nông nghiệp
+stu_04a9d6e971e1b953,936,Toán tài chính
+stu_04cdb2a880fe6895,937,Logistics và Quản lý chuỗi cung ứng
+stu_0574859aea5adc8f,938,Kinh doanh nông nghiệp
+stu_061583aa4658264a,939,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_06b0496b50fedac7,940,An toàn thông tin
+stu_06eb9bac0e9731f3,941,Công nghệ Marketing
+stu_07a3c69ac397f49f,942,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_0817ceee1c6da9c6,943,Công nghệ Marketing
+stu_08672f0831cf09c3,944,Logistics và Quản lý chuỗi cung ứng
+stu_089cd0e5d86006be,945,Kinh doanh nông nghiệp
+stu_08d1b5c55d07b182,946,Kinh doanh nông nghiệp
+stu_0941b7245ffec05e,947,An toàn thông tin
+stu_09792e032bf65761,948,Công nghệ Marketing
+stu_09e8bc714e7d251c,949,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_0a4b49cdb571f7d9,950,Tài chính
+stu_0a72d2271f583154,951,Tài chính
+stu_0b3941a3107bfeea,952,Đầu tư tài chính
+stu_0cf841dead3dd711,953,Tài chính
+stu_0d116dbe6059711f,954,Kinh doanh nông nghiệp
+stu_0d4fdbd08bffc765,955,Toán tài chính
+stu_0d9b771e82d698b9,956,Toán tài chính
+stu_0ee116ab3dd89374,957,An toàn thông tin
+stu_0f1430316fce4a10,958,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_0f6ba13842042a88,959,Logistics và Quản lý chuỗi cung ứng
+stu_0f6da65e10dbef52,960,Công nghệ Marketing
+stu_0f87b5a46095ca9f,961,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_0f8f3a2c1720afa1,962,Kinh doanh nông nghiệp
+stu_0fc6384a21efec35,963,Công nghệ Marketing
+stu_0fe0b9071ba45471,964,Tài chính
+stu_100352136f048d81,965,Logistics và Quản lý chuỗi cung ứng
+stu_1096d935d28667f9,966,Tài chính
+stu_10c6719a11941342,967,Tài chính
+stu_114d19924ad96d48,968,An toàn thông tin
+stu_1173f31826ee9c03,969,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_12e4e338175465b5,970,Tài chính
+stu_13697fb2273186a1,971,Khoa học dữ liệu
+stu_1370f792e65631e9,972,Đầu tư tài chính
+stu_13c99b5847e53c93,973,An toàn thông tin
+stu_14548e3510a2e0da,974,Toán tài chính
+stu_15b0d347f515af39,975,Khoa học dữ liệu
+stu_15f2a243f2bf50f0,976,Đầu tư tài chính
+stu_160f258e972bcfa9,977,Đầu tư tài chính
+stu_173c664a51fe59b5,978,Đầu tư tài chính
+stu_17b98164a81f5c86,979,Kinh doanh nông nghiệp
+stu_17f1929832e67946,980,Toán tài chính
+stu_183305ff64662949,981,Kinh doanh nông nghiệp
+stu_184c02d4b318061f,982,Toán tài chính
+stu_188d441af2715351,983,An toàn thông tin
+stu_18a141b1e4cb1bb0,984,Toán tài chính
+stu_193534051e5f500d,985,Toán tài chính
+stu_19355bd112630842,986,An toàn thông tin
+stu_19c895a7311478bc,987,Công nghệ Marketing
+stu_19eb3c058267c278,988,Đầu tư tài chính
+stu_1adea63affef1d72,989,Toán tài chính
+stu_1b068656253ab335,990,Logistics và Quản lý chuỗi cung ứng
+stu_1b9d2cb9de4bf3ac,991,Kinh doanh nông nghiệp
+stu_1bc3d88f772fb0a0,992,An toàn thông tin
+stu_1dd2e5ff2b46be5d,993,Công nghệ Marketing
+stu_1e22bf6498dc6a29,994,Tài chính
+stu_1e4cd9c6deb9a318,995,Công nghệ Marketing
+stu_1f665242d29ee535,996,An toàn thông tin
+stu_210c0fd6772eed3d,997,Công nghệ Marketing
+stu_212a9e7ee2dd3884,998,An toàn thông tin
+stu_2135869b694b0b8d,999,An toàn thông tin
+stu_21a1669c650b7d79,1000,Đầu tư tài chính
+stu_23146d20b05d6270,1001,Toán tài chính
+stu_241581403ea646c1,1002,Đầu tư tài chính
+stu_24c517b4b1106d22,1003,Công nghệ Marketing
+stu_25398a4f200ff182,1004,Đầu tư tài chính
+stu_271b7d6d7755e2f2,1005,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_27648bdfceaf7769,1006,Toán tài chính
+stu_27a7e98916241398,1007,Khoa học dữ liệu
+stu_28b73b3981fa27c5,1008,An toàn thông tin
+stu_28ebb8988a559255,1009,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_29d48dc489d363cd,1010,Toán tài chính
+stu_2a638ae00a3ee905,1011,Công nghệ Marketing
+stu_2a66b872d997f76d,1012,Tài chính
+stu_2ac3c5d0f4d55ad6,1013,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_2b196c645abca1fe,1014,Khoa học dữ liệu
+stu_2b255e2556279069,1015,An toàn thông tin
+stu_2c6fd00797b953ed,1016,Logistics và Quản lý chuỗi cung ứng
+stu_2c7aa9186cf6bba9,1017,Logistics và Quản lý chuỗi cung ứng
+stu_2c9e50bcb8f600af,1018,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_2ca4748ff447177e,1019,Đầu tư tài chính
+stu_2cc71ebd82509eb3,1020,Kinh doanh nông nghiệp
+stu_2d75d159d4807618,1021,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_2dd01d8a1736beca,1022,An toàn thông tin
+stu_2f2678fb3f3b8f7c,1023,An toàn thông tin
+stu_2f5af7f83ad89825,1024,Đầu tư tài chính
+stu_2ffabaff250ed38a,1025,Kinh doanh nông nghiệp
+stu_305cc284e0d4b1a2,1026,Đầu tư tài chính
+stu_3089257e2946d3fb,1027,Tài chính
+stu_30adf4517475eb42,1028,Toán tài chính
+stu_3143d063bc0c83b3,1029,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_323d3accc949fa8c,1030,Đầu tư tài chính
+stu_3243442fe9bad158,1031,Công nghệ Marketing
+stu_327cdcb2372cdf38,1032,An toàn thông tin
+stu_332a864c4d1ab533,1033,Công nghệ Marketing
+stu_335297b89a34b57e,1034,Logistics và Quản lý chuỗi cung ứng
+stu_33918570c2bf40b5,1035,Kinh doanh nông nghiệp
+stu_33c7d4694f62fa7e,1036,Logistics và Quản lý chuỗi cung ứng
+stu_3462859de8f577b9,1037,Logistics và Quản lý chuỗi cung ứng
+stu_34b71cce1b3092ef,1038,Kinh doanh nông nghiệp
+stu_34bc7ce4fdbd4b7d,1039,Toán tài chính
+stu_34d5813459b97a3d,1040,Toán tài chính
+stu_356253cce1e55691,1041,Công nghệ Marketing
+stu_357568d71f9e31c1,1042,Logistics và Quản lý chuỗi cung ứng
+stu_35ea1bcd1baebac1,1043,Khoa học dữ liệu
+stu_36bc751a686362f8,1044,Logistics và Quản lý chuỗi cung ứng
+stu_37c666c00ebd10e3,1045,Tài chính
+stu_37ce7a43ca9f780a,1046,Công nghệ Marketing
+stu_38d8d2986504c8e3,1047,Đầu tư tài chính
+stu_39106ea07af6e57f,1048,Toán tài chính
+stu_39117407990f5259,1049,Khoa học dữ liệu
+stu_399000cc602cd2be,1050,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_3b96ec29f38313ec,1051,Toán tài chính
+stu_3bab7ece542a6669,1052,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_3be216d581dafaa2,1053,Kinh doanh nông nghiệp
+stu_3c0cd7750e52d2b0,1054,Khoa học dữ liệu
+stu_3c11f0060f6153e4,1055,Kinh doanh nông nghiệp
+stu_3d5bcf270d5fb447,1056,Đầu tư tài chính
+stu_3db8e6b643b2fed4,1057,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_3df7c914bef2b4e2,1058,Đầu tư tài chính
+stu_3e2abaf30c06193a,1059,An toàn thông tin
+stu_3e6e9f26792ac4b3,1060,Toán tài chính
+stu_3e76dde060d026e9,1061,Khoa học dữ liệu
+stu_3e8f8ec2dc1d80e5,1062,Khoa học dữ liệu
+stu_3ec5ffe8ce82aae6,1063,Toán tài chính
+stu_3f9216d2884cdba0,1064,Toán tài chính
+stu_3f96a72b089ffeb7,1065,Tài chính
+stu_3fc61c1b3792e33f,1066,Đầu tư tài chính
+stu_4037afe71c5883fb,1067,An toàn thông tin
+stu_40606e8f99bde5ac,1068,Tài chính
+stu_4195df7362e92d58,1069,Logistics và Quản lý chuỗi cung ứng
+stu_4217bfd52c8870fe,1070,Logistics và Quản lý chuỗi cung ứng
+stu_427912e6d21f197f,1071,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_42e4aaf8a9004e96,1072,Logistics và Quản lý chuỗi cung ứng
+stu_4349537f70462f9b,1073,Đầu tư tài chính
+stu_4416838c769fcca6,1074,Logistics và Quản lý chuỗi cung ứng
+stu_4562b634ff152b3d,1075,Toán tài chính
+stu_45aba3ed83d5f325,1076,Khoa học dữ liệu
+stu_467fcafff6ea64c3,1077,Đầu tư tài chính
+stu_46c8476e2a3a895f,1078,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_46d29508e536df13,1079,Tài chính
+stu_46f3759ef85338b7,1080,Đầu tư tài chính
+stu_471f45083baab524,1081,Logistics và Quản lý chuỗi cung ứng
+stu_47ad33a13976e96f,1082,Tài chính
+stu_48b6c2f92217396d,1083,An toàn thông tin
+stu_48d07bed5440c34e,1084,Tài chính
+stu_49af36744a539764,1085,Kinh doanh nông nghiệp
+stu_4a341994c436f40f,1086,An toàn thông tin
+stu_4a596eb2a09a73b3,1087,Công nghệ Marketing
+stu_4b04384c45dce9c8,1088,Kinh doanh nông nghiệp
+stu_4c79993e3122bbe3,1089,Tài chính
+stu_4d327d1a18d72ad2,1090,Logistics và Quản lý chuỗi cung ứng
+stu_4d726705918a6300,1091,Công nghệ Marketing
+stu_4f0f432ed8efd2c8,1092,Toán tài chính
+stu_4f4596e6ae09f6c5,1093,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_4f50a93b8ef5e1a0,1094,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_5052093c96f38d5a,1095,Công nghệ Marketing
+stu_53f9ed2d6b49ecbf,1096,Logistics và Quản lý chuỗi cung ứng
+stu_5422eda068d5ee00,1097,Khoa học dữ liệu
+stu_546c0bc6320ca013,1098,Kinh doanh nông nghiệp
+stu_54f7e6d4f4378bd1,1099,Logistics và Quản lý chuỗi cung ứng
+stu_551b0585da7c8a72,1100,Toán tài chính
+stu_55a73fd4652cf105,1101,Tài chính
+stu_55ade36464aec2c6,1102,Đầu tư tài chính
+stu_55b8fe7fa5d8d0b1,1103,Kinh doanh nông nghiệp
+stu_55ccc6254ec4b28e,1104,An toàn thông tin
+stu_5606e7b72e37a7ab,1105,Tài chính
+stu_56f33cf43b332e73,1106,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_572c9db97f36b593,1107,Kinh doanh nông nghiệp
+stu_5887f48a213e4cef,1108,Kinh doanh nông nghiệp
+stu_5915fc313bdd1e51,1109,Khoa học dữ liệu
+stu_5a239bce7c3cdefd,1110,Kinh doanh nông nghiệp
+stu_5ac364dcce87c5cd,1111,Kinh doanh nông nghiệp
+stu_5bafb2dcf7a07b3d,1112,Toán tài chính
+stu_5bbef8648d08cc00,1113,Tài chính
+stu_5cf5e2ed3ab8f744,1114,An toàn thông tin
+stu_5e5794d07a39856d,1115,Kinh doanh nông nghiệp
+stu_5ed59b4ae54b551e,1116,Toán tài chính
+stu_5ed854ab9201428e,1117,Kinh doanh nông nghiệp
+stu_5ef0a6823a74e0ce,1118,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_5f449ac63fe318ee,1119,Tài chính
+stu_5f62fbf8938fc2e1,1120,Đầu tư tài chính
+stu_5fb3737251046105,1121,Đầu tư tài chính
+stu_60d04dc049563a08,1122,Khoa học dữ liệu
+stu_6144580999d5ce59,1123,Công nghệ Marketing
+stu_616f3804dea9d1fe,1124,Tài chính
+stu_618a89649f625fa2,1125,Đầu tư tài chính
+stu_622fa7904f1152e5,1126,An toàn thông tin
+stu_6242251c41315b39,1127,Công nghệ Marketing
+stu_625a668c94c0c7fa,1128,Logistics và Quản lý chuỗi cung ứng
+stu_627b671d477abbfd,1129,Công nghệ Marketing
+stu_62fcd1fe67cc02ed,1130,Kinh doanh nông nghiệp
+stu_631743a0e18d8732,1131,Đầu tư tài chính
+stu_635064d9ea2933e7,1132,Logistics và Quản lý chuỗi cung ứng
+stu_636901d990de1c10,1133,Tài chính
+stu_63847810d89d88ef,1134,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_638f6332cb5f184e,1135,Đầu tư tài chính
+stu_639313e2ecd8a805,1136,Tài chính
+stu_63af9247d9272771,1137,Logistics và Quản lý chuỗi cung ứng
+stu_63ccb41d7fe6f101,1138,Khoa học dữ liệu
+stu_63e309d85b5af8c9,1139,Kinh doanh nông nghiệp
+stu_6422ac77d02b516e,1140,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_644b6e9e5b168955,1141,Kinh doanh nông nghiệp
+stu_652f38d640b7e1e7,1142,Khoa học dữ liệu
+stu_653d6e2219d0c2b7,1143,Toán tài chính
+stu_660413382ee3a678,1144,Tài chính
+stu_66968d95e7ea4fed,1145,Logistics và Quản lý chuỗi cung ứng
+stu_6706bb59e586ca37,1146,Tài chính
+stu_67d1d2307bec11d7,1147,Khoa học dữ liệu
+stu_6878e6acd0e46bad,1148,Tài chính
+stu_68faf81dfba3eb26,1149,Kinh doanh nông nghiệp
+stu_6946f6c0d668e037,1150,Đầu tư tài chính
+stu_69cb966287d70795,1151,An toàn thông tin
+stu_6b39b0ff9e607f39,1152,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_6b7ae1fe7f01726e,1153,An toàn thông tin
+stu_6b8db559c9dd0036,1154,Công nghệ Marketing
+stu_6bf398f52d351c00,1155,Tài chính
+stu_6cd6f3bc4c78db27,1156,An toàn thông tin
+stu_6d918ce8532b683d,1157,Logistics và Quản lý chuỗi cung ứng
+stu_6d9c046f49e3fd3f,1158,Khoa học dữ liệu
+stu_6e111a0222454a6e,1159,Tài chính
+stu_6e3138c4e181fd73,1160,Logistics và Quản lý chuỗi cung ứng
+stu_6f296ffb0136c2a9,1161,Toán tài chính
+stu_700aa5132fbdb706,1162,Logistics và Quản lý chuỗi cung ứng
+stu_7011680202c8c17e,1163,Tài chính
+stu_70be68c9ba96414d,1164,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_71865d4453d8439e,1165,Đầu tư tài chính
+stu_725ac760051e888a,1166,Toán tài chính
+stu_7296be4a838d5efc,1167,Logistics và Quản lý chuỗi cung ứng
+stu_73456060fc4182de,1168,Toán tài chính
+stu_73b521b41050c893,1169,Toán tài chính
+stu_740949465b590fb5,1170,Tài chính
+stu_7443478c84fe239c,1171,Logistics và Quản lý chuỗi cung ứng
+stu_74a8bc4ca2015a0a,1172,An toàn thông tin
+stu_74e3c437e74578e4,1173,Logistics và Quản lý chuỗi cung ứng
+stu_74feb3cba7fde0c3,1174,Logistics và Quản lý chuỗi cung ứng
+stu_751f5e2560c8336c,1175,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_7600178446dcd677,1176,Khoa học dữ liệu
+stu_7620ff14cf3687cc,1177,Đầu tư tài chính
+stu_764a8a1bfd40985d,1178,Đầu tư tài chính
+stu_76631bc58720ad7f,1179,Toán tài chính
+stu_771e5844d657d99c,1180,Đầu tư tài chính
+stu_77262be7b74a56de,1181,Tài chính
+stu_77363809c9d325ad,1182,Logistics và Quản lý chuỗi cung ứng
+stu_77ab7eba95e7a526,1183,An toàn thông tin
+stu_7809167821c5513c,1184,Kinh doanh nông nghiệp
+stu_786682029fbdb3ee,1185,Kinh doanh nông nghiệp
+stu_787a44d95dd91a1a,1186,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_78db05bed365313d,1187,Đầu tư tài chính
+stu_78e32b03c1b62d9a,1188,An toàn thông tin
+stu_794cb86e8633fc2f,1189,Kinh doanh nông nghiệp
+stu_7955531364faf834,1190,Công nghệ Marketing
+stu_7956c261abb1d43c,1191,Toán tài chính
+stu_7a6f1f9163fe3bdf,1192,Tài chính
+stu_7aab8097a70fc723,1193,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_7b1953d2eb40d6c7,1194,An toàn thông tin
+stu_7b28debe24f251b8,1195,Đầu tư tài chính
+stu_7bad97d312dd7dc4,1196,Tài chính
+stu_7c76293a9ab20f17,1197,Kinh doanh nông nghiệp
+stu_7e2d5d610ce8c7ff,1198,Đầu tư tài chính
+stu_7e7f064fcac25c78,1199,Toán tài chính
+stu_7ed0b3e85d8ace5b,1200,Khoa học dữ liệu
+stu_7fa024bdc56f662e,1201,Đầu tư tài chính
+stu_7fe72c2ccc481878,1202,Toán tài chính
+stu_80033cb9885410f9,1203,Kinh doanh nông nghiệp
+stu_8028d65bb8cb89e7,1204,Đầu tư tài chính
+stu_80564474d87c9e67,1205,Đầu tư tài chính
+stu_80845f40d55cb25e,1206,Công nghệ Marketing
+stu_80e33821b6a048be,1207,Toán tài chính
+stu_821555e3abb62fc7,1208,Kinh doanh nông nghiệp
+stu_8230704b81a20a56,1209,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_82453bf9ec29959e,1210,Toán tài chính
+stu_827286e51d204d6c,1211,Toán tài chính
+stu_82fa74e97dbcf5f6,1212,Đầu tư tài chính
+stu_832644cb7a59a4e2,1213,Công nghệ Marketing
+stu_83331326e0553917,1214,Toán tài chính
+stu_835a15cd28d233ba,1215,Logistics và Quản lý chuỗi cung ứng
+stu_84afd3a585c1d7cf,1216,Kinh doanh nông nghiệp
+stu_8579677ab059acb2,1217,Khoa học dữ liệu
+stu_85ccbc5b8dddc860,1218,An toàn thông tin
+stu_87a6a3b167c85478,1219,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_87ceec5d6fee1fc4,1220,Logistics và Quản lý chuỗi cung ứng
+stu_87e490314fcadae8,1221,Logistics và Quản lý chuỗi cung ứng
+stu_8800855ea5e94e43,1222,Kinh doanh nông nghiệp
+stu_88d74e1535922e66,1223,An toàn thông tin
+stu_89b9e3905033e4ea,1224,Công nghệ Marketing
+stu_89ddf60bec0a5c4c,1225,Logistics và Quản lý chuỗi cung ứng
+stu_8a96d1503d5c7716,1226,Logistics và Quản lý chuỗi cung ứng
+stu_8aa7e65d901d828c,1227,Kinh doanh nông nghiệp
+stu_8b367b9b34ae7825,1228,Khoa học dữ liệu
+stu_8b61224bc2a856bf,1229,Đầu tư tài chính
+stu_8bcb47dc09229a62,1230,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_8c38dff253b8d6cb,1231,Đầu tư tài chính
+stu_8cd8b1abd2f70469,1232,Kinh doanh nông nghiệp
+stu_8cfce4eb10586cbb,1233,Đầu tư tài chính
+stu_8d2ebdfc111c32ff,1234,Kinh doanh nông nghiệp
+stu_8d3e82ecdc727e88,1235,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_8d91cafa2d523e87,1236,Logistics và Quản lý chuỗi cung ứng
+stu_8dbe8014421e2072,1237,Công nghệ Marketing
+stu_8ddd9d6eb4fdd77a,1238,Logistics và Quản lý chuỗi cung ứng
+stu_8e0ba601d093b799,1239,An toàn thông tin
+stu_8f2fc1607e6cba24,1240,Đầu tư tài chính
+stu_8fa20898ef36abaf,1241,Toán tài chính
+stu_905eba5f72af5d38,1242,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_919cbef6cdbec713,1243,Tài chính
+stu_920557343ebf2d27,1244,Tài chính
+stu_9223f17fa503bbfe,1245,Toán tài chính
+stu_9231c78779b449e7,1246,Tài chính
+stu_925206c59f9455e4,1247,Đầu tư tài chính
+stu_927cb67620b52ef2,1248,An toàn thông tin
+stu_927f2a25443f9edf,1249,An toàn thông tin
+stu_92dbcf68aed6dc56,1250,Toán tài chính
+stu_93938085b400f197,1251,Kinh doanh nông nghiệp
+stu_93f10fa7149f2fa9,1252,Đầu tư tài chính
+stu_93f57f2a77c22fa1,1253,Đầu tư tài chính
+stu_947cae780f128335,1254,Logistics và Quản lý chuỗi cung ứng
+stu_94be4b6c4c251056,1255,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_94f10e46ba740a4d,1256,Đầu tư tài chính
+stu_97051adf16f5b55c,1257,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_9793641697a80aa6,1258,Toán tài chính
+stu_9839e96c5dcf142b,1259,Khoa học dữ liệu
+stu_98cf9738ba7fdd11,1260,Khoa học dữ liệu
+stu_99a860daf93137b9,1261,Công nghệ Marketing
+stu_9a02990d0fe0bf96,1262,Đầu tư tài chính
+stu_9a0eb93ddf34a16f,1263,Toán tài chính
+stu_9a7e6729e36016d8,1264,Kinh doanh nông nghiệp
+stu_9be9988d16c2656b,1265,Tài chính
+stu_9db76958a691e486,1266,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_9dcf07bb5f51aecb,1267,Logistics và Quản lý chuỗi cung ứng
+stu_9e67d5e48eb5c2c7,1268,An toàn thông tin
+stu_9e7659cc121f33e0,1269,An toàn thông tin
+stu_9f4371d1012ff2e6,1270,Toán tài chính
+stu_9fae0d17866a43a8,1271,Toán tài chính
+stu_a0633ea61e6418b4,1272,Tài chính
+stu_a1dc78d801b4b55e,1273,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_a2f48ea9554ed807,1274,Logistics và Quản lý chuỗi cung ứng
+stu_a2f681d0a1cd2241,1275,Tài chính
+stu_a3e0e700ff07b829,1276,Kinh doanh nông nghiệp
+stu_a43d58050eb3e95a,1277,Khoa học dữ liệu
+stu_a449d008e009d9b4,1278,Tài chính
+stu_a44b06cec454064b,1279,Đầu tư tài chính
+stu_a44cce7a3dc9003f,1280,Đầu tư tài chính
+stu_a46a50b668410acb,1281,Công nghệ Marketing
+stu_a56702e265d859a4,1282,An toàn thông tin
+stu_a5bdd96bfc99c91f,1283,Tài chính
+stu_a5c310b401cd27be,1284,Tài chính
+stu_a654ac37ef2964d0,1285,An toàn thông tin
+stu_a6eeaa75e01af5fe,1286,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_a755e0278f3e6576,1287,An toàn thông tin
+stu_a7fd41c423c6593e,1288,Đầu tư tài chính
+stu_a8258944b424b6e4,1289,Khoa học dữ liệu
+stu_a87b588e06f70fbc,1290,Kinh doanh nông nghiệp
+stu_a8b5b187b5774f7b,1291,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_a962b797c8920393,1292,Công nghệ Marketing
+stu_a9a86dcd86a21bce,1293,An toàn thông tin
+stu_a9abfc9d2708f0da,1294,Kinh doanh nông nghiệp
+stu_aa4001303995b535,1295,Khoa học dữ liệu
+stu_ab0162eacab7b611,1296,An toàn thông tin
+stu_ab9274e608d0249c,1297,Logistics và Quản lý chuỗi cung ứng
+stu_ab99db5c5f8b8b52,1298,Công nghệ Marketing
+stu_ac42ff71bf2b191b,1299,An toàn thông tin
+stu_ac4abd368ce62e24,1300,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_adfe58f0589eef17,1301,Khoa học dữ liệu
+stu_ae2aa6a0ca0eaff2,1302,An toàn thông tin
+stu_aee699b24063d688,1303,Kinh doanh nông nghiệp
+stu_af0c8e2ebec52b22,1304,Logistics và Quản lý chuỗi cung ứng
+stu_af7894c2b7461080,1305,Công nghệ Marketing
+stu_af9f95bda859c374,1306,Tài chính
+stu_b03f4abee4351467,1307,Toán tài chính
+stu_b076998d57132cc3,1308,An toàn thông tin
+stu_b0923d306c796b4b,1309,Tài chính
+stu_b130d968771f0bc4,1310,Kinh doanh nông nghiệp
+stu_b138f0f16129362b,1311,Công nghệ Marketing
+stu_b22c38567cd35b46,1312,An toàn thông tin
+stu_b2a4d5a2ad69f1ca,1313,Đầu tư tài chính
+stu_b30930040e630a36,1314,Logistics và Quản lý chuỗi cung ứng
+stu_b31a542234c41821,1315,Khoa học dữ liệu
+stu_b3547d2c64b8e8a6,1316,Công nghệ Marketing
+stu_b3f7d74eded5d032,1317,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_b4130049154ea21a,1318,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_b4a65fe352147ab0,1319,Toán tài chính
+stu_b5620f717ca57b74,1320,Khoa học dữ liệu
+stu_b569e8107fa2e36b,1321,Khoa học dữ liệu
+stu_b57aeaa978c6f849,1322,An toàn thông tin
+stu_b5acebf79454cd65,1323,Đầu tư tài chính
+stu_b62c1262ab6b69f2,1324,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_b7b0058244f0878b,1325,Toán tài chính
+stu_b8a19f5720d6096a,1326,Khoa học dữ liệu
+stu_b9fc85aab4045196,1327,Đầu tư tài chính
+stu_ba7714cf47cb4d4a,1328,Toán tài chính
+stu_ba907c5d62971a0c,1329,An toàn thông tin
+stu_bb066a552ba3e0ee,1330,Đầu tư tài chính
+stu_bc3977a519c7c1a7,1331,An toàn thông tin
+stu_bd009c2abcd95b38,1332,Tài chính
+stu_bd52af45fa6d96fa,1333,Công nghệ Marketing
+stu_bd71e27247c5defe,1334,Tài chính
+stu_bdca78e84e258b74,1335,Tài chính
+stu_be752ce73c06f120,1336,Khoa học dữ liệu
+stu_bec3e31eae9fb27a,1337,Khoa học dữ liệu
+stu_bf52824333645300,1338,An toàn thông tin
+stu_bfe6cffe52f28c8b,1339,Logistics và Quản lý chuỗi cung ứng
+stu_bffc8fc63d8b111b,1340,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_c0ec12001bf0632d,1341,Logistics và Quản lý chuỗi cung ứng
+stu_c0f66cfd0c7df69a,1342,Tài chính
+stu_c0fcf6f67554a043,1343,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_c1a758021d4c451c,1344,Tài chính
+stu_c1abc84fa745fa25,1345,Đầu tư tài chính
+stu_c26e676bcc559c6d,1346,An toàn thông tin
+stu_c331167b55e05d8c,1347,Toán tài chính
+stu_c366f88894d087f4,1348,Khoa học dữ liệu
+stu_c3aa3dcb79ffabcc,1349,Kinh doanh nông nghiệp
+stu_c4e85e6c38c58b06,1350,Công nghệ Marketing
+stu_c54382bd7fd058c6,1351,Khoa học dữ liệu
+stu_c5dc53e87c0cbab4,1352,Công nghệ Marketing
+stu_c60774c15b4cf8e7,1353,Kinh doanh nông nghiệp
+stu_c60777d711e0193d,1354,An toàn thông tin
+stu_c61744f9015ca6a3,1355,Tài chính
+stu_c622d74d3b298b12,1356,An toàn thông tin
+stu_c62a176b0bce9b1d,1357,Logistics và Quản lý chuỗi cung ứng
+stu_c68844691193f8ed,1358,Toán tài chính
+stu_c6c8cd0427ddde30,1359,Kinh doanh nông nghiệp
+stu_c79ed253c32c9904,1360,Đầu tư tài chính
+stu_c85c11c815f93e26,1361,Tài chính
+stu_c8794ce5d08c764c,1362,Đầu tư tài chính
+stu_c962767e85d61649,1363,Tài chính
+stu_c9d19dc7a531ed4f,1364,Kinh doanh nông nghiệp
+stu_c9f9b5c63cd4322a,1365,Logistics và Quản lý chuỗi cung ứng
+stu_ca3f7e02dd9bd297,1366,Kinh doanh nông nghiệp
+stu_cb4093ad298306bb,1367,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_cb40e24d081fc8c9,1368,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_cc4f978b721fb057,1369,Khoa học dữ liệu
+stu_cc734e25450066ca,1370,An toàn thông tin
+stu_cca9b2b8eb34fbd4,1371,Tài chính
+stu_cce02d2b3f360c84,1372,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_cd6e17a79a2740da,1373,Kinh doanh nông nghiệp
+stu_cd71c973fce8b850,1374,Đầu tư tài chính
+stu_ce3862beafe817b3,1375,Công nghệ Marketing
+stu_cea7e12f4850f401,1376,An toàn thông tin
+stu_d120b9a8b4873a82,1377,Logistics và Quản lý chuỗi cung ứng
+stu_d13ef315ee118878,1378,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_d1a471485031f25a,1379,Đầu tư tài chính
+stu_d1cb0bcebd2f2c3f,1380,Toán tài chính
+stu_d1ef89a17b4fd3bd,1381,Kinh doanh nông nghiệp
+stu_d34be92517b8a307,1382,Logistics và Quản lý chuỗi cung ứng
+stu_d4aeb3a541252c82,1383,Công nghệ Marketing
+stu_d568b2c4ae1a5e9c,1384,An toàn thông tin
+stu_d56d834e9fa381c6,1385,Đầu tư tài chính
+stu_d5ba479c05a98973,1386,Tài chính
+stu_d5e6e4f320c0a1fd,1387,Logistics và Quản lý chuỗi cung ứng
+stu_d6c12b2e8d8b4d08,1388,Toán tài chính
+stu_d6fdf7cbe339a4d8,1389,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_d74211ef2b72d027,1390,Logistics và Quản lý chuỗi cung ứng
+stu_d75a445dd873d58f,1391,Khoa học dữ liệu
+stu_d78b7410566102fd,1392,Khoa học dữ liệu
+stu_d78e7c095b246585,1393,Công nghệ Marketing
+stu_d7a80b37576699b5,1394,Khoa học dữ liệu
+stu_d9126904e6308194,1395,Logistics và Quản lý chuỗi cung ứng
+stu_d9eac2efcc3d9789,1396,An toàn thông tin
+stu_da3d330c4b2179b3,1397,Khoa học dữ liệu
+stu_db5c9cea8f9295f9,1398,Đầu tư tài chính
+stu_dbd365bc63dbe609,1399,Kinh doanh nông nghiệp
+stu_dc0c0f1c0290d7f3,1400,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_dca5f52571f57745,1401,Logistics và Quản lý chuỗi cung ứng
+stu_dd3f2c41748ee0e0,1402,Toán tài chính
+stu_ddeb495e016f222b,1403,An toàn thông tin
+stu_deca71e4e06f93a8,1404,Toán tài chính
+stu_def3a30f70f392bf,1405,Toán tài chính
+stu_df051793e892dc93,1406,Công nghệ Marketing
+stu_df40fe047d7cbf94,1407,Đầu tư tài chính
+stu_dfae99c043cbbe8e,1408,Đầu tư tài chính
+stu_e1053b3eb2443bbc,1409,Toán tài chính
+stu_e13ad9c85358eb87,1410,Khoa học dữ liệu
+stu_e288f841948388bf,1411,Khoa học dữ liệu
+stu_e2ddd255c4f10552,1412,Logistics và Quản lý chuỗi cung ứng
+stu_e339a40583e2a9cc,1413,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_e381a59cb90cc796,1414,Logistics và Quản lý chuỗi cung ứng
+stu_e40301b4fb5b1d99,1415,Công nghệ Marketing
+stu_e57d3e6d459e1d47,1416,Đầu tư tài chính
+stu_e62f8fd8b03586d2,1417,Khoa học dữ liệu
+stu_e736759e1fd86b08,1418,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_e77995e895672eac,1419,Toán tài chính
+stu_e7a83fad3be3d0b5,1420,Đầu tư tài chính
+stu_e8112335cc319b1c,1421,Đầu tư tài chính
+stu_e871750c8426a555,1422,Kinh doanh nông nghiệp
+stu_e909d330444a2dd0,1423,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_eabdcf4a66373d8b,1424,Toán tài chính
+stu_eb436c90dbd86a6e,1425,Kinh doanh nông nghiệp
+stu_ebaaed1112dc7b74,1426,Công nghệ Marketing
+stu_ebc94fc82d6d5590,1427,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_ec1b2fafc591397c,1428,Kinh doanh nông nghiệp
+stu_ec4ff1443cbb698e,1429,Logistics và Quản lý chuỗi cung ứng
+stu_ecb87d4b6686e838,1430,Toán tài chính
+stu_ecf2ca00934d0e3e,1431,Khoa học dữ liệu
+stu_ed502f5515f4edeb,1432,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_ee601afc2c41b4d9,1433,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_ef8fee084820b1bf,1434,Toán tài chính
+stu_efdc8508e898c61b,1435,Toán tài chính
+stu_f015318cd82e0019,1436,Đầu tư tài chính
+stu_f0298135406b163c,1437,An toàn thông tin
+stu_f081e5ec773de97b,1438,An toàn thông tin
+stu_f0b9a87eea21ea11,1439,Khoa học dữ liệu
+stu_f13a64de17f99708,1440,Tài chính
+stu_f1fdf5528f588588,1441,Tài chính
+stu_f20fa20cdae9cc9e,1442,Toán tài chính
+stu_f220eccf43e21d18,1443,Kinh doanh nông nghiệp
+stu_f2bae75835e29264,1444,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_f35f14541de732da,1445,Kinh doanh nông nghiệp
+stu_f471c8067652442f,1446,Logistics và Quản lý chuỗi cung ứng
+stu_f4cd20471bb8a744,1447,Kinh doanh nông nghiệp
+stu_f59896438059dddd,1448,Khoa học dữ liệu
+stu_f5dce06b385d973f,1449,Kinh doanh nông nghiệp
+stu_f64d7d2e1156a979,1450,Công nghệ Marketing
+stu_f6c47e1fa7c340cd,1451,Logistics và Quản lý chuỗi cung ứng
+stu_f7830142448431be,1452,Kinh doanh nông nghiệp
+stu_f7bbe7d46573e193,1453,Kinh doanh nông nghiệp
+stu_f7e5d0161efa81ce,1454,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_f84baaa5a90412f7,1455,An toàn thông tin
+stu_f9724e21f5ebee71,1456,Toán tài chính
+stu_f985afbb8213b49e,1457,Logistics và Quản lý chuỗi cung ứng
+stu_f9c3ca3286eeb3c8,1458,Công nghệ Marketing
+stu_f9fc7e8f91d04226,1459,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_fab6368d60d00dd6,1460,Kinh doanh nông nghiệp
+stu_fbe659a57c6cefca,1461,Kỹ sư Robot và Trí tuệ nhân tạo
+stu_fbe8dd6510dd4dbe,1462,Logistics và Quản lý chuỗi cung ứng
+stu_fc80f85d6a19eed0,1463,Khoa học dữ liệu
+stu_fcd9bfeaf2ce80c4,1464,Toán tài chính
+stu_fcdb55914d443964,1465,Toán tài chính
+stu_fce67f916bfeb343,1466,Công nghệ Marketing
+stu_fda24e68fb3682a8,1467,Toán tài chính
+stu_fef7a337f29dc019,1468,Kinh doanh nông nghiệp
+stu_ffe495bf22532e01,1469,Logistics và Quản lý chuỗi cung ứng
+stu_01ff2a11ef096965,1470,Hệ thống thông tin kinh doanh
+stu_029f263039081be7,1471,Kinh tế
+stu_02de5376ad86d3da,1472,Kiểm toán
+stu_02f66bddf02e4b1e,1473,Kinh tế
+stu_0412076082c1e83a,1474,Luật kinh doanh quốc tế
+stu_04e570c58fe84a64,1475,Kinh tế
+stu_06d0d2a016e00ecc,1476,Hệ thống thông tin quản lý
+stu_07e3f8abbc0f2955,1477,Bất động sản
+stu_085f9edeaab999ea,1478,Kiểm toán
+stu_089a6c92ade24d57,1479,Luật kinh doanh quốc tế
+stu_0c5c77a472a70083,1480,Hệ thống thông tin kinh doanh
+stu_0c815075b416a6e7,1481,Hệ thống thông tin quản lý
+stu_0cf14061b37d70f8,1482,Hệ thống thông tin quản lý
+stu_0d68f986f2bad717,1483,Kiểm toán
+stu_102f013117b2444b,1484,Luật kinh doanh quốc tế
+stu_12a74a388bc39122,1485,Kinh tế
+stu_13096eccb34add0e,1486,Kiểm toán
+stu_1313dcef95b5f82b,1487,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_132b1b3ec7781903,1488,Hệ thống thông tin kinh doanh
+stu_13d1b3433e2a0594,1489,Hệ thống thông tin kinh doanh
+stu_163051dde6e8138d,1490,Hệ thống thông tin kinh doanh
+stu_1678fba27208ef27,1491,Kiểm toán
+stu_16989826526a1774,1492,Hệ thống thông tin quản lý
+stu_16e666be3df5bd35,1493,Kinh tế
+stu_17030c60448e746d,1494,Kinh tế
+stu_17f7e7a7730dfbfb,1495,Bất động sản
+stu_17fdb29905da19eb,1496,Hệ thống thông tin kinh doanh
+stu_186c4115dcab511f,1497,Bất động sản
+stu_18a257a0d4f303e2,1498,Hệ thống thông tin quản lý
+stu_1a63f905a871d6ff,1499,Luật kinh doanh quốc tế
+stu_1b107ecd15aba66e,1500,Hệ thống thông tin quản lý
+stu_1cc8a7f8bcd8de69,1501,Luật kinh doanh quốc tế
+stu_1da23e0bffa390c2,1502,Bất động sản
+stu_1df53d8a6d839733,1503,Hệ thống thông tin quản lý
+stu_1df5713ddaf51ed2,1504,Bất động sản
+stu_1f3acf560535c7db,1505,Kiểm toán
+stu_20b90349c04dfde9,1506,Kinh tế
+stu_21c4ccba587bfe0c,1507,Luật kinh doanh quốc tế
+stu_21d8b823552beae3,1508,Luật kinh doanh quốc tế
+stu_2236805f84eed49f,1509,Hệ thống thông tin quản lý
+stu_22a6f19a54913b96,1510,Bất động sản
+stu_23b2b6f67b92cc3b,1511,Hệ thống thông tin quản lý
+stu_2400e12035e234e0,1512,Bất động sản
+stu_24135733bd6afdac,1513,Hệ thống thông tin quản lý
+stu_256937fec450dde7,1514,Luật kinh doanh quốc tế
+stu_277d5ecec0ef61c3,1515,Luật kinh doanh quốc tế
+stu_27bda6cf2da3a0da,1516,Hệ thống thông tin quản lý
+stu_282f55c9935123ec,1517,Luật kinh doanh quốc tế
+stu_28dce47396dd3068,1518,Bất động sản
+stu_295f81bd4ca4b0e4,1519,Kiểm toán
+stu_2a12025038d0dbb3,1520,Hệ thống thông tin quản lý
+stu_2ac445fe19748eb7,1521,Hệ thống thông tin quản lý
+stu_2b4c1f8ce5c23913,1522,Hệ thống thông tin quản lý
+stu_2bcd42fec3640125,1523,Kiểm toán
+stu_2cd1b6b88647a38d,1524,Kinh tế
+stu_2de067cda5040475,1525,Kinh tế
+stu_2f62ac7b5e365969,1526,Bất động sản
+stu_301585d69b1622b1,1527,Hệ thống thông tin kinh doanh
+stu_30e5a9eeea0664ca,1528,Hệ thống thông tin quản lý
+stu_32d7a2bab8a6d2a0,1529,Luật kinh doanh quốc tế
+stu_33060cb59c9fd53d,1530,Hệ thống thông tin kinh doanh
+stu_343ab236447c3996,1531,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_35903687eb56034b,1532,Kinh tế
+stu_360cce01368cbc62,1533,Hệ thống thông tin kinh doanh
+stu_36ab7136023aad53,1534,Kiểm toán
+stu_37519a034e27d6fb,1535,Hệ thống thông tin kinh doanh
+stu_37a6cf9e30eeff31,1536,Hệ thống thông tin quản lý
+stu_38d75e4314f1ff3f,1537,Kinh tế
+stu_38e6d25002be1f28,1538,Kiểm toán
+stu_3955db97417976d8,1539,Kiểm toán
+stu_3a0cde88d66a192e,1540,Hệ thống thông tin quản lý
+stu_3c7a0187492f3803,1541,Kiểm toán
+stu_3decf53dfa0449f3,1542,Luật kinh doanh quốc tế
+stu_3f7cae46dd512963,1543,Kinh tế
+stu_409e132439e1e213,1544,Bất động sản
+stu_417b8dbea1554c7d,1545,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_4184c01ececa2911,1546,Hệ thống thông tin kinh doanh
+stu_419dcb07b68ec9ee,1547,Hệ thống thông tin kinh doanh
+stu_41c4c6a3958d138b,1548,Luật kinh doanh quốc tế
+stu_42b80f69d1fc58e7,1549,Hệ thống thông tin kinh doanh
+stu_4358d2e353531585,1550,Hệ thống thông tin kinh doanh
+stu_43982c5a7fb61633,1551,Kinh tế
+stu_43c2722afc5c439e,1552,Hệ thống thông tin quản lý
+stu_43db1ebed7ab867c,1553,Kiểm toán
+stu_44ad5d5ddd4d837d,1554,Hệ thống thông tin quản lý
+stu_44df97b9239f23eb,1555,Hệ thống thông tin kinh doanh
+stu_452498953493b37b,1556,Bất động sản
+stu_478a071da78d9c56,1557,Bất động sản
+stu_47cf78289f182e84,1558,Kiểm toán
+stu_47dd110f13387632,1559,Hệ thống thông tin kinh doanh
+stu_482d43fa032ab2a3,1560,Kinh tế
+stu_48a6cab7b08790cf,1561,Kiểm toán
+stu_4a35f74e80d2eeee,1562,Luật kinh doanh quốc tế
+stu_4b50c06cd7668c0a,1563,Hệ thống thông tin quản lý
+stu_4b61c4b83e9c89f6,1564,Bất động sản
+stu_4be63d39c331c7bf,1565,Hệ thống thông tin quản lý
+stu_4d1d011103ec92bb,1566,Hệ thống thông tin quản lý
+stu_4e4607dcb4222eb7,1567,Kiểm toán
+stu_4e635ef6f4716d39,1568,Luật kinh doanh quốc tế
+stu_4e9c5b91cbd1a712,1569,Kiểm toán
+stu_51b8323148b78c4c,1570,Hệ thống thông tin quản lý
+stu_539ee3621224f135,1571,Kiểm toán
+stu_53bf470b0bea7b87,1572,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_54bc684bd2c01541,1573,Kiểm toán
+stu_550cf7210a8ae9ce,1574,Hệ thống thông tin quản lý
+stu_5551a7ea80aa0b4f,1575,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_5582c06c981ed8d4,1576,Luật kinh doanh quốc tế
+stu_57b6f720d4c51eb9,1577,Kinh tế
+stu_58f3a9547012dea9,1578,Bất động sản
+stu_58fa3394bcca0a91,1579,Bất động sản
+stu_593bcbb8332972af,1580,Kiểm toán
+stu_59c3377b537d6890,1581,Hệ thống thông tin quản lý
+stu_5a3a37c7522d435b,1582,Kiểm toán
+stu_5a59f20b38ab2510,1583,Hệ thống thông tin kinh doanh
+stu_5a809e7d898377a4,1584,Luật kinh doanh quốc tế
+stu_5b314e313c6fe16c,1585,Kinh tế
+stu_5c40145878fe2e4e,1586,Hệ thống thông tin quản lý
+stu_5d421b2a63eac2ae,1587,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_5d9c3e2bf524c940,1588,Hệ thống thông tin quản lý
+stu_5e0cb3e311bf8d18,1589,Kiểm toán
+stu_5ed2a6111d4b2cd3,1590,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_5f4a5aac3a389672,1591,Luật kinh doanh quốc tế
+stu_6026cb9b3fe5d8e1,1592,Hệ thống thông tin kinh doanh
+stu_61a37bdf4b7ee56c,1593,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_6264ed0c03677b45,1594,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_62db605892ce43d7,1595,Kiểm toán
+stu_64eceed16f2e6de1,1596,Kinh tế
+stu_656ff9c6833089e7,1597,Hệ thống thông tin kinh doanh
+stu_662d8b6c4e2c4f85,1598,Kiểm toán
+stu_690643ea96985640,1599,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_695059ea8589a1a4,1600,Hệ thống thông tin quản lý
+stu_698d5ed6fb9b1e5d,1601,Luật kinh doanh quốc tế
+stu_6a30ca507c8c7f8c,1602,Kiểm toán
+stu_6ad760d3b737ea00,1603,Bất động sản
+stu_6b14c9a204d1d4d2,1604,Hệ thống thông tin kinh doanh
+stu_6b4863804fd66b19,1605,Bất động sản
+stu_6b4cb1b86e01d5c4,1606,Kiểm toán
+stu_6c19f9fddffd32a2,1607,Kiểm toán
+stu_6d16fd4c2fa40c49,1608,Hệ thống thông tin quản lý
+stu_6d9dfa0e61278f4c,1609,Bất động sản
+stu_6dc631ff0c2929e5,1610,Kinh tế
+stu_6e644e3b1c17ea21,1611,Kiểm toán
+stu_6ff16f10ac85de52,1612,Kiểm toán
+stu_7004ad4680946cf6,1613,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_70324b25ce77551b,1614,Hệ thống thông tin kinh doanh
+stu_70af06fe596d9956,1615,Hệ thống thông tin quản lý
+stu_70c83909ffc7764f,1616,Hệ thống thông tin quản lý
+stu_70ca123c330e04a2,1617,Hệ thống thông tin quản lý
+stu_713a640969915378,1618,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_72732f0546101f8d,1619,Hệ thống thông tin quản lý
+stu_73c1b437048f4584,1620,Kiểm toán
+stu_73d3544b151f9eab,1621,Bất động sản
+stu_7579b2f84e5f945a,1622,Bất động sản
+stu_76ba5c63eaf8a0e9,1623,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_7890dd6e5c7f922d,1624,Hệ thống thông tin kinh doanh
+stu_789ef5580430c465,1625,Hệ thống thông tin kinh doanh
+stu_7a19c24d595fee72,1626,Kiểm toán
+stu_7ab48f22009c1b36,1627,Kiểm toán
+stu_7b35d231b2b7df04,1628,Luật kinh doanh quốc tế
+stu_7c1221ca6b54e21e,1629,Bất động sản
+stu_7c23a0c70c0d2f5d,1630,Hệ thống thông tin kinh doanh
+stu_7c87c92907d5c592,1631,Kiểm toán
+stu_7d2bce0d0e69b137,1632,Kinh tế
+stu_7d3ca4c3a2a76a33,1633,Hệ thống thông tin kinh doanh
+stu_7db18a9fab219953,1634,Luật kinh doanh quốc tế
+stu_80587bf07e238ecb,1635,Kinh tế
+stu_80d95cf114c97fcd,1636,Kiểm toán
+stu_81cb1ed516f6e5c9,1637,Kiểm toán
+stu_83667fc9dcd5cab0,1638,Bất động sản
+stu_83aa6ecfe386fc51,1639,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_8406f2ae197c1865,1640,Hệ thống thông tin kinh doanh
+stu_8458aacde07b1c63,1641,Kinh tế
+stu_846d9620c4178bd5,1642,Kinh tế
+stu_8478fbd6cf98e090,1643,Luật kinh doanh quốc tế
+stu_847e9ec0c4696856,1644,Bất động sản
+stu_848b090aeeb90636,1645,Kiểm toán
+stu_85728ee71869da74,1646,Hệ thống thông tin kinh doanh
+stu_8595af75bdb1ce89,1647,Kinh tế
+stu_861abbb8dc93a1af,1648,Bất động sản
+stu_864972603a2a49b0,1649,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_86d44a5cfe0bb8e0,1650,Bất động sản
+stu_8761c59ee55c8213,1651,Luật kinh doanh quốc tế
+stu_882923a434d8ed6f,1652,Bất động sản
+stu_885b8f2111eac2b2,1653,Bất động sản
+stu_88ea04dabaee815d,1654,Kiểm toán
+stu_8a2aa1ab8d4b2d77,1655,Bất động sản
+stu_8ad9cd4951719eb6,1656,Kinh tế
+stu_8b16fa1a6a991ef3,1657,Luật kinh doanh quốc tế
+stu_8c2ae137141ac5c5,1658,Luật kinh doanh quốc tế
+stu_8c85a96637a7dd84,1659,Kinh tế
+stu_8cad92d009ea6473,1660,Luật kinh doanh quốc tế
+stu_8e34691587627259,1661,Kiểm toán
+stu_8e4299edf4d68a90,1662,Bất động sản
+stu_8e5d9ecdba99f99c,1663,Bất động sản
+stu_8f97df0051c619ab,1664,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_8fa3f01a196edb8a,1665,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_9347710c06d78486,1666,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_9358ad9b295995dd,1667,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_9577f76b550b398e,1668,Hệ thống thông tin kinh doanh
+stu_958f1892f45954ea,1669,Luật kinh doanh quốc tế
+stu_9611ba39eea470ff,1670,Bất động sản
+stu_965f037dd6f8935c,1671,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_97169004b2c7d045,1672,Bất động sản
+stu_97447b2feb5f5c72,1673,Luật kinh doanh quốc tế
+stu_991179f4d919cf36,1674,Luật kinh doanh quốc tế
+stu_99bde5e69dc0eae0,1675,Luật kinh doanh quốc tế
+stu_9a36baf6448f5118,1676,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_9c7239e2b36f8590,1677,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_9cbb7c843769ec3d,1678,Kiểm toán
+stu_9e6c8bd33ccb320d,1679,Bất động sản
+stu_9e85f07aabafd80d,1680,Bất động sản
+stu_9f5918b8087f719c,1681,Hệ thống thông tin quản lý
+stu_9fb5a2075477ae56,1682,Kiểm toán
+stu_a026da7425e6f6a3,1683,Hệ thống thông tin kinh doanh
+stu_a044a5bc2508e4c2,1684,Hệ thống thông tin quản lý
+stu_a354f4dc59e82a9b,1685,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_a36cce40c6d5f8e4,1686,Hệ thống thông tin quản lý
+stu_a50615ac8dab7383,1687,Hệ thống thông tin kinh doanh
+stu_a512080312098c6b,1688,Kinh tế
+stu_a52e9ed295ee4860,1689,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_a62f51096f49de13,1690,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_a6d78b9b186cc425,1691,Kinh tế
+stu_a71d033a5168f2ae,1692,Hệ thống thông tin kinh doanh
+stu_a76ccbe453c9c0b8,1693,Hệ thống thông tin kinh doanh
+stu_a87f11b5ebda2649,1694,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_a8aac8e07195c07c,1695,Bất động sản
+stu_aa513055375b63da,1696,Bất động sản
+stu_ab26cc0d1562e93e,1697,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_abdbc3f355f511db,1698,Hệ thống thông tin quản lý
+stu_ac6b5bd89183e807,1699,Kinh tế
+stu_ac9029c1fab442dd,1700,Luật kinh doanh quốc tế
+stu_ae01442e8c6c1540,1701,Kiểm toán
+stu_ae0e1285a9bde6bc,1702,Hệ thống thông tin kinh doanh
+stu_aed6ff16e34f032a,1703,Luật kinh doanh quốc tế
+stu_aede71b7cc894f1d,1704,Bất động sản
+stu_af096a55b49a00df,1705,Kiểm toán
+stu_af53656558e60b6d,1706,Hệ thống thông tin quản lý
+stu_af719c0ca63081de,1707,Hệ thống thông tin quản lý
+stu_b0fa83cb30b67a8f,1708,Bất động sản
+stu_b1050945f673b2f5,1709,Hệ thống thông tin kinh doanh
+stu_b15418cfae16eb5b,1710,Kinh tế
+stu_b1eb0a006d3d2b19,1711,Hệ thống thông tin quản lý
+stu_b2f3c5ddd03e64a6,1712,Hệ thống thông tin kinh doanh
+stu_b5377c5ece055154,1713,Luật kinh doanh quốc tế
+stu_b5c65e933ea4d5e1,1714,Kiểm toán
+stu_b5e63149d9b40b91,1715,Luật kinh doanh quốc tế
+stu_b733ec7a914e6de7,1716,Luật kinh doanh quốc tế
+stu_b8016fc9a1947bce,1717,Luật kinh doanh quốc tế
+stu_b87455eb499e7b89,1718,Kiểm toán
+stu_b8b5fb297b6211cf,1719,Luật kinh doanh quốc tế
+stu_b9e3ee3f8ee4ed98,1720,Luật kinh doanh quốc tế
+stu_ba1b6d09659e3382,1721,Kinh tế
+stu_ba93ef88bb2c2b71,1722,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_bb36b31b2fd3b81b,1723,Hệ thống thông tin kinh doanh
+stu_bc3198dbf86a1b0c,1724,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_bc61b1a77e7b74e3,1725,Bất động sản
+stu_bd1b0bf09d73d78a,1726,Kinh tế
+stu_bd5e2b1eb0d28103,1727,Hệ thống thông tin kinh doanh
+stu_bdd50244ec3f81af,1728,Hệ thống thông tin kinh doanh
+stu_bf7d2e1df09972ef,1729,Bất động sản
+stu_bfa9080bcdf43c2d,1730,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_bfb02dbd6e02050b,1731,Luật kinh doanh quốc tế
+stu_c0fc956c756ffa5a,1732,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_c29e6acda149520f,1733,Bất động sản
+stu_c356c2060d37d76f,1734,Hệ thống thông tin quản lý
+stu_c491274f2294b552,1735,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_c5915ff0a4c1afb5,1736,Bất động sản
+stu_c63b1115dabcdadd,1737,Bất động sản
+stu_c73dbbfa154440cc,1738,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_c747f8b792b3c0af,1739,Kinh tế
+stu_c802f46ed8c114ac,1740,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_c8c9c1c4a35ac747,1741,Kinh tế
+stu_c9817c9f0ebbce86,1742,Hệ thống thông tin kinh doanh
+stu_cac2d0d56d82a332,1743,Hệ thống thông tin kinh doanh
+stu_cc51b94b684d8d4b,1744,Hệ thống thông tin kinh doanh
+stu_ce173bb7cc437fd0,1745,Kinh tế
+stu_cef7fe65352bb43f,1746,Luật kinh doanh quốc tế
+stu_cf01160a48f8928c,1747,Hệ thống thông tin quản lý
+stu_cf8695dde3c2075e,1748,Luật kinh doanh quốc tế
+stu_d21801ce7cb245fb,1749,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_d2243d86d2e99a12,1750,Hệ thống thông tin quản lý
+stu_d3663997915a38bb,1751,Hệ thống thông tin kinh doanh
+stu_d502f1f67298edff,1752,Luật kinh doanh quốc tế
+stu_d66f176e8a20b6e3,1753,Kinh tế
+stu_d72fe651dafd3d71,1754,Kinh tế
+stu_d746490d7f42090f,1755,Kiểm toán
+stu_d7b4e7cd5c273cf6,1756,Bất động sản
+stu_d7c675be5b356af2,1757,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_d7cbe91168c270b1,1758,Kinh tế
+stu_d95cfbb7507b4f72,1759,Hệ thống thông tin quản lý
+stu_d967c43397f726c6,1760,Hệ thống thông tin kinh doanh
+stu_d9fa7e59ec57e71d,1761,Bất động sản
+stu_da74bbb0cac64838,1762,Kinh tế
+stu_db09de33904312a5,1763,Bất động sản
+stu_db3da2129bc7838c,1764,Bất động sản
+stu_dbba9c9019d13c74,1765,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_dc068d852718dddb,1766,Luật kinh doanh quốc tế
+stu_dc5079031f5fe63b,1767,Kinh tế
+stu_dd6d2f883999af5d,1768,Hệ thống thông tin kinh doanh
+stu_ddbce9164079939f,1769,Kiểm toán
+stu_de0fd61722a8566d,1770,Bất động sản
+stu_de3bd59d89e7be83,1771,Bất động sản
+stu_dee177f8b3103963,1772,Luật kinh doanh quốc tế
+stu_dff39cf46067dcff,1773,Bất động sản
+stu_e06980d9bf91fdd6,1774,Hệ thống thông tin kinh doanh
+stu_e2cfbe5a0efea65d,1775,Kiểm toán
+stu_e3eda0b69800af64,1776,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_e416e16ad251a339,1777,Kiểm toán
+stu_e41ede9ab1bcdf19,1778,Kinh tế
+stu_e4b3ebcd55a151fe,1779,Hệ thống thông tin kinh doanh
+stu_e688494476c4d8d1,1780,Kiểm toán
+stu_e6e77406ec4c54eb,1781,Hệ thống thông tin quản lý
+stu_e7047c8a62e80772,1782,Hệ thống thông tin kinh doanh
+stu_e70996fd27e427fb,1783,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_e76a52ef6bff2898,1784,Kiểm toán
+stu_e774f206902bb21b,1785,Bất động sản
+stu_e7b34a6e84608917,1786,Hệ thống thông tin quản lý
+stu_e8332e0a2baf21df,1787,Kinh tế
+stu_e9040fee65fe443c,1788,Kiểm toán
+stu_e91227d54214fb97,1789,Bất động sản
+stu_eb65a7f6dd885ba7,1790,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_eb9a8e6793d72550,1791,Bất động sản
+stu_ed5f4604f2e31853,1792,Hệ thống thông tin kinh doanh
+stu_ed746d44524cb00e,1793,Bất động sản
+stu_edc798032a00995e,1794,Bất động sản
+stu_f13f07879a3f2d27,1795,Hệ thống thông tin kinh doanh
+stu_f17bd21197d667d4,1796,Bất động sản
+stu_f3d0a89de5934f5e,1797,Hệ thống thông tin kinh doanh
+stu_f3f5b73414466750,1798,Bất động sản
+stu_f50565e36af57d77,1799,Kinh tế
+stu_f52558bc41a5bb3e,1800,Hệ thống thông tin quản lý
+stu_f5b6a9cc82434afe,1801,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_f76127edfc4dfa5d,1802,Kinh tế
+stu_f805cce2d2b56948,1803,Kiểm toán
+stu_f884410fbda27182,1804,Kiểm toán
+stu_f900926ad528f157,1805,Hệ thống thông tin quản lý
+stu_f936aefdb8bf2a6b,1806,Hệ thống thông tin quản lý
+stu_f9a01bfb6c064bae,1807,Bất động sản
+stu_fa535f30ba569e3e,1808,Kinh tế
+stu_faeac9b21c2fdfa2,1809,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_fb5582e7f1e776f0,1810,Hệ thống thông tin quản lý
+stu_fcc5ac50bef41f43,1811,Bất động sản
+stu_fcd725610c9b2a50,1812,Hệ thống thông tin quản lý
+stu_fda3b84ec1924062,1813,Luật kinh doanh quốc tế
+stu_fe5818ed5bc6bbb1,1814,Kinh tế
+stu_fe6ccd3fcda42d92,1815,Bất động sản
+stu_fe98af88513c1582,1816,Kinh tế
+stu_fea5d5a7b6120f39,1817,Công nghệ logistics tích hợp chứng chỉ FIATA
+stu_ff0b0f0a9516c442,1818,Kiểm toán
+stu_ff98970f6612cae6,1819,Bất động sản
+stu_ffd70c87bda1a767,1820,Luật kinh doanh quốc tế
+stu_03b078427c0c9235,1821,Quản trị Hải quan - Ngoại thương
+stu_03f136b11e2297c4,1822,Kinh doanh quốc tế
+stu_07ecfc89f0808d8d,1823,Quản trị Hải quan - Ngoại thương
+stu_0bee87bed395738c,1824,Quản trị Hải quan - Ngoại thương
+stu_1008ab2eac917be9,1825,Kinh doanh quốc tế
+stu_1303460de55ded81,1826,Kinh doanh quốc tế
+stu_1306430dae6aa7fb,1827,Quản trị Hải quan - Ngoại thương
+stu_14a2214b5f29e2cb,1828,Kinh doanh quốc tế
+stu_187d5226956d9252,1829,Quản trị Hải quan - Ngoại thương
+stu_1a3ea1bfda929f5c,1830,Kinh doanh quốc tế
+stu_1b6a10d97666301a,1831,Kinh doanh quốc tế
+stu_1c1162221943a7b3,1832,Kinh doanh quốc tế
+stu_1d3cb208c78463d9,1833,Kinh doanh quốc tế
+stu_1dc77190d9e5aa45,1834,Kinh doanh quốc tế
+stu_23e9db8579850ff3,1835,Quản trị Hải quan - Ngoại thương
+stu_2425ea448d36da22,1836,Kinh doanh quốc tế
+stu_24be25dff626c2c3,1837,Quản trị Hải quan - Ngoại thương
+stu_266b568f9bc9f353,1838,Quản trị Hải quan - Ngoại thương
+stu_28676cc99a02dde3,1839,Quản trị Hải quan - Ngoại thương
+stu_2d8b01649223ee57,1840,Quản trị Hải quan - Ngoại thương
+stu_2fee7db7a4cd14f8,1841,Kinh doanh quốc tế
+stu_30149a9a47d10c61,1842,Quản trị Hải quan - Ngoại thương
+stu_3437ec58b1399802,1843,Quản trị Hải quan - Ngoại thương
+stu_344d08c871860d6d,1844,Quản trị Hải quan - Ngoại thương
+stu_3762be695e3e2eeb,1845,Kinh doanh quốc tế
+stu_3793d989c907c894,1846,Kinh doanh quốc tế
+stu_388648f5006d1309,1847,Kinh doanh quốc tế
+stu_41e54387efdd3cf1,1848,Kinh doanh quốc tế
+stu_426c407670c7ac81,1849,Kinh doanh quốc tế
+stu_4527b49a89f806c5,1850,Quản trị Hải quan - Ngoại thương
+stu_4660fb9c42299b6a,1851,Quản trị Hải quan - Ngoại thương
+stu_467d09ce64a2cd6d,1852,Kinh doanh quốc tế
+stu_4694fe6a52ee0a12,1853,Quản trị Hải quan - Ngoại thương
+stu_469ca137a1e17b29,1854,Quản trị Hải quan - Ngoại thương
+stu_4721e0eb55b97f8e,1855,Quản trị Hải quan - Ngoại thương
+stu_4aa1376d970dcdfe,1856,Kinh doanh quốc tế
+stu_4b48c226e5699d97,1857,Quản trị Hải quan - Ngoại thương
+stu_4e3b09cd5dec3f58,1858,Quản trị Hải quan - Ngoại thương
+stu_4e3b6528074b1e2c,1859,Kinh doanh quốc tế
+stu_4ff071ccf542fad7,1860,Quản trị Hải quan - Ngoại thương
+stu_50d65c1ef3e6f77c,1861,Quản trị Hải quan - Ngoại thương
+stu_5339b02d1adb08be,1862,Quản trị Hải quan - Ngoại thương
+stu_5921b97b42cc9873,1863,Kinh doanh quốc tế
+stu_596d948db163c273,1864,Kinh doanh quốc tế
+stu_5a76c5181a1d1a36,1865,Kinh doanh quốc tế
+stu_5fe754eb6b314554,1866,Kinh doanh quốc tế
+stu_607a62db47935d70,1867,Quản trị Hải quan - Ngoại thương
+stu_615dc24e349273c4,1868,Quản trị Hải quan - Ngoại thương
+stu_64da826e45dba514,1869,Quản trị Hải quan - Ngoại thương
+stu_67a8b54e1c35865c,1870,Kinh doanh quốc tế
+stu_6998bfa1c3bda6b4,1871,Kinh doanh quốc tế
+stu_6a2c73b235286aec,1872,Kinh doanh quốc tế
+stu_6e76702fa5f35359,1873,Kinh doanh quốc tế
+stu_6eca2f5521ec5e8d,1874,Quản trị Hải quan - Ngoại thương
+stu_6ecabc1281aa056d,1875,Quản trị Hải quan - Ngoại thương
+stu_714af2f2cd6470ba,1876,Kinh doanh quốc tế
+stu_72d6749306bb2475,1877,Kinh doanh quốc tế
+stu_743cb8052f06d221,1878,Kinh doanh quốc tế
+stu_75038dfb3e21c054,1879,Quản trị Hải quan - Ngoại thương
+stu_7506a10977c1bdda,1880,Quản trị Hải quan - Ngoại thương
+stu_763bd0e477d1abe3,1881,Quản trị Hải quan - Ngoại thương
+stu_77ceee09c9ca0ecd,1882,Kinh doanh quốc tế
+stu_7a4b944ba24c65aa,1883,Quản trị Hải quan - Ngoại thương
+stu_7c4b9295d23fbba2,1884,Quản trị Hải quan - Ngoại thương
+stu_7ccd441c1f6794ad,1885,Quản trị Hải quan - Ngoại thương
+stu_7d25cbaf130f923f,1886,Kinh doanh quốc tế
+stu_7f95cbb7590a9931,1887,Quản trị Hải quan - Ngoại thương
+stu_7fd7ccbb4fdee502,1888,Kinh doanh quốc tế
+stu_803a6d46468e3884,1889,Quản trị Hải quan - Ngoại thương
+stu_80932b2ae690aba2,1890,Kinh doanh quốc tế
+stu_81c80bf4cfe82a2d,1891,Kinh doanh quốc tế
+stu_83cd21c35877fe3c,1892,Quản trị Hải quan - Ngoại thương
+stu_84c25c56bb2f9fe7,1893,Quản trị Hải quan - Ngoại thương
+stu_871db46ab874de75,1894,Kinh doanh quốc tế
+stu_87d16d04d91b6645,1895,Kinh doanh quốc tế
+stu_8922ae125744a76c,1896,Kinh doanh quốc tế
+stu_8b48638f5da5f15d,1897,Kinh doanh quốc tế
+stu_8c9f324bf5f981d4,1898,Kinh doanh quốc tế
+stu_91c51e1adf88c5cb,1899,Kinh doanh quốc tế
+stu_921cf9214e9a7a90,1900,Kinh doanh quốc tế
+stu_98569f7eceebfe39,1901,Quản trị Hải quan - Ngoại thương
+stu_9a99cab13f687d92,1902,Kinh doanh quốc tế
+stu_9eeb0da6bbd1ba49,1903,Kinh doanh quốc tế
+stu_a0d539664d76c2f6,1904,Quản trị Hải quan - Ngoại thương
+stu_a2470dfb657514a7,1905,Quản trị Hải quan - Ngoại thương
+stu_a2c592e0262dd5b4,1906,Quản trị Hải quan - Ngoại thương
+stu_a424f512dfc75d0c,1907,Kinh doanh quốc tế
+stu_a51c657d53f5fab2,1908,Kinh doanh quốc tế
+stu_a592e1cd1c8a2059,1909,Quản trị Hải quan - Ngoại thương
+stu_a678a714257f0bd0,1910,Quản trị Hải quan - Ngoại thương
+stu_a93761bcf597bb54,1911,Kinh doanh quốc tế
+stu_b03d2af40ad03fdb,1912,Kinh doanh quốc tế
+stu_b29cdd1496422cad,1913,Quản trị Hải quan - Ngoại thương
+stu_b430e14ffa8da661,1914,Quản trị Hải quan - Ngoại thương
+stu_b904e5dbc1b570cd,1915,Quản trị Hải quan - Ngoại thương
+stu_bbc08c181508dc62,1916,Quản trị Hải quan - Ngoại thương
+stu_bd072d1c22789329,1917,Kinh doanh quốc tế
+stu_bdddc2ddd178ac23,1918,Quản trị Hải quan - Ngoại thương
+stu_c179f633b016db53,1919,Kinh doanh quốc tế
+stu_c38d0150f6410a98,1920,Quản trị Hải quan - Ngoại thương
+stu_c3e5ae3e10601565,1921,Kinh doanh quốc tế
+stu_ca20c57c8dd7e5a2,1922,Kinh doanh quốc tế
+stu_cd4bd80642bf1d48,1923,Kinh doanh quốc tế
+stu_cdf8a86ac3caeb90,1924,Kinh doanh quốc tế
+stu_cff5d9e4531292a1,1925,Kinh doanh quốc tế
+stu_d09b0d9ee482f0e4,1926,Quản trị Hải quan - Ngoại thương
+stu_d2cc4c244d54c346,1927,Quản trị Hải quan - Ngoại thương
+stu_d2d0813b3bdbba6e,1928,Kinh doanh quốc tế
+stu_d3cf151b071b6766,1929,Quản trị Hải quan - Ngoại thương
+stu_d58900bd4cdbd5a8,1930,Kinh doanh quốc tế
+stu_d84a294194baba91,1931,Kinh doanh quốc tế
+stu_d901f32db22afdb3,1932,Kinh doanh quốc tế
+stu_da58fd22cf446b18,1933,Kinh doanh quốc tế
+stu_dbc0b313e1ded28b,1934,Kinh doanh quốc tế
+stu_dcd5aa1beb8675f1,1935,Quản trị Hải quan - Ngoại thương
+stu_e0774c507a3b7746,1936,Kinh doanh quốc tế
+stu_e1d48b6a4c65343f,1937,Kinh doanh quốc tế
+stu_e40706e6640eacf0,1938,Quản trị Hải quan - Ngoại thương
+stu_e4962cfa67bf6e8c,1939,Quản trị Hải quan - Ngoại thương
+stu_e6849528d5615dc4,1940,Kinh doanh quốc tế
+stu_e9fb69440685d6a5,1941,Kinh doanh quốc tế
+stu_eb72855fd684d795,1942,Quản trị Hải quan - Ngoại thương
+stu_ec70bb571e50cd78,1943,Quản trị Hải quan - Ngoại thương
+stu_ed9d3238e0d6e30c,1944,Quản trị Hải quan - Ngoại thương
+stu_f61dfb8a877d09f7,1945,Kinh doanh quốc tế
+stu_f9607c85a1acc82c,1946,Kinh doanh quốc tế
+stu_fa108e25721a8f7e,1947,Quản trị Hải quan - Ngoại thương
+stu_fc7db866dec265e2,1948,Quản trị Hải quan - Ngoại thương
+stu_fdfd7dde3cc9f239,1949,Quản trị Hải quan - Ngoại thương
+stu_fffd71d2f595f2fb,1950,Quản trị Hải quan - Ngoại thương
+stu_0549ea0f704e847d,1951,Bảo hiểm
+stu_06487d938ee47508,1952,Bảo hiểm
+stu_09c5f7f1ba362387,1953,Bảo hiểm
+stu_0d1638a76dda330a,1954,Bảo hiểm
+stu_0d9d0b1b7ae16980,1955,Bảo hiểm
+stu_0e00d85616c25a5a,1956,Bảo hiểm
+stu_118372a654a661df,1957,Bảo hiểm
+stu_14e44e397363e5c6,1958,Bảo hiểm
+stu_14e61f7e3343b382,1959,Bảo hiểm
+stu_1c10498acc857d20,1960,Bảo hiểm
+stu_1c874140009e5adb,1961,Bảo hiểm
+stu_1ec8944082eff024,1962,Bảo hiểm
+stu_22fa4f5e0e32d7f7,1963,Bảo hiểm
+stu_3d02e934d1362a6d,1964,Bảo hiểm
+stu_3e8f6495d070a90d,1965,Bảo hiểm
+stu_482eb4fcd0bf3a33,1966,Bảo hiểm
+stu_4bec41dcf874c013,1967,Bảo hiểm
+stu_4fbd5e34ae2db81b,1968,Bảo hiểm
+stu_70bf1acf7dd12316,1969,Bảo hiểm
+stu_7b3faaf8bcc36238,1970,Bảo hiểm
+stu_7c98d87cf684bd17,1971,Bảo hiểm
+stu_81a20ec0618a4459,1972,Bảo hiểm
+stu_825e6dcafb3113cf,1973,Bảo hiểm
+stu_8666d4e116e10700,1974,Bảo hiểm
+stu_884287cb81ef890c,1975,Bảo hiểm
+stu_8982601284a118e4,1976,Bảo hiểm
+stu_970d1ec4fbb1c94d,1977,Bảo hiểm
+stu_996fdae166d04ca2,1978,Bảo hiểm
+stu_99b0222ceacb6534,1979,Bảo hiểm
+stu_9fd00f3d6ce2baa5,1980,Bảo hiểm
+stu_a0d57a1573287b53,1981,Bảo hiểm
+stu_a2b16b408d84989d,1982,Bảo hiểm
+stu_ab3309264266ef45,1983,Bảo hiểm
+stu_b0c2626b638d0c39,1984,Bảo hiểm
+stu_b30b94941e51d49c,1985,Bảo hiểm
+stu_b39e2a17b8166b12,1986,Bảo hiểm
+stu_c2af2f6a42898040,1987,Bảo hiểm
+stu_c4b06ab1d032a2d5,1988,Bảo hiểm
+stu_c6c95bf7279ee78d,1989,Bảo hiểm
+stu_c8a190640aa32656,1990,Bảo hiểm
+stu_d1b5e64eba2e42af,1991,Bảo hiểm
+stu_d3c9f2dcb0c3d061,1992,Bảo hiểm
+stu_dc2b1166b417c7e9,1993,Bảo hiểm
+stu_dea67ca28550bb42,1994,Bảo hiểm
+stu_e24f22dda5dfe64d,1995,Bảo hiểm
+stu_e25ad0d56e5ebee7,1996,Bảo hiểm
+stu_e4ddcada29550783,1997,Bảo hiểm
+stu_f18955e51dd75c03,1998,Bảo hiểm
+stu_fb18079137a4b08a,1999,Bảo hiểm
